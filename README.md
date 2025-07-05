@@ -1,4 +1,5 @@
 # "TripNest" project
+Goals: Consolidation of the team-game project
 
 ## Installation
 ```bash
