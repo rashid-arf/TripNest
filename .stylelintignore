@@ -1,0 +1,5 @@
+dist/
+build/
+static/
+coverage/
+node_modules/

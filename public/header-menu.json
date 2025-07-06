@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "link": "/",
+    "image": "/assets/images/plus.svg",
+    "alt": "plus"
+  },
+  {
+    "id": 2,
+    "title": "About",
+    "link": "/about"
+  },
+  {
+    "id": 3,
+    "title": "Tours",
+    "link": "/tours",
+    "image": "/assets/images/plus.svg",
+    "alt": "plus"
+  },
+  {
+    "id": 4,
+    "title": "Destination",
+    "link": "/destination",
+    "image": "/assets/images/plus.svg",
+    "alt": "plus"
+  },
+  {
+    "id": 5,
+    "title": "Pages",
+    "link": "/pages",
+    "image": "/assets/images/plus.svg",
+    "alt": "plus"
+  },
+  {
+    "id": 6,
+    "title": "Contact",
+    "link": "/contact"
+  }
+]

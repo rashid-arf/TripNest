@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "bgImage": "/assets/images/banner-spain.png",
+    "bgAlt": "Background Image",
+    "location": "Spain",
+    "title": "Let's journey and discover a place.",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 5.0
+  },
+  {
+    "id": 2,
+    "bgImage": "/assets/images/banner-new-york.png",
+    "bgAlt": "Background Image",
+    "location": "New York",
+    "title": "Let's explore your Family trip",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 4.0
+  },
+  {
+    "id": 3,
+    "bgImage": "/assets/images/banner-mexico.png",
+    "bgAlt": "Background Image",
+    "location": "Mexico City",
+    "title": "Discover your future vacation specials!",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 3.5
+  },
+  {
+    "id": 4,
+    "bgImage": "/assets/images/banner-spain.png",
+    "bgAlt": "Background Image",
+    "location": "Spain",
+    "title": "Let's journey and discover a place.",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 5.0
+  },
+  {
+    "id": 5,
+    "bgImage": "/assets/images/banner-new-york.png",
+    "bgAlt": "Background Image",
+    "location": "New York",
+    "title": "Let's explore your family trip",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 4.0
+  },
+  {
+    "id": 6,
+    "bgImage": "/assets/images/banner-mexico.png",
+    "bgAlt": "Background Image",
+    "location": "Mexico City",
+    "title": "Discover your future vacation specials!",
+    "description": "Life is unpredictable, and we understand that plans might change. Enjoy flexible booking options, so you can reschedule or modify your trip with ease.",
+    "tripAdvisorIcon": "/assets/images/trip-advisor-icon.svg",
+    "iconAlt": "Trip Advisor Icon",
+    "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
+    "tripAdvisorLogoAlt": "TripAdvisor Logo",
+    "tripAdvisorRating": 3.5
+  }
+]

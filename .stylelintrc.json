@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": [
+      "^([a-z][a-z0-9\\-]*|[a-z][a-zA-Z0-9]*)$",
+      {
+        "message": "Use camelCase or kebab-case for class names"
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}

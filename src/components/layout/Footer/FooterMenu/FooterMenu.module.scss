@@ -1,0 +1,18 @@
+.footerContainerMenuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white60);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.selectedMenuItem {
+  color: var(--menu-item-select);
+}

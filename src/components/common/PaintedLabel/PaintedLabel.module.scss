@@ -1,0 +1,41 @@
+.text {
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+
+  &.location .text {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    font-family: var(--font-jost-mono), sans-serif;
+  }
+
+  &.discount .text {
+    font-size: 18px;
+    letter-spacing: 0.72px;
+    font-weight: 400;
+    font-family: var(--font-satisfy-mono), sans-serif;
+  }
+}
+
+.background {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  white-space: nowrap;
+}

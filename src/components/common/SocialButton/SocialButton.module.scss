@@ -1,0 +1,39 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+
+.icon {
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+
+  &:global(.facebook) {
+    mask-image: url('/assets/images/facebook.svg');
+  }
+
+  &:global(.twitter) {
+    mask-image: url('/assets/images/twitter.svg');
+  }
+
+  &:global(.pinterest) {
+    mask-image: url('/assets/images/pinterest.svg');
+  }
+
+  &:global(.instagram) {
+    mask-image: url('/assets/images/instagram.svg');
+  }
+
+  &:global(.linkedin) {
+    mask-image: url('/assets/images/linkedin.svg');
+  }
+}

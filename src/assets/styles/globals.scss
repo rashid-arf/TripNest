@@ -1,0 +1,58 @@
+:root {
+  --content-max-width: 1320px;
+
+  // colors
+  --main-bg-color: #fff;
+  --main-color: #100c08;
+  --main-color40: rgba(16 12 8 / 40%);
+  --main-color-accent: #63ab45;
+--mask-green: rgba(99 171 69 / 40%);
+--top-strip-bg-color: #222;
+  --white: #fff;
+  --white50: rgb(255 255 255 / 50%);
+  --white60: rgb(255 255 255 / 60%);
+  --white80: rgb(255 255 255 / 80%);
+  --separation-line-color: #fff3;
+  --separation2-line-color: rgb(255 255 255 / 10%);
+  --menu-item-select: rgb(99 171 69 / 90%);
+  --footer-bg-color: #1d231f;
+  --footer-hover-menu: rgba(117 174 232 / 40%);
+  --blur-color: #100c0866;
+  --rating-circle-color: #00aa6c;
+  --newsletter-bg: #f9f4f0;
+  --email-error: red;
+  --grey: #787878;
+  --phone-bg: #152F0066;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-rubik-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--main-bg-color);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.content-width {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+footer {
+  font-family: var(--font-jost-mono), sans-serif;
+}

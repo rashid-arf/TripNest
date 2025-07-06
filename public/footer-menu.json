@@ -1,0 +1,28 @@
+[
+
+  {
+    "id": 1,
+    "title": "About Us",
+    "link": "/about"
+  },
+  {
+    "id": 2,
+    "title": "Destinations",
+    "link": "/destinations"
+  },
+  {
+    "id": 3,
+    "title": "Tour Package",
+    "link": "/tour-package"
+  },
+  {
+    "id": 4,
+    "title": "Article",
+    "link": "/article"
+  },
+  {
+    "id": 5,
+    "title": "Contact Us",
+    "link": "/contact"
+  }
+]

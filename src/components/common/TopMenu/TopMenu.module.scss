@@ -1,0 +1,89 @@
+.topMenuWidth {
+  max-width: 1780px;
+  margin: 0 auto;
+  background: var(--main-color);
+  border-radius: 300px;
+  padding: 0 60px;
+  position: absolute;
+  z-index: 2;
+left: 50%;
+  transform: translateX(-50%);
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  justify-content: space-between;
+  width: 656px;
+}
+
+.menuItemPlusImage {
+  width: 8px;
+  height: 8px;
+  mask-image: var(--menu-icon);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--main-bg-color);
+}
+
+.menuItemSelect {
+  color: var(--main-bg-color);
+}
+
+.menuItemPlusActive {
+  .menuItemSelect {
+    color: var(--menu-item-select);
+  }
+
+  .menuItemPlusImage {
+    background: var(--menu-item-select);
+  }
+}
+
+.menuItemPlus {
+  display: flex;
+  flex-direction: row;
+gap: 6px;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    .menuItemSelect {
+      color: var(--menu-item-select);
+    }
+
+    .menuItemPlusImage {
+      background: var(--menu-item-select);
+    }
+  }
+}
+
+.accountBlock {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  justify-content: space-between;
+  width: 346px;
+  }
+
+.accountBlockIcons {
+  display: flex;
+  }
+
+.masked-icon:hover {
+  background: var(--main-color-accent);
+}
+
+.buttonLink {
+  text-decoration: none;
+}
