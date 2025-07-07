@@ -1,9 +1,10 @@
-export const LocationService = {
-  async getMenu() {
+export const TravelLocationService = {
+  async getTravelLocation() {
     try {
       const response = await fetch('/travel-location.json');
-      const menu = await response.json();
-      return menu;
+      const travelLocation = await response.json();
+
+      return travelLocation;
     } catch (e) {
       console.error(e);
 

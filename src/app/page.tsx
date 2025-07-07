@@ -3,13 +3,10 @@ import { BannerSwiper } from '@/components/layout/BannerSwiper/BannerSwiper';
 import { useEffect, useState } from 'react';
 import {BannerSwiperService} from "@/components/common/services/banner-swiper-service";
 import {TravelLocation} from "@/components/common/TravelLocation/TravelLocation";
-
-
-
+import {TravelLocationService} from "@/components/common/services/travelLocation.services";
 
 export default function Home() {
   const [bannerSwiperInfo, setBannerSwiperInfo] = useState(null);
-
 
   useEffect(() => {
     (async () => {
@@ -18,13 +15,19 @@ export default function Home() {
     })();
   }, []);
 
+  const [travelLocation, setTravelLocation] = useState(null);
+
+    useEffect(() => {
+        (async () => {
+            const TravelLocationFromResponse = await TravelLocationService.getTravelLocation();
+            setTravelLocation(TravelLocationFromResponse);
+        })();
+    }, []);
 
   return (
       <main>
         <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo} />}</div>
-<TravelLocation />
-
-
+          {travelLocation && (<TravelLocation travelLocation={travelLocation} />)}
 
       </main>
   );

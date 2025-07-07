@@ -18,21 +18,26 @@ margin: 120px auto;
  width: 1320px;
  padding: 0 12px;
 
- .TravelLocationPhotosItem1:nth-child(2),
- .TravelLocationPhotosItem1:nth-child(4) {
+ .TravelLocationPhotosItem:nth-child(2),
+ .TravelLocationPhotosItem:nth-child(4),
+ .TravelLocationPhotosItem:nth-child(6),
+ .TravelLocationPhotosItem:nth-child(8){
   margin-top: 20px;
  }
 }
 
-.TravelLocationPhotosItem1 {
+.TravelLocationPhotosItem{
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  padding: 15px;
- background: no-repeat  url("/assets/images/Sweden.png");
+ background: var(--local-image);
+ background-size: cover;
+ background-position: center;
  width: 306px;
  height: 370px;
  border-radius: 10px;
+background: #1d231f;
 }
 
 .TravelLocationPhotosItem1Mask {
@@ -67,4 +72,45 @@ margin: 120px auto;
  font-size: 28px;
  font-weight: 500;
  color: var(--main-bg-color);
+}
+
+.swiperTravelLocationButtonBox {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 84px;
+ align-items: center;
+ width: 1320px;
+
+}
+
+.swiperArrowBlock {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+width: 162px;
+}
+
+.swiperTravelLocationButtonPrev {
+background: no-repeat url("/assets/images/swiperButtonPrev.svg");
+ width: 14px;
+ height: 9px;
+}
+
+.swiperTravelLocationButtonNext {
+ background: no-repeat url("/assets/images/swiperButtonNext.svg");
+ width: 14px;
+ height: 9px;
+}
+
+.swiperArrowBlockTitle {
+ font-size: 14px;
+ color: var(--main-color-accent);
+ text-decoration: underline;
+}
+
+.swiperArrowBlockItem {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
 }

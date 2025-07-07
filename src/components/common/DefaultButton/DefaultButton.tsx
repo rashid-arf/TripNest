@@ -5,7 +5,7 @@ import clsx from "clsx";
 type Props = {
   buttonText: string;
   bgColor?: string;
-  modifier?: 'footer' | "button";
+  modifier?: 'footer' | "button" | "slider";
 };
 
 export const DefaultButton: FC<Props> = ({ buttonText, bgColor, modifier }) => {

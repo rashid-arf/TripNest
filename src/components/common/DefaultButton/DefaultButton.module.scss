@@ -20,6 +20,11 @@
     box-shadow: none;
   }
 
+  &--slider {
+    background-color: var(--mask-yellow);
+    box-shadow: 0 6px 0 var(--shadow-yellow);
+  }
+
 }
 
 
