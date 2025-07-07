@@ -6,8 +6,10 @@ import {TravelLocation} from "@/components/common/TravelLocation/TravelLocation"
 
 
 
+
 export default function Home() {
   const [bannerSwiperInfo, setBannerSwiperInfo] = useState(null);
+
 
   useEffect(() => {
     (async () => {
@@ -15,10 +17,15 @@ export default function Home() {
       setBannerSwiperInfo(BannerSwiperInfoFromResponse);
     })();
   }, []);
+
+
   return (
       <main>
         <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo} />}</div>
-<TravelLocation/>
+<TravelLocation />
+
+
+
       </main>
   );
 }

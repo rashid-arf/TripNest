@@ -8,13 +8,13 @@
   --main-color-accent: #63ab45;
 --mask-green: rgba(99 171 69 / 40%);
 --top-strip-bg-color: #222;
-  --white: #fff;
   --white50: rgb(255 255 255 / 50%);
   --white60: rgb(255 255 255 / 60%);
   --white80: rgb(255 255 255 / 80%);
   --separation-line-color: #fff3;
   --separation2-line-color: rgb(255 255 255 / 10%);
   --menu-item-select: rgb(99 171 69 / 90%);
+  --green-title: rgb(99 171 69);
   --footer-bg-color: #1d231f;
   --footer-hover-menu: rgba(117 174 232 / 40%);
   --blur-color: #100c0866;
@@ -23,6 +23,7 @@
   --email-error: red;
   --grey: #787878;
   --phone-bg: #152F0066;
+  --mask-yellow: rgba(251, 176, 59, 1)
 }
 
 html,

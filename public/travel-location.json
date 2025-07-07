@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Sweden",
+    "link": "/sweden",
+    "image": "/assets/images/Sweden.png",
+    "alt": "Sweden"
+  },
+  {
+    "id": 2,
+    "title": "Japan",
+    "link": "/japan",
+    "image": "/assets/images/Japan.png",
+    "alt": "Japan"
+  },
+  {
+    "id": 3,
+    "title": "India",
+    "link": "/india",
+    "image": "/assets/images/India.png",
+    "alt": "India"
+  },
+  {
+    "id": 4,
+    "title": "Brazil",
+    "link": "/brazil",
+    "image": "/assets/images/Brazil.png",
+    "alt": "plus"
+  }
+]

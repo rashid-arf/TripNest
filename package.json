@@ -6,8 +6,17 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "prebuild": "npm run lint",
+    "lint": "npm run prettier:check && npm run lint:code && npm run lint:style",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,scss,css,jsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,js,scss,css,jsx}\"",
+    "eslint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
+    "lint:code": "next lint",
+    "lint:code:fix": "npm run eslint -- --fix",
+    "lint:style": "stylelint \"**/*.scss\"",
+    "lint:style:fix": "npm run lint:style -- --fix"
   },
+
   "dependencies": {
     "clsx": "^2.1.1",
     "next": "15.3.5",
