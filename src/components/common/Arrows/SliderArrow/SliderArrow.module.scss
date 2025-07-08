@@ -1,0 +1,43 @@
+.sliderArrowWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  mask-image: url('/assets/images/swiperButtonPrev.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--green-title);
+  width: 14px;
+  height: 9px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: var(--green);
+}
+
+.arrowText {
+  font-size: 14px;
+  color: var(--main-color-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px; // додає відступ між текстом і лінією
+  cursor: pointer;
+}
+
+.arrowText:hover {
+  color: var(--green);
+}
+
+.prev--PREV {
+  background-image: url('/assets/images/swiperButtonPrev.svg');
+  order: 0; // стрілка зліва
+}
+
+.prev--NEXT {
+  background-image: url('/assets/images/swiperButtonNext.svg');
+  order: 1; // стрілка справа
+  rotate: 180deg;
+}

@@ -89,28 +89,3 @@ background: #1d231f;
  justify-content: space-between;
 width: 162px;
 }
-
-.swiperTravelLocationButtonPrev {
-background: no-repeat url("/assets/images/swiperButtonPrev.svg");
- width: 14px;
- height: 9px;
-}
-
-.swiperTravelLocationButtonNext {
- background: no-repeat url("/assets/images/swiperButtonNext.svg");
- width: 14px;
- height: 9px;
-}
-
-.swiperArrowBlockTitle {
- font-size: 14px;
- color: var(--main-color-accent);
- text-decoration: underline;
-}
-
-.swiperArrowBlockItem {
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
-}
