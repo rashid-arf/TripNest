@@ -1,0 +1,42 @@
+.sliderArrowWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  mask-image: url('/assets/images/swiperButtonPrev.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background:var(--green);
+  width: 14px;
+  height: 9px;
+  cursor: pointer;
+
+  &--white {
+    background: var(--main-bg-color);
+  }
+  }
+
+.arrowText {
+  font-size: 14px;
+  color: var(--main-color-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px; // додає відступ між текстом і лінією
+  cursor: pointer;
+}
+
+.title--white {
+  color: var(--main-bg-color);
+}
+
+.prev--PREV {
+  order: 0; // стрілка зліва
+}
+
+.prev--NEXT {
+  order: 1; // стрілка справа
+  rotate: 180deg;
+}
+

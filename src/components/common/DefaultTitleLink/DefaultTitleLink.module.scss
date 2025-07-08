@@ -2,7 +2,6 @@
 display: flex;
   align-items: center;
   justify-content: center;
-   background: no-repeat url('/assets/images/title-bg.svg');
   z-index: -1;
   height: 42px;
   width: 174px;
@@ -12,11 +11,21 @@ display: flex;
   mask-position: left;
   background: var(--mask-green);
   text-align: center;
+
 }
+
+.mask--Package {
+  background: var(--mask-yellow30);
+}
+
 
 .titleLinkButton {
   font-family: var(--font-satisfy-mono), sans-serif;
   letter-spacing: 0.5px;
   color: var(--main-color-accent);
   cursor: pointer;
+}
+
+.title--Package {
+  color: var(--mask-yellow);
 }
