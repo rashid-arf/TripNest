@@ -14,12 +14,10 @@ import { Swiper as SwiperType } from 'swiper';
 
 type TourPackageItem = {
     id: number;
-    titleTop: string;
-    titleBottom: string;
     greenLable: string;
-    link: string;
     image: string;
     alt: string;
+
 }
 
 type Props = {
@@ -42,6 +40,7 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
 
     return (
         <div className={styles.TourPackageContainer}>
+            <div className={styles.TourPackageContainerBg}></div>
             <Link href={'/tour-package'} className={styles.TourPackageLink}>
                 <DefaultTitleLink modifier={'Package'} titleLinkText={'Tour Package'}/>
             </Link>
@@ -49,9 +48,7 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
             <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourPackagePhotos} modules={[Navigation]} {...swiperProps}>
                 {tourPackage.map((item) => (
                     <SwiperSlide
-                        key={item.id}
-className={styles.TourPackageSliders}
-                    >
+                        key={item.id} className={styles.TourPackageSliders}>
                         <div className={styles.TourPackagePhotosItem}
                              style={{backgroundImage: `url(${item.image})`}}>
                             <div className={styles.greenMask}>
@@ -59,9 +56,11 @@ className={styles.TourPackageSliders}
                             </div>
                         </div>
 <div className={styles.TourPackageSlidersInfo}>
+    <div className={styles.TourPackageSlidersInfoRated}>
+
+    </div>
 
 </div>
-
                     </SwiperSlide>
                 ))}
 

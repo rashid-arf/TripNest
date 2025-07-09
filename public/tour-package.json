@@ -2,55 +2,43 @@
   {
     "id": 1,
     "greenLable": "Popular",
-    "titleTop": "Travel To",
-    "titleBottom": "Sweden",
-    "link": "/sweden",
     "image": "/assets/images/tour-package1.png",
-    "alt": "Sweden"
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   },
   {
     "id": 2,
     "greenLable": "Featured",
-    "titleTop": "Travel To",
-    "titleBottom": "Japan",
-    "link": "/japan",
     "image": "/assets/images/tour-package2.png",
-    "alt": "Japan"
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   },
   {
     "id": 3,
     "greenLable": "Popular",
-    "titleTop": "Travel To",
-    "titleBottom": "India",
-    "link": "/india",
     "image": "/assets/images/tour-package3.png",
-    "alt": "India"
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   },
   {
     "id": 4,
     "greenLable": "Popular",
-    "titleTop": "Travel To",
-    "titleBottom": "Brazil",
-    "link": "/brazil",
     "image": "/assets/images/tour-package1.png",
-    "alt": "plus"
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   },
   {
     "id": 5,
     "greenLable": "Featured",
-    "titleTop": "Travel To",
-    "titleBottom": "Sweden",
-    "link": "/sweden",
     "image": "/assets/images/tour-package2.png",
-    "alt": "Sweden"
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   },
   {
     "id": 6,
     "greenLable": "Popular",
-    "titleTop": "Travel To",
-    "titleBottom": "Japan",
-    "link": "/japan",
-    "image": "/assets/images/tour-package3.png",
-    "alt": "Japan"
+     "image": "/assets/images/tour-package3.png",
+    "alt": "package",
+    "rated": "assets/images/rated.svg"
   }
 ]
