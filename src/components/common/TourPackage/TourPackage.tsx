@@ -12,29 +12,29 @@ import { Swiper as SwiperType } from 'swiper';
 
 
 
-type LocationItem = {
+type TourPackageItem = {
     id: number;
     titleTop: string;
     titleBottom: string;
-    tour: string;
+    greenLable: string;
     link: string;
     image: string;
     alt: string;
 }
 
 type Props = {
-    travelLocation: LocationItem[];
+    tourPackage: TourPackageItem[];
 }
 
 
-export const TourPackage: FC <Props> = ({travelLocation}) => {
+export const TourPackage: FC <Props> = ({tourPackage}) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
         autoplay: {
             delay: 1000,
         },
-        slidesPerView: 4,
+        slidesPerView: 3,
         pagination: false,
         spaceBetween: 24
 
@@ -42,31 +42,31 @@ export const TourPackage: FC <Props> = ({travelLocation}) => {
 
     return (
         <div className={styles.TourPackageContainer}>
-            <Link href={'/about'} className={styles.TourPackageLink}>
+            <Link href={'/tour-package'} className={styles.TourPackageLink}>
                 <DefaultTitleLink modifier={'Package'} titleLinkText={'Tour Package'}/>
             </Link>
             <DefaultTitleName modifier={'white'} titleName={'Thrilling Tour Plans'}/>
-            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TravelLocationPhotos} modules={[Navigation]} {...swiperProps}>
-                {travelLocation.map((item) => (
+            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourPackagePhotos} modules={[Navigation]} {...swiperProps}>
+                {tourPackage.map((item) => (
                     <SwiperSlide
                         key={item.id}
-                        className={styles.TravelLocationPhotosItem}
-                        style={{backgroundImage: `url(${item.image})`}}
+className={styles.TourPackageSliders}
                     >
-                        <div className={styles.yellowMask}>
-                            <div className={styles.TravelLocationPhotosItem1Mask}>{item.tour}</div>
-                        </div>
-                        <div className={styles.titleMask}>
-                            <div className={styles.TravelLocationPhotosItemTitle}>
-                                <div className={styles.TravelLocationPhotosItemTitleTop}>{item.titleTop}</div>
-                                <div className={styles.TravelLocationPhotosItemTitleBottom}>{item.titleBottom}</div>
+                        <div className={styles.TourPackagePhotosItem}
+                             style={{backgroundImage: `url(${item.image})`}}>
+                            <div className={styles.greenMask}>
+                                <div className={styles.TourPackagePhotosItem1Mask}>{item.greenLable}</div>
                             </div>
                         </div>
+<div className={styles.TourPackageSlidersInfo}>
+
+</div>
+
                     </SwiperSlide>
                 ))}
 
             </Swiper>
-            <div className={styles.swiperTravelLocationButtonBox}>
+            <div className={styles.swiperTourPackageButtonBox}>
 
                         <SliderArrow
                             arrowText={'PREV'}

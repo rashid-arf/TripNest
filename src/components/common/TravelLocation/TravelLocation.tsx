@@ -42,7 +42,7 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
 
     return (
         <div className={styles.TravelLocationContainer}>
-            <Link href={'/about'} className={styles.TravelLocationLink}>
+            <Link href={'/travel-location'} className={styles.TravelLocationLink}>
                 <DefaultTitleLink titleLinkText={'Journey TripNext'}/>
             </Link>
             <DefaultTitleName titleName={'Trendy Travel Locations'}/>
