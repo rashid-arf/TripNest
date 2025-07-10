@@ -20,6 +20,8 @@ type LocationItem = {
     link: string;
     image: string;
     alt: string;
+    rating: number; // <== додаємо рейтинг
+
 }
 
 type Props = {
@@ -52,6 +54,7 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
                         key={item.id}
                         className={styles.TravelLocationPhotosItem}
                         style={{backgroundImage: `url(${item.image})`}}
+
                     >
                         <div className={styles.yellowMask}>
                             <div className={styles.TravelLocationPhotosItem1Mask}>{item.tour}</div>
@@ -74,7 +77,10 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
                         />
                         <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} />
                 </div>
-<DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
+                <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
+                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
+                </Link>
+
             </div>
         </div>
     )

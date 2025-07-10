@@ -14,6 +14,7 @@ import date from '@/assets/images/date.png';
 import tourLocation from '@/assets/images/tour-location.png';
 import flag from '@/assets/images/flag.png';
 import planeIcon from '@/assets/images/plane.png';
+import clsx from "clsx";
 
 
 
@@ -70,10 +71,13 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                         </div>
 <div className={styles.TourPackageSlidersInfo}>
     <div className={styles.ratingRow}>
-        <div className={styles.TourPackageSlidersInfoRated}
-             style={{'--rated-image': `url(${item.rated})`} as CSSProperties}>
-
-        </div>
+        <div
+            className={clsx(
+                styles.TourPackageSlidersInfoRated,
+                item.ratingNumber > 0 && styles.activeRating
+            )}
+            style={{'--rated-image': `url(${item.rated})`} as CSSProperties}
+        />
         <div>({item.ratingNumber})</div>
     </div>
     <div className={styles.TourPackageSlidersInfoTitle}>{item.title}</div>
@@ -99,9 +103,9 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                                <p className={styles.TourPackageSlidersPriceItemDiscountNew}>${item.newPrice}</p>
                                <p className={styles.TourPackageSlidersPriceItemDiscountOld}>${item.oldPrice}</p>
                            </div>
-                           <p className={styles.TourPackageSlidersPriceItemCapton}>TAXES INCL/PERS</p>
+                           <p className={styles.TourPackageSlidersPriceItemCaption}>TAXES INCL/PERS</p>
                        </div>
-                      <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"} iconRight={<Image src={planeIcon} alt="plane" width={24} height={24} />}/>
+                      <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"} iconRight={<Image src={planeIcon} alt="plane" width={18} height={20} />}/>
                    </div>
                     </SwiperSlide>
                 ))}
@@ -113,7 +117,10 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                             arrowText={'PREV'}
                             onClick={() => swiperRef.current?.slidePrev()} color={'white'}
                         />
-                <DefaultButton buttonText={'View All Destination'} modifier={'slider'} />
+                <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
+                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'} />
+                </Link>
+
                         <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} color={'white'} />
             </div>
         </div>
