@@ -1,44 +1,87 @@
 [
   {
     "id": 1,
-    "greenLable": "Popular",
+    "greenLabel": "Popular",
     "image": "/assets/images/tour-package1.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 0,
+    "title": "Discover Serenity, Exploration, And Enlightenment.",
+    "date": "1 Week",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 340,
+    "oldPrice": 450
   },
   {
     "id": 2,
-    "greenLable": "Featured",
+    "greenLabel": "Featured",
     "image": "/assets/images/tour-package2.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 3,
+    "title": "Embracing City Lights, Landm, And Iconic Culture.",
+    "date": "3 Days / 4 Night",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 240,
+    "oldPrice": 380
   },
   {
     "id": 3,
-    "greenLable": "Popular",
+    "greenLabel": "Popular",
     "image": "/assets/images/tour-package3.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 0,
+    "title": "Immersive Cultural Expirees, Local Cuisine.",
+    "date": "10 Days / 11 Night",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 500,
+    "oldPrice": 580
+
   },
   {
     "id": 4,
-    "greenLable": "Popular",
+    "greenLabel": "Popular",
     "image": "/assets/images/tour-package1.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 0,
+    "title": "Discover Serenity, Exploration, And Enlightenment.",
+    "date": "1 Week",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 340,
+    "oldPrice": 450
   },
   {
     "id": 5,
-    "greenLable": "Featured",
+    "greenLabel": "Featured",
     "image": "/assets/images/tour-package2.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 3,
+    "title": "Embracing City Lights, Landm, And Iconic Culture.",
+    "date": "3 Days / 4 Night",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 240,
+    "oldPrice": 380
   },
   {
     "id": 6,
-    "greenLable": "Popular",
+    "greenLabel": "Popular",
      "image": "/assets/images/tour-package3.png",
     "alt": "package",
-    "rated": "assets/images/rated.svg"
+    "rated": "/assets/images/rated.svg",
+    "ratingNumber": 0,
+    "title": "Immersive Cultural Expirees, Local Cuisine.",
+    "date": "10 Days / 11 Night",
+    "location": "4 Location",
+    "countries": "1 Countries",
+    "newPrice": 500,
+    "oldPrice": 580
   }
 ]

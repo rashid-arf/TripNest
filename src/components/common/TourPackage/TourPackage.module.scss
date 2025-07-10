@@ -38,9 +38,6 @@ background-image: url("/assets/images/bg.png");
 
 .TourPackagePhotosItem{
  padding: 15px;
- background: var(--local-image);
- background-size: cover;
- background-position: center;
  width: 416px;
  height: 288px;
  border: none;
@@ -50,14 +47,14 @@ background-image: url("/assets/images/bg.png");
 
 .TourPackagePhotosItem1Mask {
  position: absolute;
- top: 10px;
- left: -40px;
+ top: 20px;
+ left: -30px;
  display: flex;
  align-items: center;
  justify-content: center;
  width: 140px;
  height: 28px;
- background: var(--greenLable);
+ background: var(--greenLabel);
  font-size: 15px;
  font-weight: 500;
  color: var(--main-bg-color);
@@ -71,12 +68,108 @@ background-image: url("/assets/images/bg.png");
 }
 
 .TourPackageSlidersInfo {
- height: 280px;
+ height: 182px;
  background: var(--main-bg-color);
  padding: 30px 25px 21px;
  display: flex;
  flex-direction: column;
+ justify-content: start;
+}
 
+.ratingRow {
+ display: flex;
+ align-items: start;
+ justify-content: start;
+font-size: 13px;
+ color: var(--grey-text);
+}
+
+.TourPackageSlidersInfoRated {
+ width: 88px;
+ height: 18px;
+ mask-image: var(--rated-image);
+ mask-repeat: no-repeat;
+ mask-size: contain;
+ mask-position: center;
+ background: var(--main-color);
+ }
+
+.TourPackageSlidersInfoTitle {
+ font-size: 22px;
+ font-weight: 500;
+ line-height: 30px;
+ color: var(--main-color);
+ margin-top: 8px;
+}
+
+.TourPackageSlidersInfoList {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+
+.listItem {
+ display: flex;
+ align-items: center;
+ gap: 4px;
+ margin-top: 16px;
+ margin-bottom: 26px;
+ }
+
+.listItemTitle {
+ font-weight: 500;
+ font-size: 14px;
+ color: var(--grey-text50);
+
+}
+
+.TourPackageSlidersPrice {
+ height: 100px;
+ width: 100%;
+ border-top: 1px solid var(--grey-text20);
+ background: var(--main-bg-color);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 25px;
+}
+
+.TourPackageSlidersPriceItem {
+ padding: 22px 25px;
+}
+
+.TourPackageSlidersPriceItemDiscount {
+ display: flex;
+ align-items: center;
+ gap: 4px;
+}
+
+.TourPackageSlidersPriceItemDiscountNew {
+ font-weight: 800;
+ font-size: 22px;
+ letter-spacing: 0.22px;
+ color: var(--green-title);
+}
+
+.TourPackageSlidersPriceItemDiscountOld {
+ font-weight: 500;
+ font-size: 16px;
+ color: var(--grey-text50);
+ text-decoration: line-through;
+}
+
+.TourPackageSlidersPriceItemCapton {
+text-transform: uppercase;
+ font-size: 11px;
+ letter-spacing: 0.22px;
+ color: var(--main-color);
+}
+
+.TourPackageSlidersPriceItemTitle {
+ font-size: 13px;
+ font-weight: 500;
+ letter-spacing: 0.26px;
+ color: var(--main-color);
 }
 
 .swiperTourPackageButtonBox {

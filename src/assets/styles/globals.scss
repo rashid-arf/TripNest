@@ -3,14 +3,17 @@
 
   // colors
   --main-bg-color: #fff;
-  --main-color: #100c08;
+  --main-color: #100c08; // rgba(16 12 8 / 100%)
   --main-color40: rgba(16 12 8 / 40%);
+  --grey-text: rgba(120 120 120);
+  --grey-text50: rgba(16 12 8 / 50%);
+  --grey-text20: rgba(34 34 34 /20%);
   --main-color-accent: #63ab45;
 --mask-green: rgba(99 171 69 / 40%);
   --menu-item-select: rgb(99 171 69 / 90%);
   --green-title: rgb(99 171 69);
   --green: green;
-  --greenLable: rgba(0 128 0);
+  --greenLabel: rgba(0 128 0);
   --phone-bg: #152F0066;
 --top-strip-bg-color: #222;
   --white50: rgb(255 255 255 / 50%);
@@ -28,6 +31,8 @@
   --mask-yellow: rgba(251, 176, 59, 1);
   --mask-yellow30: rgba(251, 176, 59, 30%);
   --shadow-yellow: #a67c3b;
+--rating-image: rgba(255, 194, 0, 1);
+
 
 }
 
