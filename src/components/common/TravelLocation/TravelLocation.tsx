@@ -1,15 +1,14 @@
-import React, { FC} from 'react';
+import React, {FC} from 'react';
 import styles from './TravelLocation.module.scss';
 import Link from 'next/link';
-import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';
-import { DefaultTitleName } from '@/components/common/DefaultTitleName/DefaultTitleName';
+import {DefaultTitleLink} from '@/components/common/DefaultTitleLink/DefaultTitleLink';
+import {DefaultTitleName} from '@/components/common/DefaultTitleName/DefaultTitleName';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
 import {DefaultButton} from "@/components/common/DefaultButton/DefaultButton";
 import {SliderArrow} from "@/components/common/Arrows/SliderArrow/SliderArrow";
-import { useRef } from 'react';
-import { Swiper as SwiperType } from 'swiper';
-
+import {useRef} from 'react';
+import {Swiper as SwiperType} from 'swiper';
 
 
 type LocationItem = {
@@ -27,7 +26,7 @@ type Props = {
 }
 
 
-export const TravelLocation: FC <Props> = ({travelLocation}) => {
+export const TravelLocation: FC<Props> = ({travelLocation}) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
@@ -46,7 +45,8 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
                 <DefaultTitleLink titleLinkText={'Journey TripNext'}/>
             </Link>
             <DefaultTitleName titleName={'Trendy Travel Locations'}/>
-            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TravelLocationPhotos} modules={[Navigation]} {...swiperProps}>
+            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TravelLocationPhotos}
+                    modules={[Navigation]} {...swiperProps}>
                 {travelLocation.map((item) => (
                     <SwiperSlide
                         key={item.id}
@@ -68,13 +68,13 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
             </Swiper>
             <div className={styles.swiperTravelLocationButtonBox}>
                 <div className={styles.swiperArrowBlock}>
-                        <SliderArrow
-                            arrowText={'PREV'}
-                            onClick={() => swiperRef.current?.slidePrev()}
-                        />
-                        <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} />
+                    <SliderArrow
+                        arrowText={'PREV'}
+                        onClick={() => swiperRef.current?.slidePrev()}
+                    />
+                    <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}/>
                 </div>
-<DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
+                <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
             </div>
         </div>
     )

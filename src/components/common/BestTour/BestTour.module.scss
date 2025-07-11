@@ -1,0 +1,77 @@
+.bestTourContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 872px;
+  border: 1px solid red;
+  margin-top: 120px;
+  position: relative;
+}
+
+.planeMask {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  transform: rotate(-10deg);
+  width: 410px;
+  height: 204px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url('/assets/images/planeMask.svg');
+  --webkit-mask-repeat: no-repeat;
+  --webkit-mask-size: contain;
+  --webkit-mask-image: url('/assets/images/planeMask.svg');
+  background: var(--grey-text);
+  z-index: 1;
+}
+
+.planetLeft {
+  position: absolute;
+  top: -122px;
+  left: -300px;
+  width: 782px;
+  height: 1096px;
+  z-index: -1;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url('/assets/images/planet-left.svg');
+  --webkit-mask-repeat: no-repeat;
+  --webkit-mask-size: contain;
+  --webkit-mask-image: url('/assets/images/planet-left.svg');
+  background: var(--grey-text10);
+}
+
+.planetRight {
+  position: absolute;
+  top: -122px;
+  right: -368px;
+  width: 1246px;
+  height: 934px;
+  z-index: -1;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url('/assets/images/planet-right.svg');
+  --webkit-mask-repeat: no-repeat;
+  --webkit-mask-size: contain;
+  --webkit-mask-image: url('/assets/images/planet-right.svg');
+  background: var(--grey-text10);
+}
+
+.bestTourContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.bestTourContentLeft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.bestTourContentLeftText {
+  font-family: var(--font-jost-mono) sans-serif;
+  color: var(--grey-text);
+}

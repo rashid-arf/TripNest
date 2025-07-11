@@ -6,6 +6,7 @@ import {TravelLocation} from "@/components/common/TravelLocation/TravelLocation"
 import {TravelLocationService} from "@/components/common/services/travelLocation.services";
 import {TourPackage} from "@/components/common/TourPackage/TourPackage";
 import {TourPackageService} from "@/components/common/services/tourPackage.services";
+import {BestTour} from "@/components/common/BestTour/BestTour";
 
 export default function Home() {
   const [bannerSwiperInfo, setBannerSwiperInfo] = useState(null);
@@ -41,6 +42,7 @@ export default function Home() {
         <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo} />}</div>
           {travelLocation && (<TravelLocation travelLocation={travelLocation} />)}
           {tourPackage && (<TourPackage tourPackage={tourPackage}/>)}
+          <BestTour/>
       </main>
   );
 }

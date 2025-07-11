@@ -15,9 +15,6 @@ import tourLocation from '@/assets/images/tour-location.png';
 import flag from '@/assets/images/flag.png';
 import planeIcon from '@/assets/images/plane.png';
 
-
-
-
 type TourPackageItem = {
     id: number;
     greenLabel: string;
@@ -37,7 +34,6 @@ type Props = {
     tourPackage: TourPackageItem[];
 }
 
-
 export const TourPackage: FC <Props> = ({tourPackage}) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
@@ -48,7 +44,6 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
         slidesPerView: 3,
         pagination: false,
         spaceBetween: 24
-
     };
 
     return (
@@ -72,7 +67,6 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
     <div className={styles.ratingRow}>
         <div className={styles.TourPackageSlidersInfoRated}
              style={{'--rated-image': `url(${item.rated})`} as CSSProperties}>
-
         </div>
         <div>({item.ratingNumber})</div>
     </div>
@@ -105,10 +99,8 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                    </div>
                     </SwiperSlide>
                 ))}
-
             </Swiper>
             <div className={styles.swiperTourPackageButtonBox}>
-
             <SliderArrow
                             arrowText={'PREV'}
                             onClick={() => swiperRef.current?.slidePrev()} color={'white'}
