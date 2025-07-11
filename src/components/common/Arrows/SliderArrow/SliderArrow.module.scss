@@ -17,6 +17,10 @@
   &--white {
     background: var(--main-bg-color);
   }
+
+  &--white:hover {
+    background: var(--grey-text);
+  }
   }
 
 .arrowText {
@@ -29,6 +33,10 @@
 
 .title--white {
   color: var(--main-bg-color);
+}
+
+.title--white:hover {
+  color: var(--grey-text);
 }
 
 .prev--PREV {

@@ -74,6 +74,10 @@ background: #1d231f;
  color: var(--main-bg-color);
 }
 
+.viewAllDestinationLink {
+ text-decoration: none;
+}
+
 .swiperTravelLocationButtonBox {
  display: flex;
  justify-content: space-between;
