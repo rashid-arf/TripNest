@@ -10,7 +10,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-color: var(--blur-color);
+    background: var(--blur-color);
     z-index: -1;
   }
 }
@@ -118,10 +118,9 @@
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-image: url('/assets/images/arrow.svg');
-
-  --webkit-mask-repeat: no-repeat;
-  --webkit-mask-size: contain;
-  --webkit-mask-image: url('/assets/images/arrow.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: url('/assets/images/arrow.svg');
 }
 
 .swiperButtonPrev {

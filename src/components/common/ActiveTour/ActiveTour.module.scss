@@ -1,0 +1,185 @@
+.activeTourContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1920px;
+  height: 742px;
+  margin: 0 auto;
+
+}
+
+.activeTourContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activeTourContentLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--active-bg);
+  padding: 0 110px;
+}
+
+.activeTourAboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+.activeTourAboutList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 68px;
+}
+
+.activeTourAboutListItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activeTourContentLeftAbout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.activeTourContentLeftText {
+  font-family: var(--font-jost-mono), sans-serif;
+  color: var(--grey-text);
+  margin-top: -10px;
+  line-height: 32px;
+  letter-spacing: 0.51px;
+}
+
+.activeTourContentLeftTextTitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.6px;
+}
+
+
+.activeTourContentLeftLabel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.activeTourContentLeftLink {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 46px;
+  margin-top: 52px;
+}
+
+.activeTourContentRight {
+  position: relative;
+}
+
+.activeTourContentRightLabel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.activeTourContentRightMask {
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url('/assets/images/planet-right.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: url('/assets/images/planet-right.svg');
+}
+
+.buttonNumber {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--main-bg-color);
+}
+
+.activeTourBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 136px;
+  width: 100%;
+  border-top: 1px solid var(--grey-border);
+  border-bottom: 1px solid var(--grey-border);
+  margin-top: 90px;
+
+}
+
+.activeTourBottomVertical {
+  width: 41px;
+  transform: rotate(90deg);
+  background-color: var(--grey-line);
+}
+
+.buttonTextSmall {
+  color: var(--grey);
+  font-size: 16px;
+  font-family: var(--font-jost-mono), sans-serif;
+}
+
+.activeTourBottomCaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  height: 24px;
+  width: 1320px;
+  gap: 10px;
+}
+
+.activeTourBottomCaptionTitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.activeTourRating {
+  width: 86px;
+}
+
+.ratingNumber {
+  font-weight: 600;
+}
+
+.ratingReviewsNumber {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.activeTourRatingInfo {
+  font-family: var(--font-jost-mono), sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--grey-text);
+  letter-spacing: normal;
+}
+
+.activeTourAdvisorBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+
+.activeTourAdvisorBlockImage {
+  width: 110px;
+  height: 20px;
+  mask-image: url('/assets/images/trip-advisor-logo.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: black;
+}

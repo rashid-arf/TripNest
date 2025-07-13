@@ -24,6 +24,7 @@
   &--slider {
     background-color: var(--mask-yellow);
     box-shadow: 0 6px 0 var(--shadow-yellow);
+    color: var(--main-color);
   }
 
   &--tourSlider {
@@ -35,7 +36,9 @@
     padding: 0 16px;
     font-weight: 500;
     line-height: 14px;
-      }
+    display: flex;
+    align-items: center;
+  }
 
   &--bestTourGreen {
     width: 306px;
@@ -49,9 +52,78 @@
     gap: 16px;
     display: flex;
     justify-content: start;
-   text-align: left;
+    text-align: left;
+    letter-spacing: 0.34px;
+    line-height: 22px;
   }
 
+  &--bestTourYellow {
+    width: 306px;
+    height: 82px;
+    border-radius: 10px;
+    background-color: var(--mask-yellow10);
+    box-shadow: none;
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: 500;
+    gap: 16px;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    letter-spacing: 0.34px;
+    line-height: 22px;
+  }
+
+  &--bestTourVideo {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    gap: 10px;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    letter-spacing: 0.34px;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  &--bestTourExperience {
+    box-shadow: none;
+    border-radius: 10px;
+    text-align: left;
+    gap: 8px;
+    width: 166px;
+    height: 68px;
+  }
+
+  &--activeTourList {
+    background: none;
+    box-shadow: none;
+    color: var(--main-color);
+    font-family: var(--font-jost-mono), sans-serif;
+    letter-spacing: 0.51px;
+    line-height: 24px;
+    font-weight: 500;
+    gap: 8px;
+    padding: 0;
+    height: auto;
+  }
+
+  &--activeTourTab {
+    border: var(--tab-bg);
+    background: var(--main-bg-color);
+    border-radius: 200px;
+    box-shadow: none;
+    color: var(--main-color);
+    gap: 10px;
+    width: 326px;
+    height: 60px;
+    justify-content: start;
+    padding: 6px;
+  }
 }
 
 .iconRight {
@@ -61,3 +133,18 @@
 
 }
 
+.button--activeTourTab {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  // інші стилі для неактивної вкладки
+
+  &.active {
+    background-color: var(--mask-yellow); // помаранчевий
+    color: var(--main-bg-color);
+  }
+}
+
+.button--active {
+  background-color: var(--mask-yellow) !important;
+  color: var(--main-bg-color) !important;
+}

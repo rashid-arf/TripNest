@@ -1,24 +1,27 @@
 'use client';
-import { BannerSwiper } from '@/components/layout/BannerSwiper/BannerSwiper';
-import { useEffect, useState } from 'react';
+import {BannerSwiper} from '@/components/layout/BannerSwiper/BannerSwiper';
+import {useEffect, useState} from 'react';
 import {BannerSwiperService} from "@/components/common/services/banner-swiper-service";
 import {TravelLocation} from "@/components/common/TravelLocation/TravelLocation";
 import {TravelLocationService} from "@/components/common/services/travelLocation.services";
 import {TourPackage} from "@/components/common/TourPackage/TourPackage";
 import {TourPackageService} from "@/components/common/services/tourPackage.services";
 import {BestTour} from "@/components/common/BestTour/BestTour";
+import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
+import {ActiveTour} from "@/components/common/ActiveTour/ActiveTour";
+
 
 export default function Home() {
-  const [bannerSwiperInfo, setBannerSwiperInfo] = useState(null);
+    const [bannerSwiperInfo, setBannerSwiperInfo] = useState<SwiperItem[] | null>(null);
 
-  useEffect(() => {
-    (async () => {
-      const BannerSwiperInfoFromResponse = await BannerSwiperService.getBannerSwiperInfo();
-      setBannerSwiperInfo(BannerSwiperInfoFromResponse);
-    })();
-  }, []);
+    useEffect(() => {
+        (async () => {
+            const BannerSwiperInfoFromResponse = await BannerSwiperService.getBannerSwiperInfo();
+            setBannerSwiperInfo(BannerSwiperInfoFromResponse);
+        })();
+    }, []);
 
-  const [travelLocation, setTravelLocation] = useState(null);
+    const [travelLocation, setTravelLocation] = useState(null);
 
     useEffect(() => {
         (async () => {
@@ -37,12 +40,29 @@ export default function Home() {
     }, []);
 
 
-  return (
-      <main>
-        <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo} />}</div>
-          {travelLocation && (<TravelLocation travelLocation={travelLocation} />)}
-          {tourPackage && (<TourPackage tourPackage={tourPackage}/>)}
-          <BestTour/>
-      </main>
-  );
+    return (
+        <main>
+            <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo}/>}</div>
+            {travelLocation && (<TravelLocation travelLocation={travelLocation}/>)}
+            {tourPackage && (<TourPackage tourPackage={tourPackage}/>)}
+            {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
+                <BestTour
+                    tripAdvisorRating={bannerSwiperInfo[0].tripAdvisorRating}
+                    tripAdvisorIcon={bannerSwiperInfo[0].tripAdvisorIcon}
+                    iconAlt={bannerSwiperInfo[0].iconAlt}
+                    tripAdvisorLogo={bannerSwiperInfo[0].tripAdvisorLogo}
+                    tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
+                />
+            )}
+            {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
+                <ActiveTour
+                    tripAdvisorRating={bannerSwiperInfo[0].tripAdvisorRating}
+                    tripAdvisorIcon={bannerSwiperInfo[0].tripAdvisorIcon}
+                    iconAlt={bannerSwiperInfo[0].iconAlt}
+                    tripAdvisorLogo={bannerSwiperInfo[0].tripAdvisorLogo}
+                    tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
+                />
+            )}
+        </main>
+    );
 }
