@@ -124,7 +124,21 @@
     justify-content: start;
     padding: 6px;
   }
+
+  &--whoWeAreLabel {
+    width: 416px;
+    height: 172px;
+    padding: 25px;
+    border: var(--tab-bg);
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px -2px #00000014;
+      gap: 10px;
+   text-align: start;
+    border-radius: 10px;
+  }
 }
+
+
 
 .iconRight {
   display: flex;

@@ -1,0 +1,40 @@
+.whoWeAreContainer {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.whoWeAreContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.whoWeAreContentLabel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 78px;
+}
+
+.whoWeAreContentLabelText {
+  display: inline-block;
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: var(--main-color);
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.45px;
+    color: var(--grey-text);
+    font-family: var(--font-jost-mono), sans-serif;
+  }
+}

@@ -9,6 +9,8 @@ import {TourPackageService} from "@/components/common/services/tourPackage.servi
 import {BestTour} from "@/components/common/BestTour/BestTour";
 import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
 import {ActiveTour} from "@/components/common/ActiveTour/ActiveTour";
+import {WhoWeAre} from "@/components/common/WhoWeAre/WhoWeAre";
+import {TourSelect} from "@/components/common/TourSelect/TourSelect";
 
 
 export default function Home() {
@@ -39,6 +41,14 @@ export default function Home() {
         })();
     }, []);
 
+    const [tourSelect, setTourSelect] = useState(null);
+
+    useEffect(() => {
+        (async () => {
+            const TourSelectFromResponse = await TourPackageService.getTourPackage();
+            setTourSelect(TourSelectFromResponse);
+        })();
+    }, []);
 
     return (
         <main>
@@ -56,13 +66,15 @@ export default function Home() {
             )}
             {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
                 <ActiveTour
-                    tripAdvisorRating={bannerSwiperInfo[0].tripAdvisorRating}
+                    tripAdvisorRating ={bannerSwiperInfo[0].tripAdvisorRating}
                     tripAdvisorIcon={bannerSwiperInfo[0].tripAdvisorIcon}
                     iconAlt={bannerSwiperInfo[0].iconAlt}
                     tripAdvisorLogo={bannerSwiperInfo[0].tripAdvisorLogo}
                     tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                 />
             )}
+            <WhoWeAre/>
+            {tourSelect && <TourSelect tourSelect={tourSelect}/>}
         </main>
     );
 }
