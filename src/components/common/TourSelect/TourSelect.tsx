@@ -13,6 +13,7 @@ import flag from '@/assets/images/flag.png';
 import planeIcon from '@/assets/images/plane.png';
 import TourSelectBanner from '@/assets/images/TourSelectBanner.png'
 import clsx from "clsx";
+import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
 
 type TourSelectItem = {
     id: number;
@@ -47,72 +48,86 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
 
     return (
         <div className={styles.TourSelectContainer}>
-            <div className={styles.TourSelectContainerBg}></div>
             <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourSelectPhotos}
                     modules={[Navigation]} {...swiperProps}>
                 {tourSelect.map((item) => (
                     <SwiperSlide
                         key={item.id} className={styles.TourSelectSliders}>
-                        <Image src={TourSelectBanner} alt="TourSelectBanner" width={536} height={280} className={styles.tourSelectBanner}/>
-                        <div className={styles.TourSelectPhotosItem}
-                             style={{backgroundImage: `url(${item.image})`}}>
-                            <div className={styles.greenMask}>
-                                <div className={styles.TourSelectPhotosItem1Mask}>{item.greenLabel}</div>
-                            </div>
-                        </div>
-                        <div className={styles.TourSelectSlidersInfo}>
-                            <div className={styles.ratingRow}>
-                                <div
-                                    className={clsx(
-                                        styles.TourSelectSlidersInfoRated,
-                                        item.ratingNumber > 0 && styles.activeRating
-                                    )}
-                                    style={{'--rated-image': `url(${item.rated})`} as CSSProperties}
-                                />
-                                <div>({item.ratingNumber})</div>
-                            </div>
-                            <div className={styles.TourSelectSlidersInfoTitle}>{item.title}</div>
-                            <div className={styles.TourSelectSlidersInfoList}>
-                                <div className={styles.listItem}>
-                                    <Image src={date} alt="date"/>
-                                    <div className={styles.listItemTitle}>{item.date}</div>
+                        <div className={styles.TourSelectSlidersLeftPhoto}>
+                            <Image src={TourSelectBanner} alt="TourSelectBanner" width={536} height={284}
+                                   className={styles.tourSelectBanner}/>
+                            <div className={styles.TourSelectSlidersLeftPhotoFilter}>
+                                <div className={styles.TourSelectSlidersLeftPhotoContent}>
+                                    <DefaultTitleLink titleLinkText={"Savings worldwide"} modifier={'tourSelect'}/>
+                                    <p className={styles.TourSelectSlidersLeftPhotoDiscount}>20% Off</p>
+                                    <p className={styles.TourSelectSlidersLeftPhotoDescription}>Discover Great Deal</p>
+                                    <DefaultButton buttonText={"View This Trip"} modifier={"tourSelect"}/>
                                 </div>
-                                <div className={styles.listItem}>
-                                    <Image src={tourLocation} alt="location"/>
-                                    <div className={styles.listItemTitle}>{item.location}</div>
-                                </div>
-                                <div className={styles.listItem}>
-                                    <Image src={flag} alt="flag"/>
-                                    <div className={styles.listItemTitle}>{item.countries}</div>
-                                </div>
-                            </div>
-                            <div className={styles.TourSelectSlidersPrice}>
-                                <div className={styles.TourSelectSlidersPriceItem}>
-                                    <p className={styles.TourSelectSlidersPriceItemTitle}>Starting From:</p>
-                                    <div className={styles.TourSelectSlidersPriceItemDiscount}>
-                                        <p className={styles.TourSelectSlidersPriceItemDiscountNew}>${item.newPrice}</p>
-                                        <p className={styles.TourSelectSlidersPriceItemDiscountOld}>${item.oldPrice}</p>
-                                    </div>
-                                    <p className={styles.TourSelectSlidersPriceItemCaption}>TAXES INCL/PERS</p>
-                                </div>
-                                <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"}
-                                               iconRight={<Image src={planeIcon} alt="plane" width={18} height={20}/>}/>
-                            </div>
-                        </div>
 
+                            </div>
+                        </div>
+                        <div className={styles.TourSelectRightContent}>
+                            <div className={styles.TourSelectPhotosItem}
+                                 style={{backgroundImage: `url(${item.image})`}}>
+                                <div className={styles.greenMask}>
+                                    <div className={styles.TourSelectPhotosItem1Mask}>{item.greenLabel}</div>
+                                </div>
+                            </div>
+                            <div className={styles.TourSelectSlidersInfo}>
+                                <div className={styles.ratingRow}>
+                                    <div
+                                        className={clsx(
+                                            styles.TourSelectSlidersInfoRated,
+                                            item.ratingNumber > 0 && styles.activeRating
+                                        )}
+                                        style={{'--rated-image': `url(${item.rated})`} as CSSProperties}
+                                    />
+                                    <div>({item.ratingNumber})</div>
+                                </div>
+                                <div className={styles.TourSelectSlidersInfoTitle}>{item.title}</div>
+                                <div className={styles.TourSelectSlidersInfoList}>
+                                    <div className={styles.listItem}>
+                                        <Image src={date} alt="date"/>
+                                        <div className={styles.listItemTitle}>{item.date}</div>
+                                    </div>
+                                    <div className={styles.listItem}>
+                                        <Image src={tourLocation} alt="location"/>
+                                        <div className={styles.listItemTitle}>{item.location}</div>
+                                    </div>
+                                    <div className={styles.listItem}>
+                                        <Image src={flag} alt="flag"/>
+                                        <div className={styles.listItemTitle}>{item.countries}</div>
+                                    </div>
+                                </div>
+                                <hr className={styles.TourSelectHorizontalLine}/>
+                                <div className={styles.TourSelectSlidersPrice}>
+                                    <div className={styles.TourSelectSlidersPriceItem}>
+                                        <p className={styles.TourSelectSlidersPriceItemTitle}>Starting From:</p>
+                                        <div className={styles.TourSelectSlidersPriceItemDiscount}>
+                                            <p className={styles.TourSelectSlidersPriceItemDiscountNew}>${item.newPrice}</p>
+                                            <p className={styles.TourSelectSlidersPriceItemDiscountOld}>${item.oldPrice}</p>
+                                        </div>
+
+                                    </div>
+                                    <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"}
+                                                   iconRight={<Image src={planeIcon} alt="plane" width={18}
+                                                                     height={20}/>}/>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </SwiperSlide>
                 ))}
 
             </Swiper>
             <div className={styles.swiperTourSelectButtonBox}>
-
                 <SliderArrow
                     arrowText={'PREV'}
-                    onClick={() => swiperRef.current?.slidePrev()} color={'white'}
+                    onClick={() => swiperRef.current?.slidePrev()} color={'green'}
                 />
                 <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}
-                             color={'white'}/>
+                             color={'green'}/>
             </div>
         </div>
     )

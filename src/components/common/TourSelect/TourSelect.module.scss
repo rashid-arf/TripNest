@@ -1,189 +1,223 @@
 .TourSelectContainer {
- position: relative;
- display: flex;
- flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 100px 0;
-}
-
-.TourSelectContainerBg {
- width: 100%;
- height: 100%;
- position: absolute;
- z-index: -1;
-}
-
-.TourSelectLink {
- text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 130px;
 }
 
 .TourSelectSliders {
- display: flex;
+  display: flex;
 }
 
-.tourSelectBanner{
- margin-right: 20px;
+.TourSelectSlidersLeftPhoto {
+  position: relative;
+  margin-right: 20px;
+  height: 284px;
+}
+
+.TourSelectSlidersLeftPhotoFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(
+                  to right,
+                  rgba(76, 124, 237, 1),
+                  rgba(76, 124, 237, 0)
+  );
+  border-radius: 10px;
+  padding: 60px 20px;
+  display: flex;
+  align-items: start;
+
+}
+
+.TourSelectRightContent {
+  display: flex;
+  box-shadow: 0 0 20px -2px var(--box-shadow-8);
+  border: 1px solid var(--box-shadow-8);
+  border-radius: 5px;
+}
+
+.TourSelectSlidersLeftPhotoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.TourSelectSlidersLeftPhotoDescription {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-bg-color);
 }
 
 .TourSelectPhotos {
- display: flex;
- justify-content: space-between;
- align-items: start;
- width: 1320px;
- padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 1320px;
 }
 
-.TourSelectPhotosItem{
- padding: 15px;
- width: 267px;
- height: 280px;
- border: none;
- position: relative;
- overflow: hidden;
+.TourSelectPhotosItem {
+  width: 267px;
+  height: 284px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .TourSelectPhotosItem1Mask {
- position: absolute;
- top: 20px;
- left: -30px;
- display: flex;
- align-items: center;
- justify-content: center;
- width: 140px;
- height: 28px;
- background: var(--greenLabel);
- font-size: 15px;
- font-weight: 500;
- color: var(--main-bg-color);
- transform: rotate(-45deg);
- z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 28px;
+  background: var(--greenLabel);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-bg-color);
+  transform: rotate(-45deg);
+  z-index: 2;
 }
 
 .greenMask {
- display: flex;
- justify-content: start;
+  display: flex;
+  justify-content: start;
 }
 
 .TourSelectSlidersInfo {
-
- background: var(--main-bg-color);
- padding: 30px 25px 21px;
- display: flex;
- flex-direction: column;
- justify-content: start;
+  //background: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px 0 0;
 }
 
 .ratingRow {
- display: flex;
- align-items: start;
- justify-content: start;
-font-size: 13px;
- color: var(--grey-text);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 13px;
+  color: var(--grey-text);
 }
 
 .TourSelectSlidersInfoRated {
- width: 88px;
- height: 18px;
- mask-image: var(--rated-image);
- mask-repeat: no-repeat;
- mask-size: contain;
- mask-position: center;
- background: var(--main-color);
- }
+  width: 88px;
+  height: 18px;
+  mask-image: var(--rated-image);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--main-color);
+}
 
 .activeRating {
- background: var(--email-error); // активний колір (без фільтрів)
+  background: var(--email-error); // активний колір (без фільтрів)
 }
 
 .TourSelectSlidersInfoTitle {
- font-size: 22px;
- font-weight: 500;
- line-height: 30px;
- color: var(--main-color);
- margin-top: 8px;
- width: 372px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--main-color);
+  margin-top: 8px;
+  padding: 0 30px;
 }
 
 .TourSelectSlidersInfoList {
- display: flex;
- align-items: center;
- gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
 }
 
 .listItem {
- display: flex;
- align-items: center;
- gap: 4px;
- margin-top: 16px;
- margin-bottom: 26px;
- }
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
 
 .listItemTitle {
- font-weight: 500;
- font-size: 14px;
- color: var(--grey-text50);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-text50);
 
 }
 
 .TourSelectSlidersPrice {
- height: 100px;
- width: 416px;
- border-top: 1px solid var(--grey-text20);
- background: var(--main-bg-color);
- display: flex;
- align-items: center;
- justify-content: space-between;
-padding: 23px 25px ;
- border-radius: 0 0 5px 5px;
+  height: 84px;
+  background: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
 }
 
-.TourSelectSlidersPriceItem {
- padding: 22px 25px;
-}
 
 .TourSelectSlidersPriceItemDiscount {
- display: flex;
- align-items: center;
- gap: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .TourSelectSlidersPriceItemDiscountNew {
- font-weight: 800;
- font-size: 22px;
- letter-spacing: 0.22px;
- color: var(--green-title);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  color: var(--green-title);
 }
 
 .TourSelectSlidersPriceItemDiscountOld {
- font-weight: 500;
- font-size: 16px;
- color: var(--grey-text50);
- text-decoration: line-through;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey-text50);
+  text-decoration: line-through;
 }
 
 .TourSelectSlidersPriceItemCaption {
-text-transform: uppercase;
- font-size: 11px;
- letter-spacing: 0.22px;
- color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.22px;
+  color: var(--main-color);
 }
 
 .TourSelectSlidersPriceItemTitle {
- font-size: 13px;
- font-weight: 500;
- letter-spacing: 0.26px;
- color: var(--main-color);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.26px;
+  color: var(--main-color);
 }
 
 .viewAllDestinationLink {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .swiperTourSelectButtonBox {
- display: flex;
- justify-content: space-between;
- margin-top: 84px;
- align-items: center;
- width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  align-items: center;
+  width: 1320px;
+}
+
+.TourSelectHorizontalLine {
+  background: var(--line);
+}
+
+.TourSelectSlidersLeftPhotoDiscount {
+ font-weight: 700;
+  color: var(--mask-yellow);
+  font-size: 35px;
 }
