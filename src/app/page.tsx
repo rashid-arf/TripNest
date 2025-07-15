@@ -11,6 +11,7 @@ import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
 import {ActiveTour} from "@/components/common/ActiveTour/ActiveTour";
 import {WhoWeAre} from "@/components/common/WhoWeAre/WhoWeAre";
 import {TourSelect} from "@/components/common/TourSelect/TourSelect";
+import {FindTravel} from "@/components/common/FindTravel/FindTravel";
 
 
 export default function Home() {
@@ -66,15 +67,12 @@ export default function Home() {
             )}
             {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
                 <ActiveTour
-                    tripAdvisorRating ={bannerSwiperInfo[0].tripAdvisorRating}
-                    tripAdvisorIcon={bannerSwiperInfo[0].tripAdvisorIcon}
-                    iconAlt={bannerSwiperInfo[0].iconAlt}
-                    tripAdvisorLogo={bannerSwiperInfo[0].tripAdvisorLogo}
-                    tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                 />
             )}
             <WhoWeAre/>
             {tourSelect && <TourSelect tourSelect={tourSelect}/>}
+            {tourSelect && <FindTravel tourSelect={tourSelect}/>}
+
         </main>
     );
 }

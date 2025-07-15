@@ -1,4 +1,4 @@
-import {CSSProperties, FC, useState} from "react";
+import {FC, useState} from "react";
 import styles from './ActiveTour.module.scss'
 import rafting from '@/assets/images/rafting.svg';
 import zip from '@/assets/images/zip.svg';
@@ -14,6 +14,7 @@ import Image from "next/image";
 
 
 export const ActiveTour: FC = () => {
+
     const [activeTab, setActiveTab] = useState('Zip lining');
 
     const tabs = [

@@ -1,0 +1,49 @@
+.FindTravelContainer {
+  position: relative;
+ background: var(--footer-bg-color);
+  width: 100%;
+  height: 844px;
+  padding: 160px 12px;
+}
+
+.FindTravelContent {
+  width: 1320px;
+  height: 524px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FindTravelContentLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  width: 638px;
+  border: 1px solid red;
+}
+
+.FindTravelContentLeftDescription {
+  font-size: 16px;
+  line-height: 30.4px;
+  letter-spacing: 0.51px;
+  font-family: var(--font-jost-mono), sans-serif;
+  color: var(--white50);
+}
+
+
+.swiperTourSelectButtonBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  align-items: center;
+  width: 500px;
+}
+
+.FindTravelSliders {
+  width: 500px;
+}
+
+.FindTravelRightContent {
+  width: 500px;
+}
