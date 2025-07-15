@@ -14,6 +14,48 @@ import {TourSelect} from "@/components/common/TourSelect/TourSelect";
 import {FindTravel} from "@/components/common/FindTravel/FindTravel";
 
 
+type LocationItem = {
+    id: number;
+    titleTop: string;
+    titleBottom: string;
+    tour: string;
+    link: string;
+    image: string;
+    alt: string;
+    rating: number; // <== додаємо рейтинг
+}
+
+type TourSelectItem = {
+    id: number;
+    greenLabel: string;
+    image: string;
+    alt: string;
+    rated: string;
+    ratingNumber: number;
+    title: string;
+    date: string;
+    location: string;
+    countries: string;
+    newPrice: number;
+    oldPrice: number;
+}
+
+type TourPackageItem = {
+    id: number;
+    greenLabel: string;
+    image: string;
+    alt: string;
+    rated: string;
+    ratingNumber: number;
+    title: string;
+    date: string;
+    location: string;
+    countries: string;
+    newPrice: number;
+    oldPrice: number;
+}
+
+
 export default function Home() {
     const [bannerSwiperInfo, setBannerSwiperInfo] = useState<SwiperItem[] | null>(null);
 
@@ -24,7 +66,7 @@ export default function Home() {
         })();
     }, []);
 
-    const [travelLocation, setTravelLocation] = useState(null);
+    const [travelLocation, setTravelLocation] = useState<LocationItem[] | null>(null);
 
     useEffect(() => {
         (async () => {
@@ -33,7 +75,7 @@ export default function Home() {
         })();
     }, []);
 
-    const [tourPackage, setTourPackage] = useState(null);
+    const [tourPackage, setTourPackage] = useState<TourPackageItem[] | null>(null);
 
     useEffect(() => {
         (async () => {
@@ -42,7 +84,7 @@ export default function Home() {
         })();
     }, []);
 
-    const [tourSelect, setTourSelect] = useState(null);
+    const [tourSelect, setTourSelect] = useState<TourSelectItem[] | null>(null);
 
     useEffect(() => {
         (async () => {
@@ -65,13 +107,15 @@ export default function Home() {
                     tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                 />
             )}
-            {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
-                <ActiveTour
-                />
-            )}
+                <ActiveTour/>
             <WhoWeAre/>
             {tourSelect && <TourSelect tourSelect={tourSelect}/>}
-            {tourSelect && <FindTravel tourSelect={tourSelect}/>}
+            {bannerSwiperInfo && tourSelect && (
+                <FindTravel
+                    tourSelect={tourSelect}
+                    bannerSwiperInfo={bannerSwiperInfo}
+                />
+            )}
 
         </main>
     );

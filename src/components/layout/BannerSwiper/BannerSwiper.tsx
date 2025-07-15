@@ -69,11 +69,13 @@ export const BannerSwiper: FC<Props> = ({ bannerSwiperInfo }) => {
                     </div>
                   </div>
                   <TripAdvisor
-                      tripAdvisorIcon={bannerSwiperInfo.tripAdvisorIcon}
+                      source="tripadvisor"
+                      icon={bannerSwiperInfo.tripAdvisorIcon}
                       iconAlt={bannerSwiperInfo.iconAlt}
-                      tripAdvisorLogo={bannerSwiperInfo.tripAdvisorLogo}
-                      tripAdvisorLogoAlt={bannerSwiperInfo.tripAdvisorLogoAlt}
-                      tripAdvisorRating={bannerSwiperInfo.tripAdvisorRating}
+                      logo={bannerSwiperInfo.tripAdvisorLogo}
+                      logoAlt={bannerSwiperInfo.tripAdvisorLogoAlt}
+                      rating={bannerSwiperInfo.tripAdvisorRating}
+                      modifier="Banner"
                   />
                 </div>
               </div>

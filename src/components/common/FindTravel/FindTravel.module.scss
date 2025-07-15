@@ -28,9 +28,21 @@
   line-height: 30.4px;
   letter-spacing: 0.51px;
   font-family: var(--font-jost-mono), sans-serif;
-  color: var(--white50);
+  color: var(--main-bg-color);
 }
 
+.FindTravelContentLeftCaption {
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--main-bg-color);
+}
+
+.FindTravelContentLeftLabels {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
 
 .swiperTourSelectButtonBox {
   display: flex;

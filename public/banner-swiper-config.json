@@ -10,7 +10,12 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 5.0
+    "tripAdvisorRating": 5.0,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon",
+    "trustPilotStars": "/assets/images/trustPilotStar.svg"
   },
   {
     "id": 2,
@@ -23,7 +28,11 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 4.0
+    "tripAdvisorRating": 4.0,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon"
   },
   {
     "id": 3,
@@ -36,7 +45,11 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 3.5
+    "tripAdvisorRating": 3.5,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon"
   },
   {
     "id": 4,
@@ -49,7 +62,11 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 5.0
+    "tripAdvisorRating": 5.0,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon"
   },
   {
     "id": 5,
@@ -62,7 +79,11 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 4.0
+    "tripAdvisorRating": 4.0,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon"
   },
   {
     "id": 6,
@@ -75,6 +96,10 @@
     "iconAlt": "Trip Advisor Icon",
     "tripAdvisorLogo": "/assets/images/trip-advisor-logo.svg",
     "tripAdvisorLogoAlt": "TripAdvisor Logo",
-    "tripAdvisorRating": 3.5
+    "tripAdvisorRating": 3.5,
+    "trustPilotLogo": "/assets/images/trustPilotLogo.svg",
+    "trustPilotLogoAlt": "TrustPilotLogo",
+    "trustPilotIcon": "/assets/images/trustPilotIcon.svg",
+    "trustPilotIconAlt": "TrustPilotIcon"
   }
 ]
