@@ -12,6 +12,9 @@ import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
 import Image from "next/image";
 import FindTravelMask from '@/assets/images/FindTravelMask.png'
 import Goldstar from '@/assets/images/Goldstar.png'
+import triangle from '@/assets/images/triangle.png'
+import planetMask from '@/assets/images/planetMask.png'
+import quoteMask from '@/assets/images/quoteMask.png'
 import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 
 
@@ -77,16 +80,19 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
                             modules={[Navigation]} {...swiperProps}>
                         {tourSelect.map((item) => (
                             <SwiperSlide
-                                key={item.id}>
+                                key={item.id} className={styles.FindTravelSlidersContent}>
                                 <div className={styles.FindTravelSlidersText}>
                                     <p>{item.description}</p>
+                                    <Image src={triangle} alt="triangle" className={styles.triangleMask} width={33} height={23} />
                                     <Image src={Goldstar} alt="star" width={100} height={18} />
+                                    <Image src={planetMask} alt="planetMask" className={styles.planetMask}/>
+                                    <Image src={quoteMask} alt="quoteMask" className={styles.quoteMask}/>
                                 </div>
-                                <div>
+                                <div className={styles.FindTravelSlidersCustomer}>
                                     <Image src={item.customerPhoto} alt='customerPhoto' width={42} height={42} className={styles.FindTravelSlidersCuspomerPhoto}/>
                                     <div>
-                                        <p>{item.customer}</p>
-                                        <p>{item.position}</p>
+                                        <p className={styles.FindTravelSlidersCustomerName}>{item.customer}</p>
+                                        <p className={styles.FindTravelSlidersCustomerPosition}>{item.position}</p>
                                     </div>
 
                                 </div>

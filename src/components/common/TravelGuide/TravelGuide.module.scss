@@ -1,0 +1,87 @@
+.TravelGuideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px auto;
+}
+
+.TravelGuideLink {
+  text-decoration: none;
+}
+
+.TravelGuidePhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 1320px;
+  padding: 0 12px;
+}
+
+.TravelGuideSlideItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--local-image);
+  background-size: cover;
+  background-position: center;
+    width: 304px;
+  height: 302px;
+  border-radius: 10px;
+
+}
+
+.TravelGuidePhotosItem1Mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 22px;
+  border-radius: 3px;
+  background: var(--mask-yellow);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.yellowMask {
+  display: flex;
+  justify-content: end;
+}
+
+.titleMask {
+  display: flex;
+  justify-content: start;
+}
+
+.TravelGuidePhotosItemTitleTop {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--green-title);
+}
+
+.TravelGuidePhotosItemTitleBottom {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--main-bg-color);
+}
+
+.viewAllDestinationLink {
+  text-decoration: none;
+}
+
+.swiperTravelGuideButtonBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  align-items: center;
+  width: 1320px;
+
+}
+
+.swiperArrowBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 162px;
+}

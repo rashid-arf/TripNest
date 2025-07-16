@@ -15,6 +15,9 @@ import {FindTravel} from "@/components/common/FindTravel/FindTravel";
 import {LocationItem} from "@/components/common/TravelLocation/TravelLocation.types";
 import {TourPackageItem} from "@/components/common/TourPackage/TourPackage.types";
 import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
+import {TravelGuide} from "@/components/common/TravelGuide/TravelGuide";
+import {TravelGuideService} from "@/components/common/services/travelGuide.services";
+import {TravelGuideItem} from "@/components/common/TravelGuide/TravelGuide.types";
 
 
 export default function Home() {
@@ -54,6 +57,15 @@ export default function Home() {
         })();
     }, []);
 
+    const [travelGuide, setTravelGuide] = useState<TravelGuideItem[] | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            const TravelGuideFromResponse = await TravelGuideService.getTravelGuide();
+            setTravelGuide(TravelGuideFromResponse);
+        })();
+    }, []);
+
     return (
         <main>
             <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo}/>}</div>
@@ -77,7 +89,7 @@ export default function Home() {
                     bannerSwiperInfo={bannerSwiperInfo}
                 />
             )}
-
+            {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
         </main>
     );
 }

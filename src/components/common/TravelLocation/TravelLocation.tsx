@@ -1,4 +1,4 @@
-import React, { FC} from 'react';
+import { FC} from 'react';
 import styles from './TravelLocation.module.scss';
 import Link from 'next/link';
 import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';

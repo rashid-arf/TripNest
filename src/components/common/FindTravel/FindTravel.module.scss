@@ -1,6 +1,6 @@
 .FindTravelContainer {
-
- background: var(--footer-bg-color);
+position: relative;
+  background: var(--footer-bg-color);
   width: 100%;
   height: 844px;
   padding: 160px 12px;
@@ -27,7 +27,6 @@
   justify-content: space-between;
   width: 638px;
   height: 436px;
-  border: 1px solid red;
 }
 
 .FindTravelContentLeftDescription {
@@ -55,15 +54,19 @@
   padding: 0 105px;
   width: 940px;
   height: 436px;
-  border: 1px solid red;
   position: absolute;
   right: 0;
-  }
+}
 
 .FindTravelSlidersText {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid var(--grey-line10);
+  border-right: 1px solid var(--grey-line10);
+  border-bottom: 3px solid var(--grey-line10);
+  border-left: 1px solid var(--grey-line10);
   background: var(--main-bg-color);
   padding: 55px 107px;
   border-radius: 8px;
@@ -76,12 +79,59 @@
   width: 728px;
 }
 
+.triangleMask {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.planetMask {
+  position: absolute;
+  top: 0;
+}
+
+.quoteMask {
+  position: absolute;
+ bottom: 20px;
+  right: 20px;
+
+}
+
+.FindTravelSlidersContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.FindTravelSlidersCustomer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.FindTravelSlidersCustomerName {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 23px;
+  color: var(--main-bg-color);
+}
+
+.FindTravelSlidersCustomerPosition {
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  color: var(--white50);
+  font-family: var(--font-jost-mono), sans-serif;
+}
+
 .swiperTourSelectButtonBox {
   display: flex;
   justify-content: space-between;
   align-items: end;
   height: 54px;
-
+  border-top: 1px solid var(--white10);
+  margin-top: 34px;
 }
 
 .FindTravelSliders {
