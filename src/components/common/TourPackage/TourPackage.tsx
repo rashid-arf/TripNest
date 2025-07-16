@@ -15,29 +15,11 @@ import tourLocation from '@/assets/images/tour-location.png';
 import flag from '@/assets/images/flag.png';
 import planeIcon from '@/assets/images/plane.png';
 import clsx from "clsx";
-
-
-
-
-type TourPackageItem = {
-    id: number;
-    greenLabel: string;
-    image: string;
-    alt: string;
-    rated: string;
-    ratingNumber: number;
-    title: string;
-    date: string;
-    location: string;
-    countries: string;
-    newPrice: number;
-    oldPrice: number;
-}
+import {TourPackageItem} from "@/components/common/TourPackage/TourPackage.types";
 
 type Props = {
     tourPackage: TourPackageItem[];
 }
-
 
 export const TourPackage: FC <Props> = ({tourPackage}) => {
     const swiperRef = useRef<SwiperType | null>(null);
@@ -49,7 +31,6 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
         slidesPerView: 3,
         pagination: false,
         spaceBetween: 24
-
     };
 
     return (

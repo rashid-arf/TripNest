@@ -3,9 +3,16 @@
   max-width: calc(5 * 16px);
   width: var(--rating-width);
   height: 16px;
-  mask-image: url('/assets/images/green-circle.svg');
-  mask-repeat: repeat-x;
-  mask-size: unset;
-  mask-position: left;
   background: var(--rating-circle-color);
+  mask-repeat: repeat-x;
+  mask-position: left;
+  mask-size: 16px 16px;
+}
+
+.tripadvisorMask {
+  mask-image: url('/assets/images/green-circle.svg');
+}
+
+.trustpilotMask {
+  mask-image: url('/assets/images/trustPilotStar.svg');
 }

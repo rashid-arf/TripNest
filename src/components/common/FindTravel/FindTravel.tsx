@@ -9,28 +9,19 @@ import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitl
 import {DefaultTitleName} from "@/components/common/DefaultTitleName/DefaultTitleName";
 import {TripAdvisor} from "@/components/common/TripAdvisor/TripAdvisor";
 import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
+import Image from "next/image";
+import FindTravelMask from '@/assets/images/FindTravelMask.png'
+import Goldstar from '@/assets/images/Goldstar.png'
+import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 
-type TourSelectItem = {
-    id: number;
-    greenLabel: string;
-    image: string;
-    alt: string;
-    rated: string;
-    ratingNumber: number;
-    title: string;
-    date: string;
-    location: string;
-    countries: string;
-    newPrice: number;
-    oldPrice: number;
-}
+
 
 type Props = {
     tourSelect: TourSelectItem[];
     bannerSwiperInfo: SwiperItem[];
 }
 
-export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo}) => {
+export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
@@ -47,7 +38,7 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo}) => {
             <div className={styles.FindTravelContent}>
                 <div className={styles.FindTravelContentLeft}>
                     <DefaultTitleLink titleLinkText={"Testimonial"} modifier={"Package"}/>
-                    <DefaultTitleName titleName={"Find The Compliments From Our Travelers"} modifier={"white"}/>
+                    <DefaultTitleName titleName={"Find The Compliments From Our Travelers"} modifier={"whiteZeroMargin"}/>
                     <p className={styles.FindTravelContentLeftDescription}>Nunc volutpat sagittis cursus. Praesent sed
                         dolor pellentesque, consectetur velon sit amet,
                         pharetra ipsum. Fusce europ ultrices tortor. Praesent vehicula commodo purus at vulputate
@@ -63,6 +54,7 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo}) => {
                                 logoAlt={bannerSwiperInfo[0].trustPilotLogoAlt}
                                 rating={bannerSwiperInfo[0].tripAdvisorRating}
                                 modifier="FindTravels"
+                                // без withBackground — фон не зʼявиться
                             />
                         )}
                         {bannerSwiperInfo?.[0] && (
@@ -73,18 +65,31 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo}) => {
                                 logo={bannerSwiperInfo[0].tripAdvisorLogo}
                                 logoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                                 rating={bannerSwiperInfo[0].tripAdvisorRating}
-                                modifier="Banner"
+                                modifier="FindTravels"
+                                withBackground // тільки тут буде фон
                             />
                         )}
                     </div>
 
                 </div>
                 <div className={styles.FindTravelRightContent}>
-                    <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.FindTravelPhotos}
+                    <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)}
                             modules={[Navigation]} {...swiperProps}>
                         {tourSelect.map((item) => (
                             <SwiperSlide
-                                key={item.id} className={styles.FindTravelSliders}>
+                                key={item.id}>
+                                <div className={styles.FindTravelSlidersText}>
+                                    <p>{item.description}</p>
+                                    <Image src={Goldstar} alt="star" width={100} height={18} />
+                                </div>
+                                <div>
+                                    <Image src={item.customerPhoto} alt='customerPhoto' width={42} height={42} className={styles.FindTravelSlidersCuspomerPhoto}/>
+                                    <div>
+                                        <p>{item.customer}</p>
+                                        <p>{item.position}</p>
+                                    </div>
+
+                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -98,6 +103,7 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo}) => {
                     </div>
                 </div>
             </div>
+            <Image src={FindTravelMask} alt={"FindTravelMask"} className={styles.FindTravelMask} width={206} height={328}/>
         </div>
     )
 }

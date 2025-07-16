@@ -1,9 +1,15 @@
 .FindTravelContainer {
-  position: relative;
+
  background: var(--footer-bg-color);
   width: 100%;
   height: 844px;
   padding: 160px 12px;
+}
+
+.FindTravelMask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .FindTravelContent {
@@ -15,11 +21,12 @@
 }
 
 .FindTravelContentLeft {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  gap: 30px;
+  justify-content: space-between;
   width: 638px;
+  height: 436px;
   border: 1px solid red;
 }
 
@@ -44,18 +51,43 @@
   gap: 30px;
 }
 
+.FindTravelRightContent {
+  padding: 0 105px;
+  width: 940px;
+  height: 436px;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  }
+
+.FindTravelSlidersText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main-bg-color);
+  padding: 55px 107px;
+  border-radius: 8px;
+  text-align: center;
+  gap: 30px;
+  font-size: 24px;
+  line-height: 45.6px;
+  letter-spacing: 0.54px;
+  font-family: var(--font-jost-mono), sans-serif;
+  width: 728px;
+}
+
 .swiperTourSelectButtonBox {
   display: flex;
   justify-content: space-between;
-  margin-top: 84px;
-  align-items: center;
-  width: 500px;
+  align-items: end;
+  height: 54px;
+
 }
 
 .FindTravelSliders {
-  width: 500px;
+  width: 940px;
 }
 
 .FindTravelRightContent {
-  width: 500px;
+  width: 940px;
 }

@@ -11,7 +11,11 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 340,
-    "oldPrice": 450
+    "oldPrice": 450,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   },
   {
     "id": 2,
@@ -25,7 +29,11 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 240,
-    "oldPrice": 380
+    "oldPrice": 380,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   },
   {
     "id": 3,
@@ -39,8 +47,11 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 500,
-    "oldPrice": 580
-
+    "oldPrice": 580,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   },
   {
     "id": 4,
@@ -54,7 +65,11 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 340,
-    "oldPrice": 450
+    "oldPrice": 450,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   },
   {
     "id": 5,
@@ -68,12 +83,16 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 240,
-    "oldPrice": 380
+    "oldPrice": 380,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   },
   {
     "id": 6,
     "greenLabel": "Popular",
-     "image": "/assets/images/tour-package3.png",
+    "image": "/assets/images/tour-package3.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 0,
@@ -82,6 +101,10 @@
     "location": "4 Location",
     "countries": "1 Countries",
     "newPrice": 500,
-    "oldPrice": 580
+    "oldPrice": 580,
+    "description": "“I cannot express enough how satisfied I am with the web development services provided by Egens Lab. From the initial consultation to the final delivery, they have exceeded.”",
+    "customer": "Mateo Daniel",
+    "position": "CEO, ToruXpro",
+    "customerPhoto": "/assets/images/customerPhoto.svg"
   }
 ]

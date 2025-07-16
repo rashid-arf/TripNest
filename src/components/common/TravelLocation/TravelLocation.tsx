@@ -9,25 +9,11 @@ import {DefaultButton} from "@/components/common/DefaultButton/DefaultButton";
 import {SliderArrow} from "@/components/common/Arrows/SliderArrow/SliderArrow";
 import { useRef } from 'react';
 import { Swiper as SwiperType } from 'swiper';
-
-
-
-type LocationItem = {
-    id: number;
-    titleTop: string;
-    titleBottom: string;
-    tour: string;
-    link: string;
-    image: string;
-    alt: string;
-    rating: number; // <== додаємо рейтинг
-
-}
+import {LocationItem} from "@/components/common/TravelLocation/TravelLocation.types";
 
 type Props = {
     travelLocation: LocationItem[];
 }
-
 
 export const TravelLocation: FC <Props> = ({travelLocation}) => {
     const swiperRef = useRef<SwiperType | null>(null);

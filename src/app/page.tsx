@@ -12,48 +12,9 @@ import {ActiveTour} from "@/components/common/ActiveTour/ActiveTour";
 import {WhoWeAre} from "@/components/common/WhoWeAre/WhoWeAre";
 import {TourSelect} from "@/components/common/TourSelect/TourSelect";
 import {FindTravel} from "@/components/common/FindTravel/FindTravel";
-
-
-type LocationItem = {
-    id: number;
-    titleTop: string;
-    titleBottom: string;
-    tour: string;
-    link: string;
-    image: string;
-    alt: string;
-    rating: number; // <== додаємо рейтинг
-}
-
-type TourSelectItem = {
-    id: number;
-    greenLabel: string;
-    image: string;
-    alt: string;
-    rated: string;
-    ratingNumber: number;
-    title: string;
-    date: string;
-    location: string;
-    countries: string;
-    newPrice: number;
-    oldPrice: number;
-}
-
-type TourPackageItem = {
-    id: number;
-    greenLabel: string;
-    image: string;
-    alt: string;
-    rated: string;
-    ratingNumber: number;
-    title: string;
-    date: string;
-    location: string;
-    countries: string;
-    newPrice: number;
-    oldPrice: number;
-}
+import {LocationItem} from "@/components/common/TravelLocation/TravelLocation.types";
+import {TourPackageItem} from "@/components/common/TourPackage/TourPackage.types";
+import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 
 
 export default function Home() {

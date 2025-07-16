@@ -14,21 +14,7 @@ import planeIcon from '@/assets/images/plane.png';
 import TourSelectBanner from '@/assets/images/TourSelectBanner.png'
 import clsx from "clsx";
 import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
-
-type TourSelectItem = {
-    id: number;
-    greenLabel: string;
-    image: string;
-    alt: string;
-    rated: string;
-    ratingNumber: number;
-    title: string;
-    date: string;
-    location: string;
-    countries: string;
-    newPrice: number;
-    oldPrice: number;
-}
+import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 
 type Props = {
     tourSelect: TourSelectItem[];

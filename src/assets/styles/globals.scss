@@ -1,56 +1,69 @@
 :root {
   --content-max-width: 1320px;
 
-  // colors
+
+ // base colors
   --main-bg-color: #fff;
   --main-color: #100c08; // rgba(16 12 8 / 100%)
+
+  // UI background & text)
   --main-color40: rgba(16 12 8 / 40%);
   --grey-text: rgb(120 120 120);
   --grey-text50: rgba(16 12 8 / 50%);
   --grey-text10: rgba(16 12 8 / 10%);
   --grey-text20: rgba(34 34 34 /20%);
+  --footer-hover-menu: rgba(117 174 232 / 40%);
+  --blur-color: #100c0866;
+  --grey: #787878;
+
+  // visual effects
+  --phone-bg: #152F0066;
+  --top-strip-bg-color: #222;
+  --newsletter-bg: #f9f4f0;
+  --footer-bg-color: #1d231f;
+  --separation-line-color: #fff3;
+  --separation2-line-color: rgb(255 255 255 / 10%);
+  --rating-circle-color: #00aa6c;
+  --box-shadow-8: rgba(0 0 0 / 8%);
+  --box-shadow-14: rgba(0 0 0 / 14%);
+  --blue-gradient: linear-gradient(
+                  to right,
+                  rgba(76 124 237 / 10%),
+                  rgba(76 124 237 / 0)
+  );
+  --line: rgba(34 34 34 / 20%);
+  --grey-line: rgba(19 20 26 / 16%);
+  --grey-border: rgba(16 12 8 / 10%);
+  --active-bg: rgba(255 252 234);
+  --tab-bg: rgba(238 238 238 / 60%);
+  --label-bg-2: rgba(51, 49, 34, 1);
+  --label-bg-1: rgba(36, 49, 35, 1);
+
+  // green variants
   --main-color-accent: #63ab45;
   --mask-green: rgba(99 171 69 / 40%);
   --mask-green10: rgba(99 171 69 / 10%);
   --menu-item-select: rgb(99 171 69 / 90%);
   --green-title: rgb(99 171 69);
   --greenLabel: rgba(0 128 0);
-  --phone-bg: #152F0066;
-  --top-strip-bg-color: #222;
-  --white10: rgb(255 255 255 / 10%);
-  --white50: rgb(255 255 255 / 50%);
-  --white60: rgb(255 255 255 / 60%);
-  --white80: rgb(255 255 255 / 80%);
-  --newsletter-bg: #f9f4f0;
-  --separation-line-color: #fff3;
-  --separation2-line-color: rgb(255 255 255 / 10%);
-  --footer-bg-color: #1d231f;
-  --footer-hover-menu: rgba(117 174 232 / 40%);
-  --blur-color: #100c0866;
-  --rating-circle-color: #00aa6c;
-  --email-error: red;
-  --grey: #787878;
+
+ // yellow variants
   --mask-yellow10: rgba(251 176 59 / 10%);
   --mask-yellow: rgb(251 176 59); //#FBB03B
   --mask-yellow30: rgba(251, 176, 59, 30%);
   --shadow-yellow: #a67c3b;
   --rating-image: rgba(255 194 0 / 10%);
   --yellowLabel: rgba(251 176 59 10%);
-  --grey-line: rgba(19 20 26 / 16%);
-  --grey-border: rgba(16 12 8 / 10%);
-  --active-bg: rgba(255 252 234);
-  --tab-bg: rgba(238 238 238 / 60%);
-  --box-shadow-8: rgba(0 0 0 / 8%);
-  --box-shadow-14: rgba(0 0 0 / 14%);
-  --line: rgba(34 34 34 / 20%);
-  --blue-gradient: linear-gradient(
-                  to right,
-                  rgba(76 124 237 / 10%),
-                  rgba(76 124 237 / 0)
-  );
 
+  // white
+  --white10: rgb(255 255 255 / 10%);
+  --white50: rgb(255 255 255 / 50%);
+  --white60: rgb(255 255 255 / 60%);
+  --white80: rgb(255 255 255 / 80%);
 
-}
+  // warning, success, error
+  --email-error: red;
+  }
 
 html,
 body {
