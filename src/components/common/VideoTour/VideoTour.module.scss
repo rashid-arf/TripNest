@@ -1,14 +1,13 @@
 .videoTourContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
   height: 822px;
   background: var(--main-color);
-  margin-bottom: 176px;
-  color: red;
+  margin-bottom: 166px;
 }
 
 
@@ -18,7 +17,7 @@
   border-radius: 30px 30px 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
   bottom: -146px;
   left: 50%;
@@ -33,6 +32,8 @@
   flex-direction: column;
   justify-content: start;
   text-align: start;
+  padding-right: 86px;
+  border-right: 1px solid var(--grey-border);
 }
 
 .videoTourCardMask {
@@ -41,4 +42,42 @@
   bottom: -146px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.videoTourCardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.videoTourCarRightTitle {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.videoTourCardRightTime {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 22px;
+  width: 388px;
+}
+
+.videoTourCardRightTimeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.videoTourCardRightTimeItemDescription {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--font-jost-mono) sans-serif;
 }

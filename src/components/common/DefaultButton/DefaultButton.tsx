@@ -6,7 +6,7 @@ import clsx from "clsx";
 type Props = {
     buttonText?: ReactNode;
     bgColor?: string;
-    modifier?: 'footer' | "button" | "slider" | "tourSlider" | "bestTourGreen" | "bestTourYellow" | "bestTourVideo" | "bestTourExperience" | "activeTourList" | "activeTourTab" | "whoWeAreLabel" | "tourSelect";
+    modifier?: 'footer' | "button" | "slider" | "tourSlider" | "bestTourGreen" | "bestTourYellow" | "bestTourVideo" | "bestTourExperience" | "activeTourList" | "activeTourTab" | "whoWeAreLabel" | "tourSelect" | "videoTour";
     iconRight?: ReactNode; // 👉 додаємо іконку праворуч
     iconLeft?: ReactNode;
     isActive?: boolean;
