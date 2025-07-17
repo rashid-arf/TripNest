@@ -15,6 +15,7 @@ import TourSelectBanner from '@/assets/images/TourSelectBanner.png'
 import clsx from "clsx";
 import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
 import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
+import {DefaultDiscount} from "@/components/common/DefaultDiscount/DefaultDiscount";
 
 type Props = {
     tourSelect: TourSelectItem[];
@@ -44,9 +45,10 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
                                    className={styles.tourSelectBanner}/>
                             <div className={styles.TourSelectSlidersLeftPhotoFilter}>
                                 <div className={styles.TourSelectSlidersLeftPhotoContent}>
-                                    <DefaultTitleLink titleLinkText={"Savings worldwide"} modifier={'tourSelect'}/>
-                                    <p className={styles.TourSelectSlidersLeftPhotoDiscount}>20% Off</p>
-                                    <p className={styles.TourSelectSlidersLeftPhotoDescription}>Discover Great Deal</p>
+                                    <DefaultTitleLink titleLinkText={"Savings worldwide"}
+                                                      modifier={'tourSelect'}/>
+                                    <DefaultDiscount
+                                    titleName={"Discover Great Deal"} discount={"20% Off"}/>
                                     <DefaultButton buttonText={"View This Trip"} modifier={"tourSelect"}/>
                                 </div>
 

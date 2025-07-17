@@ -49,12 +49,6 @@
   align-items: center;
   height: 100%;
 }
-.TourSelectSlidersLeftPhotoDescription {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--main-bg-color);
-}
 
 .TourSelectPhotos {
   display: flex;
@@ -213,10 +207,4 @@
 
 .TourSelectHorizontalLine {
   background: var(--line);
-}
-
-.TourSelectSlidersLeftPhotoDiscount {
- font-weight: 700;
-  color: var(--mask-yellow);
-  font-size: 35px;
 }

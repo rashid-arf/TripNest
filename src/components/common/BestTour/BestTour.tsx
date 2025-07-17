@@ -94,7 +94,7 @@ export const BestTour: FC<Props> = ({
                 <div className={styles.bestTourBottomCaption}>
                     <p className={styles.bestTourBottomCaptionTitle}>Excellent!</p>
                     <div className={styles.bestTourRating}>
-                        <RatingCircles rating={tripAdvisorRating}/>
+                        <RatingCircles rating={tripAdvisorRating} modifier={"Banner"} source={"tripadvisor"}/>
                     </div>
                     <div
                         className={styles.bestTourRatingInfo}> {typeof tripAdvisorRating === 'number' ? tripAdvisorRating.toFixed(1) : '5.0'} Rating

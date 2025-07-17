@@ -18,6 +18,7 @@ import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 import {TravelGuide} from "@/components/common/TravelGuide/TravelGuide";
 import {TravelGuideService} from "@/components/common/services/travelGuide.services";
 import {TravelGuideItem} from "@/components/common/TravelGuide/TravelGuide.types";
+import {VideoTour} from "@/components/common/VideoTour/VideoTour";
 
 
 export default function Home() {
@@ -90,6 +91,7 @@ export default function Home() {
                 />
             )}
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
+            <VideoTour/>
         </main>
     );
 }

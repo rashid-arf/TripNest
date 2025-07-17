@@ -29,7 +29,7 @@ export const TravelGuide: FC<Props> = ({travelGuide}) => {
     };
 
     return (
-        <div className={styles.TravelGuideContainer}>
+        <div className={`content-width ${styles.TravelGuideContainer}`}>
             <Link href={'/travel-guide'} className={styles.TravelGuideLink}>
                 <DefaultTitleLink titleLinkText={'Tour Guide'}/>
             </Link>
@@ -39,7 +39,10 @@ export const TravelGuide: FC<Props> = ({travelGuide}) => {
                 {travelGuide.map((item) => (
                     <SwiperSlide
                         key={item.id} className={styles.TravelGuideSlideItem}
-                        style={{backgroundImage: `url(${item.image})`}}>
+                    >
+                        <Image src={item.image} alt={item.alt} width={200} height={200}/>
+                        <div className={styles.TravelGuideSlideItemDescription}><p>{item.guideName}</p>
+                            <p className={styles.TravelGuideSlideItemDescriptionPosition}>{item.guidePosition}</p></div>
                     </SwiperSlide>
                 ))}
 

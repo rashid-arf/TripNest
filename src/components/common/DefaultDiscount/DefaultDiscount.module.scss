@@ -1,0 +1,39 @@
+
+.defaultDiscount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &.defaultDiscount--green-black {
+    align-items: start;
+  }
+  }
+
+.defaultDiscountTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-bg-color);
+
+  &.defaultDiscountTitle--green-black {
+    color: var(--main-color);
+    text-align: start;
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.defaultDiscountNumber {
+  font-weight: 700;
+  color: var(--mask-yellow);
+  font-size: 35px;
+
+  &.defaultDiscountNumber--green-black {
+    color: var(--green-title);
+    text-align: start;
+    font-size: 60px
+  ;
+  }
+}
+

@@ -35,3 +35,15 @@
 .title--tourSelect {
   color: var(--main-bg-color);
 }
+
+.mask--videoTour {
+  background: none;
+  height: 35px;
+  justify-content: start;
+}
+
+.title--videoTour {
+  color: var(--mask-yellow);
+  font-weight: 400;
+  font-size: 20px;
+}

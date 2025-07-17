@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 type Props = {
   titleLinkText: string;
-  modifier?: 'Jorney' | 'Package' | 'tourSelect';
+  modifier?: 'Jorney' | 'Package' | 'tourSelect' | 'videoTour';
 };
 
 export const DefaultTitleLink: FC<Props> = ({ titleLinkText, modifier }) => {

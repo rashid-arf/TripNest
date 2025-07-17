@@ -10,49 +10,49 @@
     "id": 2,
     "guideName": "Elias Josiah",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-2.svg",
+    "image": "/assets/images/guide-2.png",
     "alt": "guide-2"
   },
   {
     "id": 3,
     "guideName": "Miles Jaxon",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-3.svg",
+    "image": "/assets/images/guide-3.png",
     "alt": "guide-3"
   },
   {
     "id": 4,
     "guideName": "Silas Nicholas",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-4.svg",
+    "image": "/assets/images/guide-4.png",
     "alt": "guide-4"
   },
   {
     "id": 5,
     "guideName": "Mateo Daniel",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-1.svg",
+    "image": "/assets/images/guide-1.png",
     "alt": "guide-1"
   },
   {
     "id": 6,
     "guideName": "Elias Josiah",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-2.svg",
+    "image": "/assets/images/guide-2.png",
     "alt": "guide-2"
   },
   {
     "id": 7,
     "guideName": "Miles Jaxon",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-3.svg",
+    "image": "/assets/images/guide-3.png",
     "alt": "guide-3"
   },
   {
     "id": 8,
     "guideName": "Silas Nicholas",
     "guidePosition": "Tour Guide",
-    "image": "/assets/images/guide-4.svg",
+    "image": "/assets/images/guide-4.png",
     "alt": "guide-4"
   }
 ]

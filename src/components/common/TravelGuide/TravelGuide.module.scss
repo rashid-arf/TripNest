@@ -21,59 +21,46 @@
 .TravelGuideSlideItem {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  gap: 62px;
+  padding: 40px 0;
   background: var(--local-image);
   background-size: cover;
   background-position: center;
-    width: 304px;
-  height: 302px;
+  border: 1px solid var(--tab-bg);
+  width: 304px;
+  height: 402px;
   border-radius: 10px;
-
+  background: no-repeat center / cover url("/assets/images/guide-card-bg.svg");
 }
 
-.TravelGuidePhotosItem1Mask {
+.TravelGuideSlideItemDescription {
   display: flex;
+  flex-direction: column;
+  background: var(--main-bg-color);
+  padding: 25px;
+  gap: 8px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 22px;
-  border-radius: 3px;
-  background: var(--mask-yellow);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 27.5px;
 }
 
-.yellowMask {
-  display: flex;
-  justify-content: end;
-}
-
-.titleMask {
-  display: flex;
-  justify-content: start;
-}
-
-.TravelGuidePhotosItemTitleTop {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--green-title);
-}
-
-.TravelGuidePhotosItemTitleBottom {
-  font-size: 28px;
-  font-weight: 500;
-  color: var(--main-bg-color);
-}
-
-.viewAllDestinationLink {
-  text-decoration: none;
+.TravelGuideSlideItemDescriptionPosition {
+  font-family: var(--font-jost-mono) sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: var(--grey-text50);
 }
 
 .swiperTravelGuideButtonBox {
   display: flex;
   justify-content: space-between;
-  margin-top: 84px;
+  margin-top: 50px;
   align-items: center;
   width: 1320px;
 

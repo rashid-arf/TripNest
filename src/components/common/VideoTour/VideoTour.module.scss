@@ -1,0 +1,44 @@
+.videoTourContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 822px;
+  background: var(--main-color);
+  margin-bottom: 176px;
+  color: red;
+}
+
+
+.videoTourCard {
+  width: 820px;
+  height: 292px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -146px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--main-bg-color);
+  box-shadow: 0 0 20px rgba(0 0 0 / 8%);
+  padding: 0 50px;
+}
+
+.videoTourCardLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+
+.videoTourCardMask {
+  position: absolute;
+  border-radius: 30px 30px 0 0;
+  bottom: -146px;
+  left: 50%;
+  transform: translateX(-50%);
+}
