@@ -1,36 +1,34 @@
-import React, { FC } from "react";
-import { DefaultDiscount } from "@/components/common/DefaultDiscount/DefaultDiscount";
+import React, {FC, useRef} from "react";
+import {DefaultDiscount} from "@/components/common/DefaultDiscount/DefaultDiscount";
 import styles from "./VideoTour.module.scss";
-import { DefaultTitleLink } from "@/components/common/DefaultTitleLink/DefaultTitleLink";
+import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
 import Image from "next/image";
 import videoTourMask from '@/assets/images/videoTourMask.png';
 import ItemDote from '@/assets/images/ItemСolon.png';
-import { DefaultButton } from "@/components/common/DefaultButton/DefaultButton";
+import {DefaultButton} from "@/components/common/DefaultButton/DefaultButton";
 import planeIcon from "@/assets/images/plane.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import {  Navigation } from 'swiper/modules';
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Swiper as SwiperType} from "swiper";
+import {SliderArrow} from "@/components/common/Arrows/SliderArrow/SliderArrow";
+import {Navigation} from "swiper/modules";
 
 
 export const VideoTour: FC = () => {
+    const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
         autoplay: {
-            delay: 1000,
+            delay: 6000,
         },
         slidesPerView: 1,
         pagination: false,
-        navigation: {
-            nextEl: 'buttonNext',
-            prevEl: 'buttonPrev',
-        },
+
     };
 
     return (
         <div className={styles.videoTourContent}>
-            <Swiper modules={[Navigation]} {...swiperProps} className={styles.videoTourSlide}>
-                <SwiperSlide className={styles.videoTourSlideItem}>
+            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.videoTourSlide} modules={[Navigation]} {...swiperProps}>
+                <SwiperSlide className={styles.videoTourSlideItem} >
                     <div className={styles.videoWrapper}>
                         <iframe
                             src="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1&mute=1&loop=1&playlist=Scxs7L0vhZ4"
@@ -45,16 +43,30 @@ export const VideoTour: FC = () => {
                     <div className={styles.videoWrapper}>
                         <iframe
                             src="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1&mute=1&loop=1&playlist=Scxs7L0vhZ4"
-                            title="YouTube video"
+                            title="YouTube video 1"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
-                        ></iframe>
-
+                        />
                     </div>
                 </SwiperSlide>
-                <div className={styles.buttonNext}></div>
-                <div className={styles.buttonPrev}></div>
+                <SwiperSlide className={styles.videoTourSlideItem}>
+                    <div className={styles.videoWrapper}>
+                        <iframe
+                            src="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1&mute=1&loop=1&playlist=Scxs7L0vhZ4"
+                            title="YouTube video 1"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                        />
+                    </div>
+                </SwiperSlide>
             </Swiper>
+            <div className={styles.swiperVideoTourButtonBox}>
+                <SliderArrow
+                    arrowText={''}
+                    onClick={() => swiperRef.current?.slidePrev()} color={'white'} modifier={"PREV"} circle={"circle"} sliderArrow={"sliderArrow"}
+                 />
+                <SliderArrow modifier={"NEXT"} arrowText={""} onClick={() => swiperRef.current?.slideNext()} color={"white"} circle={"circle"} sliderArrow={"sliderArrow"}/>
+            </div>
             <div className={`content-width ${styles.videoTourCard}`}>
                 <div className={styles.videoTourCardLeft}>
                     <DefaultTitleLink titleLinkText={"Honeymoon Tour"} modifier={"videoTour"}/>
