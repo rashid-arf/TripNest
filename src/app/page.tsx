@@ -91,7 +91,7 @@ export default function Home() {
                 />
             )}
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
-            <VideoTour/>
+            <VideoTour />
         </main>
     );
 }

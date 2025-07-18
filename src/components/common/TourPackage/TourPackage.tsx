@@ -1,14 +1,14 @@
 import React, {CSSProperties, FC} from 'react';
 import styles from './TourPackage.module.scss';
 import Link from 'next/link';
-import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';
-import { DefaultTitleName } from '@/components/common/DefaultTitleName/DefaultTitleName';
+import {DefaultTitleLink} from '@/components/common/DefaultTitleLink/DefaultTitleLink';
+import {DefaultTitleName} from '@/components/common/DefaultTitleName/DefaultTitleName';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
 import {DefaultButton} from "@/components/common/DefaultButton/DefaultButton";
 import {SliderArrow} from "@/components/common/Arrows/SliderArrow/SliderArrow";
-import { useRef } from 'react';
-import { Swiper as SwiperType } from 'swiper';
+import {useRef} from 'react';
+import {Swiper as SwiperType} from 'swiper';
 import Image from 'next/image';
 import date from '@/assets/images/date.png';
 import tourLocation from '@/assets/images/tour-location.png';
@@ -21,7 +21,7 @@ type Props = {
     tourPackage: TourPackageItem[];
 }
 
-export const TourPackage: FC <Props> = ({tourPackage}) => {
+export const TourPackage: FC<Props> = ({tourPackage}) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
@@ -40,7 +40,8 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                 <DefaultTitleLink modifier={'Package'} titleLinkText={'Tour Package'}/>
             </Link>
             <DefaultTitleName modifier={'white'} titleName={'Thrilling Tour Plans'}/>
-            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourPackagePhotos} modules={[Navigation]} {...swiperProps}>
+            <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourPackagePhotos}
+                    modules={[Navigation]} {...swiperProps}>
                 {tourPackage.map((item) => (
                     <SwiperSlide
                         key={item.id} className={styles.TourPackageSliders}>
@@ -50,59 +51,60 @@ export const TourPackage: FC <Props> = ({tourPackage}) => {
                                 <div className={styles.TourPackagePhotosItem1Mask}>{item.greenLabel}</div>
                             </div>
                         </div>
-<div className={styles.TourPackageSlidersInfo}>
-    <div className={styles.ratingRow}>
-        <div
-            className={clsx(
-                styles.TourPackageSlidersInfoRated,
-                item.ratingNumber > 0 && styles.activeRating
-            )}
-            style={{'--rated-image': `url(${item.rated})`} as CSSProperties}
-        />
-        <div>({item.ratingNumber})</div>
-    </div>
-    <div className={styles.TourPackageSlidersInfoTitle}>{item.title}</div>
-    <div className={styles.TourPackageSlidersInfoList}>
-        <div className={styles.listItem}>
-            <Image src={date} alt="date"/>
-            <div className={styles.listItemTitle}>{item.date}</div>
-        </div>
-        <div className={styles.listItem}>
-            <Image src={tourLocation} alt="location"/>
-            <div className={styles.listItemTitle}>{item.location}</div>
-        </div>
-        <div className={styles.listItem}>
-            <Image src={flag} alt="flag"/>
-            <div className={styles.listItemTitle}>{item.countries}</div>
-        </div>
-    </div>
-</div>
-                   <div className={styles.TourPackageSlidersPrice}>
-                       <div className={styles.TourPackageSlidersPriceItem}>
-                           <p className={styles.TourPackageSlidersPriceItemTitle}>Starting From:</p>
-                           <div className={styles.TourPackageSlidersPriceItemDiscount}>
-                               <p className={styles.TourPackageSlidersPriceItemDiscountNew}>${item.newPrice}</p>
-                               <p className={styles.TourPackageSlidersPriceItemDiscountOld}>${item.oldPrice}</p>
-                           </div>
-                           <p className={styles.TourPackageSlidersPriceItemCaption}>TAXES INCL/PERS</p>
-                       </div>
-                      <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"} iconRight={<Image src={planeIcon} alt="plane" width={18} height={20} />}/>
-                   </div>
+                        <div className={styles.TourPackageSlidersInfo}>
+                            <div className={styles.ratingRow}>
+                                <div
+                                    className={clsx(
+                                        styles.TourPackageSlidersInfoRated,
+                                        item.ratingNumber > 0 && styles.activeRating
+                                    )}
+                                    style={{'--rated-image': `url(${item.rated})`} as CSSProperties}
+                                />
+                                <div>({item.ratingNumber})</div>
+                            </div>
+                            <div className={styles.TourPackageSlidersInfoTitle}>{item.title}</div>
+                            <div className={styles.TourPackageSlidersInfoList}>
+                                <div className={styles.listItem}>
+                                    <Image src={date} alt="date"/>
+                                    <div className={styles.listItemTitle}>{item.date}</div>
+                                </div>
+                                <div className={styles.listItem}>
+                                    <Image src={tourLocation} alt="location"/>
+                                    <div className={styles.listItemTitle}>{item.location}</div>
+                                </div>
+                                <div className={styles.listItem}>
+                                    <Image src={flag} alt="flag"/>
+                                    <div className={styles.listItemTitle}>{item.countries}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.TourPackageSlidersPrice}>
+                            <div className={styles.TourPackageSlidersPriceItem}>
+                                <p className={styles.TourPackageSlidersPriceItemTitle}>Starting From:</p>
+                                <div className={styles.TourPackageSlidersPriceItemDiscount}>
+                                    <p className={styles.TourPackageSlidersPriceItemDiscountNew}>${item.newPrice}</p>
+                                    <p className={styles.TourPackageSlidersPriceItemDiscountOld}>${item.oldPrice}</p>
+                                </div>
+                                <p className={styles.TourPackageSlidersPriceItemCaption}>TAXES INCL/PERS</p>
+                            </div>
+                            <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"}
+                                           iconRight={<Image src={planeIcon} alt="plane" width={18} height={20}/>}/>
+                        </div>
                     </SwiperSlide>
                 ))}
 
             </Swiper>
             <div className={styles.swiperTourPackageButtonBox}>
-
-            <SliderArrow
-                            arrowText={'PREV'}
-                            onClick={() => swiperRef.current?.slidePrev()} color={'white'}
-                        />
+                <SliderArrow
+                    arrowText={'PREV'}
+                    onClick={() => swiperRef.current?.slidePrev()} color={'white'}
+                />
                 <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
-                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'} />
+                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
                 </Link>
 
-                        <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} color={'white'} />
+                <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}
+                             color={'white'}/>
             </div>
         </div>
     )
