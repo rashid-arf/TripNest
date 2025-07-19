@@ -19,6 +19,9 @@ import {TravelGuide} from "@/components/common/TravelGuide/TravelGuide";
 import {TravelGuideService} from "@/components/common/services/travelGuide.services";
 import {TravelGuideItem} from "@/components/common/TravelGuide/TravelGuide.types";
 import {VideoTour} from "@/components/common/VideoTour/VideoTour";
+import {TravelActive} from "@/components/common/TravelArticle/TravelArticle";
+import {TravelArticleItem} from "@/components/common/TravelArticle/TravelArticle.types";
+import {TravelArticleService} from "@/components/common/services/travelArtivle.services";
 
 
 export default function Home() {
@@ -67,6 +70,15 @@ export default function Home() {
         })();
     }, []);
 
+    const [travelArticle, setTravelArticle] = useState<TravelArticleItem[] | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            const TravelArticleFromResponse = await TravelArticleService.getTravelArticle();
+            setTravelArticle(TravelArticleFromResponse);
+        })();
+    }, []);
+
     return (
         <main>
             <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo}/>}</div>
@@ -81,7 +93,7 @@ export default function Home() {
                     tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                 />
             )}
-                <ActiveTour/>
+            <ActiveTour/>
             <WhoWeAre/>
             {tourSelect && <TourSelect tourSelect={tourSelect}/>}
             {bannerSwiperInfo && tourSelect && (
@@ -91,7 +103,8 @@ export default function Home() {
                 />
             )}
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
-            <VideoTour />
+            <VideoTour/>
+            {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
         </main>
     );
 }

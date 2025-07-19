@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "Title": "Spiritual Sojourn: Pilgrimage Tours for Soul Seekers",
+    "image": "/assets/images/TourArticle-1.png",
+    "alt": "TourArticle-1",
+    "ByName": "Shafiqul",
+    "TourType": "Cruise Voyage",
+    "Date": "6",
+    "Month": "Feb"
+  },
+  {
+    "id": 2,
+    "Title": "Wine Country Escapes: Vineyard Tours for Connoisseurs",
+    "image": "/assets/images/TourArticle-2.png",
+    "alt": "TourArticle-2",
+    "ByName": "Shafiqul",
+    "TourType": "Adventure Safari",
+    "Date": "6",
+    "Month": "Feb"
+  },
+  {
+    "id": 3,
+    "Title": "Spiritual Sojourn: Pilgrimage Tours for Soul Seekers",
+    "image": "/assets/images/TourArticle-1.png",
+    "alt": "TourArticle-1",
+    "ByName": "Shafiqul",
+    "TourType": "Cruise Voyage",
+    "Date": "6",
+    "Month": "Feb"
+  },
+  {
+    "id": 4,
+    "Title": "Wine Country Escapes: Vineyard Tours for Connoisseurs",
+    "image": "/assets/images/TourArticle-2.png",
+    "alt": "TourArticle-2",
+    "ByName": "Shafiqul",
+    "TourType": "Adventure Safari",
+    "Date": "6",
+    "Month": "Feb"
+  }
+]
