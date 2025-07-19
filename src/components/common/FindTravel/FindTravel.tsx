@@ -18,13 +18,12 @@ import quoteMask from '@/assets/images/quoteMask.png'
 import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 
 
-
 type Props = {
     tourSelect: TourSelectItem[];
     bannerSwiperInfo: SwiperItem[];
 }
 
-export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
+export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo,}) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const swiperProps = {
         loop: true,
@@ -41,7 +40,8 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
             <div className={styles.FindTravelContent}>
                 <div className={styles.FindTravelContentLeft}>
                     <DefaultTitleLink titleLinkText={"Testimonial"} modifier={"Package"}/>
-                    <DefaultTitleName titleName={"Find The Compliments From Our Travelers"} modifier={"whiteZeroMargin"}/>
+                    <DefaultTitleName titleName={"Find The Compliments From Our Travelers"}
+                                      modifier={"whiteZeroMargin"}/>
                     <p className={styles.FindTravelContentLeftDescription}>Nunc volutpat sagittis cursus. Praesent sed
                         dolor pellentesque, consectetur velon sit amet,
                         pharetra ipsum. Fusce europ ultrices tortor. Praesent vehicula commodo purus at vulputate
@@ -83,13 +83,15 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
                                 key={item.id} className={styles.FindTravelSlidersContent}>
                                 <div className={styles.FindTravelSlidersText}>
                                     <p>{item.description}</p>
-                                    <Image src={triangle} alt="triangle" className={styles.triangleMask} width={33} height={23} />
-                                    <Image src={Goldstar} alt="star" width={100} height={18} />
+                                    <Image src={triangle} alt="triangle" className={styles.triangleMask} width={33}
+                                           height={23}/>
+                                    <Image src={Goldstar} alt="star" width={100} height={18}/>
                                     <Image src={planetMask} alt="planetMask" className={styles.planetMask}/>
                                     <Image src={quoteMask} alt="quoteMask" className={styles.quoteMask}/>
                                 </div>
                                 <div className={styles.FindTravelSlidersCustomer}>
-                                    <Image src={item.customerPhoto} alt='customerPhoto' width={42} height={42} className={styles.FindTravelSlidersCuspomerPhoto}/>
+                                    <Image src={item.customerPhoto} alt='customerPhoto' width={42} height={42}
+                                           className={styles.FindTravelSlidersCuspomerPhoto}/>
                                     <div>
                                         <p className={styles.FindTravelSlidersCustomerName}>{item.customer}</p>
                                         <p className={styles.FindTravelSlidersCustomerPosition}>{item.position}</p>
@@ -102,14 +104,16 @@ export const FindTravel: FC<Props> = ({tourSelect, bannerSwiperInfo, }) => {
                     <div className={styles.swiperTourSelectButtonBox}>
                         <SliderArrow
                             arrowText={'PREV'}
-                            onClick={() => swiperRef.current?.slidePrev()} color={'green'}
+                            onClick={() => swiperRef.current?.slidePrev()} color={'green'} sliderArrow={''}
+                            modifier={"PREV"} circle={""}
                         />
                         <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}
-                                     color={'green'}/>
+                                     color={'green'} sliderArrow={''} circle={""}/>
                     </div>
                 </div>
             </div>
-            <Image src={FindTravelMask} alt={"FindTravelMask"} className={styles.FindTravelMask} width={206} height={328}/>
+            <Image src={FindTravelMask} alt={"FindTravelMask"} className={styles.FindTravelMask} width={206}
+                   height={328}/>
         </div>
     )
 }

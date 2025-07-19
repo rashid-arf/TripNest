@@ -48,7 +48,7 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
                                     <DefaultTitleLink titleLinkText={"Savings worldwide"}
                                                       modifier={'tourSelect'}/>
                                     <DefaultDiscount
-                                    titleName={"Discover Great Deal"} discount={"20% Off"}/>
+                                        titleName={"Discover Great Deal"} discount={"20% Off"}/>
                                     <DefaultButton buttonText={"View This Trip"} modifier={"tourSelect"}/>
                                 </div>
 
@@ -112,10 +112,11 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
             <div className={styles.swiperTourSelectButtonBox}>
                 <SliderArrow
                     arrowText={'PREV'}
-                    onClick={() => swiperRef.current?.slidePrev()} color={'green'}
+                    onClick={() => swiperRef.current?.slidePrev()} color={'green'} sliderArrow={''} modifier={"PREV"}
+                    circle={""}
                 />
                 <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}
-                             color={'green'}/>
+                             color={'green'} sliderArrow={''} circle={""}/>
             </div>
         </div>
     )

@@ -1,12 +1,12 @@
 .topMenuWidth {
-  max-width: 1780px;
+  width: 1780px;
   margin: 0 auto;
   background: var(--main-color);
   border-radius: 300px;
   padding: 0 60px;
   position: absolute;
   z-index: 2;
-left: 50%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -53,7 +53,7 @@ left: 50%;
 .menuItemPlus {
   display: flex;
   flex-direction: row;
-gap: 6px;
+  gap: 6px;
   align-items: center;
   text-decoration: none;
 
@@ -74,11 +74,11 @@ gap: 6px;
   height: 72px;
   justify-content: space-between;
   width: 346px;
-  }
+}
 
 .accountBlockIcons {
   display: flex;
-  }
+}
 
 .masked-icon:hover {
   background: var(--main-color-accent);

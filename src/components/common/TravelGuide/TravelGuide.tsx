@@ -51,8 +51,8 @@ export const TravelGuide: FC<Props> = ({travelGuide}) => {
                 <SliderArrow
                     arrowText={'PREV'}
                     onClick={() => swiperRef.current?.slidePrev()}
-                />
-                <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}/>
+                   color={"green"} sliderArrow={""} circle={""}/>
+                <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} color={"green"} sliderArrow={""} circle={""}/>
             </div>
         </div>
     )

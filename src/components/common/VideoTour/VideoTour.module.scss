@@ -6,7 +6,6 @@
   position: relative;
   width: 100%;
   height: 822px;
-  //background: var(--main-color);
   margin-bottom: 166px;
 
 }
@@ -15,7 +14,7 @@
 .videoTourCard {
   width: 820px;
   height: 292px;
-  border-radius: 30px 30px 0 0;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +39,7 @@
 
 .videoTourCardMask {
   position: absolute;
-  border-radius: 30px 30px 0 0;
+  border-radius: 30px;
   bottom: -146px;
   left: 50%;
   transform: translateX(-50%);

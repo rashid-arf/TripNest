@@ -97,14 +97,13 @@ export const TourPackage: FC<Props> = ({tourPackage}) => {
             <div className={styles.swiperTourPackageButtonBox}>
                 <SliderArrow
                     arrowText={'PREV'}
-                    onClick={() => swiperRef.current?.slidePrev()} color={'white'}
-                />
+                    onClick={() => swiperRef.current?.slidePrev()} color={'white'} sliderArrow={''} circle={''} modifier={"PREV"}/>
                 <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
                     <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
                 </Link>
 
                 <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}
-                             color={'white'}/>
+                             color={'white'} sliderArrow={''} circle={''} />
             </div>
         </div>
     )

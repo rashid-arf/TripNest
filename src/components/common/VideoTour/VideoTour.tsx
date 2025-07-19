@@ -22,7 +22,6 @@ export const VideoTour: FC = () => {
         },
         slidesPerView: 1,
         pagination: false,
-
     };
 
     return (
@@ -46,6 +45,7 @@ export const VideoTour: FC = () => {
                             title="YouTube video 1"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
+                            loading="lazy"
                         />
                     </div>
                 </SwiperSlide>
@@ -56,6 +56,7 @@ export const VideoTour: FC = () => {
                             title="YouTube video 1"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
+                            loading="lazy"
                         />
                     </div>
                 </SwiperSlide>
