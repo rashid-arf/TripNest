@@ -16,6 +16,7 @@
   box-shadow: 0 6px 0 #4a9136; // тінь внизу, як на кнопці
 
 
+
   &--footer {
     border-radius: 5px;
     box-shadow: none;
@@ -159,6 +160,17 @@
     bottom: -164px;
     z-index: 3;
   }
+
+  &--newsletter {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    gap: 25px;
+  }
+
 }
 
 

@@ -1,0 +1,109 @@
+.newsletterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 298px;
+  background: var(--blue-bg);
+  padding: 0 175px;
+position: relative;
+}
+
+.newsletterContentMask1 {
+  position: absolute;
+  left: 0;
+}
+
+.newsletterContentMask2 {
+  position: absolute;
+  right: 0;
+}
+
+.newsletterItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .newsletterItemTitle {
+    color: var(--mask-yellow);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .newsletterMailTitle {
+    color: var(--main-color-accent);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+
+  .newsletterItemDescription,  .newsletterMailLink {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 60px;
+    letter-spacing: 0.75px;
+    color: var(--main-bg-color);
+    text-decoration: none;
+   }
+
+.newsletterContent {
+  width: 784px;
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--white20);
+  border-right: 1px solid var(--white20);
+}
+
+.newsletterContentSubtitle {
+  color: var(--main-bg-color);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px 0;
+}
+
+.newsletterContentEmailForm {
+  width: 500px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid var(--main-color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.newsletterContentEmailFormInput {
+  border: none;
+  background: none;
+  margin-left: 22px;
+  height: 45px;
+  width: 300px;
+
+  &::placeholder {
+    color: var(--white40);
+    font-size: 12px;
+  }
+}
+
+.newsletterContentEmailFormArrow {
+  height: 65px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  background: var(--main-color-accent);
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.newsletterEmailErrorMessage {
+  color: var(--main-bg-color);
+  margin-right: 8px;
+}

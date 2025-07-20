@@ -22,6 +22,7 @@ import {VideoTour} from "@/components/common/VideoTour/VideoTour";
 import {TravelActive} from "@/components/common/TravelArticle/TravelArticle";
 import {TravelArticleItem} from "@/components/common/TravelArticle/TravelArticle.types";
 import {TravelArticleService} from "@/components/common/services/travelArtivle.services";
+import {Newsletter} from "@/components/common/Newsletter/Newsletter";
 
 
 export default function Home() {
@@ -105,6 +106,7 @@ export default function Home() {
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
             <VideoTour/>
             {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
+            <Newsletter/>
         </main>
     );
 }

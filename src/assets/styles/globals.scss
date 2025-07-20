@@ -16,6 +16,7 @@
   --footer-hover-menu: rgba(117 174 232 / 40%);
   --blur-color: #100c0866;
   --grey: #787878;
+  --blue-bg: #202f59;
 
   // visual effects
   --phone-bg: #152F0066;
@@ -58,6 +59,8 @@
 
   // white
   --white10: rgb(255 255 255 / 10%);
+  --white20: rgb(255 255 255 / 20%);
+  --white40: rgb(255 255 255 / 40%);
   --white50: rgb(255 255 255 / 50%);
   --white60: rgb(255 255 255 / 60%);
   --white80: rgb(255 255 255 / 80%);
@@ -97,3 +100,5 @@ body {
 footer {
   font-family: var(--font-jost-mono), sans-serif;
 }
+
+
