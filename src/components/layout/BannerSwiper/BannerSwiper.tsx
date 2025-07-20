@@ -14,6 +14,7 @@ import { TripAdvisor } from '@/components/common/TripAdvisor/TripAdvisor';
 import { PaintedLabel } from '@/components/common/PaintedLabel/PaintedLabel';
 import Image from 'next/image';
 import {PhoneNumber} from "@/components/common/PhoneNumber/PhoneNumber";
+import {BannerSearch} from "@/components/layout/BannerSearch/BannerSearch";
 
 type Props = {
   bannerSwiperInfo: SwiperItem[];
@@ -91,6 +92,7 @@ export const BannerSwiper: FC<Props> = ({ bannerSwiperInfo }) => {
           </div>
         </div>
       </Swiper>
+      <BannerSearch/>
     </div>
   );
 };

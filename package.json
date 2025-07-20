@@ -16,8 +16,10 @@
     "lint:style": "stylelint \"**/*.scss\"",
     "lint:style:fix": "npm run lint:style -- --fix"
   },
-
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^6.5.0",
     "clsx": "^2.1.1",
     "next": "15.3.5",
     "react": "^19.0.0",

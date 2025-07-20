@@ -1,0 +1,122 @@
+.bannerSearchBlock {
+  position: absolute;
+  top: 676px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tabButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tabButtons > button {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  height: 54px;
+  background-color: var(--white15);
+  border: 1px solid var(--white15);
+  padding: 0 40px;
+  cursor: pointer;
+  color: var(--main-bg-color);
+}
+
+.tabButtons > p {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabButtons > button:first-child {
+  border-radius: 15px 0 0;
+  border-left: none;
+}
+
+.tabButtons > button:last-child {
+  border-radius: 0 15px 0 0;
+}
+
+.buttonIcon {
+  width: 23px;
+  height: 23px;
+  background-color: var(--main-bg-color);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  --webkit-mask-repeat: no-repeat;
+  --webkit-mask-size: contain;
+}
+
+.buttonIconTour {
+  mask-image: url('/assets/images/tour.svg');
+  --webkit-mask-image: url('/assets/images/tour.svg');
+
+}
+
+.buttonIconHotel {
+  mask-image: url('/assets/images/hotel.svg');
+  --webkit-mask-image: url('/assets/images/hotel.svg');
+}
+
+.buttonIconVisa {
+  mask-image: url('/assets/images/visa.svg');
+
+  --webkit-mask-image: url('/assets/images/visa.svg');
+}
+
+.buttonIconActivities {
+  mask-image: url('/assets/images/activities.svg');
+  --webkit-mask-image: url('/assets/images/activities.svg');
+}
+
+.buttonIconTransport {
+  mask-image: url('/assets/images/transport.svg');
+  --webkit-mask-image: url('/assets/images/transport.svg');
+}
+
+.tabButtons > .tabSelected {
+  background-color: var(--main-color-accent);
+
+}
+
+.tabSelected > p {
+  color: var(--white);
+
+}
+
+.tabSelected > .buttonIcon {
+  background-color: var(--white);
+}
+
+.tabResults {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.submitButton {
+  width: 163px;
+  height: 78px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.54px;
+  text-align: center;
+  background-color: var(--main-color-accent);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
