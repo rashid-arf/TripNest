@@ -195,3 +195,62 @@ font-family: var(--font-jost-mono), sans-serif;
   mask-position: center;
   background-color: black;
 }
+
+.bestTourGreenButton {
+  width: 306px;
+  height: 82px;
+  border-radius: 10px;
+  background-color: var(--mask-green10);
+  box-shadow: none;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: 500;
+  gap: 16px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  letter-spacing: 0.34px;
+  line-height: 22px;
+}
+
+.bestTourYellowButton {
+  width: 306px;
+  height: 82px;
+  border-radius: 10px;
+  background-color: var(--mask-yellow10);
+  box-shadow: none;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: 500;
+  gap: 16px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  letter-spacing: 0.34px;
+  line-height: 22px;
+}
+
+.bestTourVideoButton {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  letter-spacing: 0.34px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.bestTourExperienceButton {
+  box-shadow: none;
+  border-radius: 10px;
+  text-align: left;
+  gap: 8px;
+  width: 166px;
+  height: 68px;
+}

@@ -46,10 +46,10 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
                             <div className={styles.TourSelectSlidersLeftPhotoFilter}>
                                 <div className={styles.TourSelectSlidersLeftPhotoContent}>
                                     <DefaultTitleLink titleLinkText={"Savings worldwide"}
-                                                      modifier={'tourSelect'}/>
+                                                      classNameMask={styles.maskTourSelectLink} className={styles.titleTourSelectLink}/>
                                     <DefaultDiscount
                                         titleName={"Discover Great Deal"} discount={"20% Off"}/>
-                                    <DefaultButton buttonText={"View This Trip"} modifier={"tourSelect"}/>
+                                    <DefaultButton buttonText={"View This Trip"} className={styles.tourSelectButton}/>
                                 </div>
 
                             </div>
@@ -97,7 +97,7 @@ export const TourSelect: FC<Props> = ({tourSelect}) => {
                                         </div>
 
                                     </div>
-                                    <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"}
+                                    <DefaultButton buttonText={"Book A Trip"} className={styles.tourSliderButton}
                                                    iconRight={<Image src={planeIcon} alt="plane" width={18}
                                                                      height={20}/>}/>
                                 </div>

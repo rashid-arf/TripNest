@@ -42,7 +42,7 @@ export const Footer: FC = () => {
               </Link>
               <p className={styles.footerContainerHeading}>Want to Take Tour Packages?</p>
               <Link href={'/book-trip'} className={styles.buttonLink}>
-                <DefaultButton buttonText={'Book a Trip'} modifier="footer"/>
+                <DefaultButton buttonText={'Book a Trip'} className={styles.footerButton}/>
               </Link>
             </div>
             <div className={styles.footerContainerMenu}>

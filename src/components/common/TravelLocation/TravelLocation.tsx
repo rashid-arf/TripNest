@@ -64,7 +64,7 @@ export const TravelLocation: FC <Props> = ({travelLocation}) => {
                                 <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()} circle={""}  color={"green"} sliderArrow={""}/>
                 </div>
                 <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
-                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
+                    <DefaultButton buttonText={'View All Destination'} className={styles.sliderButton}/>
                 </Link>
 
             </div>

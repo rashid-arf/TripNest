@@ -37,7 +37,7 @@ export const TourPackage: FC<Props> = ({tourPackage}) => {
         <div className={styles.TourPackageContainer}>
             <div className={styles.TourPackageContainerBg}></div>
             <Link href={'/tour-package'} className={styles.TourPackageLink}>
-                <DefaultTitleLink modifier={'Package'} titleLinkText={'Tour Package'}/>
+                <DefaultTitleLink classNameMask={styles.maskPackageTitleLink} titleLinkText={'Tour Package'} className={styles.titlePackageLink}/>
             </Link>
             <DefaultTitleName modifier={'white'} titleName={'Thrilling Tour Plans'}/>
             <Swiper onSwiper={(swiper) => (swiperRef.current = swiper)} className={styles.TourPackagePhotos}
@@ -87,7 +87,7 @@ export const TourPackage: FC<Props> = ({tourPackage}) => {
                                 </div>
                                 <p className={styles.TourPackageSlidersPriceItemCaption}>TAXES INCL/PERS</p>
                             </div>
-                            <DefaultButton buttonText={"Book A Trip"} modifier={"tourSlider"}
+                            <DefaultButton buttonText={"Book A Trip"} className={styles.tourPackageButton}
                                            iconRight={<Image src={planeIcon} alt="plane" width={18} height={20}/>}/>
                         </div>
                     </SwiperSlide>
@@ -99,7 +99,7 @@ export const TourPackage: FC<Props> = ({tourPackage}) => {
                     arrowText={'PREV'}
                     onClick={() => swiperRef.current?.slidePrev()} color={'white'} sliderArrow={''} circle={''} modifier={"PREV"}/>
                 <Link href={"/view-all-destination"} className={styles.viewAllDestinationLink}>
-                    <DefaultButton buttonText={'View All Destination'} modifier={'slider'}/>
+                    <DefaultButton buttonText={'View All Destination'} className={styles.tourSliderButton}/>
                 </Link>
 
                 <SliderArrow modifier="NEXT" arrowText="NEXT" onClick={() => swiperRef.current?.slideNext()}

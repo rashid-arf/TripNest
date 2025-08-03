@@ -70,7 +70,7 @@ export const VideoTour: FC = () => {
             </div>
             <div className={`content-width ${styles.videoTourCard}`}>
                 <div className={styles.videoTourCardLeft}>
-                    <DefaultTitleLink titleLinkText={"Honeymoon Tour"} modifier={"videoTour"}/>
+                    <DefaultTitleLink titleLinkText={"Honeymoon Tour"} classNameMask={styles.maskVideoTourLink} className={styles.titleVideoTourLink}/>
                     <DefaultDiscount titleName={"Discover Great Deal"} discount={"50% Off"} modifier={"green-black"}/>
                 </div>
                 <div className={styles.videoTourCardRight}>
@@ -100,7 +100,7 @@ export const VideoTour: FC = () => {
             </div>
             <DefaultButton
                 buttonText={"View This Trip"}
-                modifier={"videoTour"}
+                className={styles.videoTourButton}
                 iconRight={<Image src={planeIcon} alt="plane" width={18} height={20}/>}
             />
             <Image src={videoTourMask} alt="videoTourMask" width={820} height={292}

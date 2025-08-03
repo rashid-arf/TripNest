@@ -42,21 +42,21 @@ export const BestTour: FC<Props> = ({
                             pulv
                             gont congue. Suspendisse ullamcorper.</p>
                         <div className={styles.bestTourContentLeftLabel}>
-                            <DefaultButton buttonText={<span>Safety First<br/> Always</span>} modifier={"bestTourGreen"}
+                            <DefaultButton buttonText={<span>Safety First<br/> Always</span>} className={styles.bestTourGreenButton}
                                            iconLeft={<Image src={bagIcon} alt="bagIcon" width={56} height={56}/>}/>
                             <DefaultButton buttonText={<span>Trusted Travel<br/> Guide</span>}
-                                           modifier={"bestTourYellow"}
+                                          className={styles.bestTourYellowButton}
                                            iconLeft={<Image src={guideIcon} alt="guideIcon" width={56} height={56}/>}/>
                             <DefaultButton buttonText={<span>Expertise And<br/> Experience</span>}
-                                           modifier={"bestTourYellow"}
+                                          className={styles.bestTourYellowButton}
                                            iconLeft={<Image src={starIcon} alt="starIcon" width={56} height={56}/>}/>
                             <DefaultButton buttonText={<span>Time and Stress<br/>Savings</span>}
-                                           modifier={"bestTourGreen"}
+                                           className={styles.bestTourGreenButton}
                                            iconLeft={<Image src={dateIcon} alt="dateIcon" width={56} height={56}/>}/>
                         </div>
                         <div className={styles.bestTourContentLeftLink}>
                             <DefaultButton buttonText={"Find Out More"}/>
-                            <DefaultButton buttonText={<span>Watch Tour</span>} modifier={"bestTourVideo"}
+                            <DefaultButton buttonText={<span>Watch Tour</span>} className={styles.bestTourVideoButton}
                                            iconLeft={<Image src={videoIcon} alt="videoIcon" width={51} height={51}/>}/>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export const BestTour: FC<Props> = ({
                             <Image src={couple} alt={'couple'}/>
                             <div className={styles.bestTourContentRightLabel}>
                                 <DefaultButton buttonText={<span>Years of<br/>experience</span>}
-                                               modifier={"bestTourExperience"}
+                                               className={styles.bestTourExperienceButton}
                                                iconLeft={<span className={styles.buttonNumber}>05</span>}/>
                             </div>
                         </div>
@@ -74,21 +74,21 @@ export const BestTour: FC<Props> = ({
                 <div className={styles.bestTourBottom}>
                     <DefaultButton
                         buttonText={<span>OK+<br/><span className={styles.buttonTextSmall}>Happy Traveler</span></span>}
-                        modifier={"bestTourVideo"}
+                        className={styles.bestTourVideoButton}
                         iconLeft={<Image src={happyTravel} alt="happyTravel" width={50} height={50}/>}/>
                     <hr className={styles.bestTourBottomVertical}/>
                     <DefaultButton
                         buttonText={<span>OK+<br/><span className={styles.buttonTextSmall}>Tours Success</span></span>}
-                        modifier={"bestTourVideo"}
+                        className={styles.bestTourVideoButton}
                         iconLeft={<Image src={success} alt="success" width={50} height={50}/>}/>
                     <hr className={styles.bestTourBottomVertical}/>
                     <DefaultButton buttonText={<span>0%<br/><span
-                        className={styles.buttonTextSmall}>Positives Review</span></span>} modifier={"bestTourVideo"}
+                        className={styles.buttonTextSmall}>Positives Review</span></span>} className={styles.bestTourVideoButton}
                                    iconLeft={<Image src={review} alt="review" width={50} height={50}/>}/>
                     <hr className={styles.bestTourBottomVertical}/>
                     <DefaultButton
                         buttonText={<span>0<br/><span className={styles.buttonTextSmall}>Travel Guide</span></span>}
-                        modifier={"bestTourVideo"}
+                        className={styles.bestTourVideoButton}
                         iconLeft={<Image src={travelGuide} alt="travelGuide" width={50} height={50}/>}/>
                 </div>
                 <div className={styles.bestTourBottomCaption}>
@@ -97,7 +97,8 @@ export const BestTour: FC<Props> = ({
                         <RatingCircles rating={tripAdvisorRating} modifier={"Banner"} source={"tripadvisor"}/>
                     </div>
                     <div
-                        className={styles.bestTourRatingInfo}> {typeof tripAdvisorRating === 'number' ? tripAdvisorRating.toFixed(1) : '5.0'} Rating
+                        className={styles.bestTourRatingInfo}> {(tripAdvisorRating ?? 5).toFixed(1)}
+                        Rating
                         out of <span className={styles.ratingNumber}>5.0</span> based on <span
                             className={styles.ratingReviewsNumber}>245354 reviews</span>
                     </div>

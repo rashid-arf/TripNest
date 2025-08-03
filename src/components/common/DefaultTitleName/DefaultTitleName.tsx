@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 type Props = {
   titleName: string;
-  modifier?: 'white' | 'black' | 'whiteZeroMargin';
+  modifier?: 'white' | 'black' ;
 };
 
 export const DefaultTitleName: FC<Props> = ({ titleName, modifier }) => {

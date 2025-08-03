@@ -4,13 +4,14 @@ import clsx from "clsx";
 
 type Props = {
   titleLinkText: string;
-  modifier?: 'Jorney' | 'Package' | 'tourSelect' | 'videoTour';
+  classNameMask?: string;
+  className?: string;
 };
 
-export const DefaultTitleLink: FC<Props> = ({ titleLinkText, modifier }) => {
+export const DefaultTitleLink: FC<Props> = ({ titleLinkText, classNameMask= '', className='' }) => {
   return (
-    <div className={clsx(styles.titleLink , modifier && styles[`mask--${modifier}`]) }>
-      <div className={clsx(styles.titleLinkButton, modifier && styles[`title--${modifier}`])}>{titleLinkText}</div>
+    <div className={clsx(styles.titleLink, classNameMask) }>
+      <div className={clsx(styles.titleLinkButton, className)}>{titleLinkText}</div>
     </div>
   );
 };

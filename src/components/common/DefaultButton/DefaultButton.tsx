@@ -6,20 +6,20 @@ import clsx from "clsx";
 type Props = {
     buttonText?: ReactNode;
     bgColor?: string;
-    modifier?: 'footer' | "button" | "slider" | "tourSlider" | "bestTourGreen" | "bestTourYellow" | "bestTourVideo" | "bestTourExperience" | "activeTourList" | "activeTourTab" | "whoWeAreLabel" | "tourSelect" | "videoTour" | "newsletter";
-    iconRight?: ReactNode; // 👉 додаємо іконку праворуч
+    className?: string;
+   iconRight?: ReactNode; // 👉 додаємо іконку праворуч
     iconLeft?: ReactNode;
     isActive?: boolean;
     onClick?: () => void;
 };
 
-export const DefaultButton: FC<Props> = ({buttonText, bgColor, modifier, iconRight, iconLeft,  isActive, onClick}) => {
+export const DefaultButton: FC<Props> = ({buttonText, bgColor, className= '', iconRight, iconLeft,  isActive, onClick}) => {
     return (
         <button
             style={{backgroundColor: bgColor}}
             className={clsx(
                 styles.button,
-                modifier && styles[`button--${modifier}`],
+                className,
                 isActive && styles['button--active'] // <-- додай клас для активної кнопки
             )}
             onClick={onClick}

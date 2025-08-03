@@ -188,3 +188,30 @@ text-transform: uppercase;
  align-items: center;
  width: 1320px;
 }
+
+.tourPackageButton {
+ border-radius: 5px;
+ box-shadow: none;
+ width: 138px;
+ height: 42px;
+ font-size: 14px;
+ padding: 0 16px;
+ font-weight: 500;
+ line-height: 14px;
+ display: flex;
+ align-items: center;
+}
+
+.tourSliderButton {
+ background-color: var(--mask-yellow);
+ box-shadow: 0 6px 0 var(--shadow-yellow);
+ color: var(--main-color);
+}
+
+.maskPackageTitleLink {
+ background: var(--mask-yellow30);
+}
+
+.titlePackageLink {
+ color: var(--mask-yellow);
+}

@@ -93,3 +93,9 @@ background: #1d231f;
  justify-content: space-between;
 width: 162px;
 }
+
+.sliderButton {
+ background-color: var(--mask-yellow);
+ box-shadow: 0 6px 0 var(--shadow-yellow);
+ color: var(--main-color);
+}

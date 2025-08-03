@@ -26,7 +26,7 @@ export const WhoWeAre: FC = () => {
       <span className={styles.description}>Curabitur convallis enim atnora ullamcorper sagittis.</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeArePlane} alt="WhoWeArePlane" width={65} height={70}/>}
                     />
                     <DefaultButton
@@ -37,7 +37,7 @@ export const WhoWeAre: FC = () => {
 nug scelerisque for thana.</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeAreCompetitive} alt="WhoWeAreCompetitive" width={65} height={70}/>}
                     />
                     <DefaultButton
@@ -48,7 +48,7 @@ nug scelerisque for thana.</span>
 urnan posuere convallis.</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeAreBooking} alt="WhoWeAreBooking" width={65} height={70}/>}
                     />
                     <DefaultButton
@@ -60,7 +60,7 @@ Proin velgorat elit porttitor metus
 convallis.</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeAreGuide} alt="WhoWeAreGuide" width={65} height={70}/>}
                     />
                     <DefaultButton
@@ -72,7 +72,7 @@ euismod, accounv varius lectus viverra
 oncen.</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeAreSupport} alt="WhoWeAreSupport" width={65} height={70}/>}
                     />
                     <DefaultButton
@@ -84,7 +84,7 @@ utom suscipit quis nulla Sed auctor eu
 der cer</span>
     </span>
                         }
-                        modifier="whoWeAreLabel"
+                        className={styles.whoWeAreLabelButton}
                         iconLeft={<Image src={WhoWeAreUltimate} alt="WhoWeAreUltimate" width={65} height={70}/>}
                     />
                 </div>

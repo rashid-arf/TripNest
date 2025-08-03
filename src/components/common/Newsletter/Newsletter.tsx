@@ -17,11 +17,7 @@ export const Newsletter: FC = () => {
 
     useEffect(() => {
         const emailRegex = /^\S+@\S+\.\S+$/;
-        if (email.length <= 3 || emailRegex.test(email) === false) {
-            setEmailError(true);
-        } else {
-            setEmailError(false);
-        }
+        setEmailError(email.length <= 3 || !emailRegex.test(email));
     }, [email]);
 
     return (
@@ -34,12 +30,12 @@ export const Newsletter: FC = () => {
       <span className={styles.newsletterItemTitle}>More Inquiry</span><br/>
                             <PhoneNumber phoneInfo={'+990-737 621 432'} className={styles.newsletterItemDescription}/>
     </span>}
-                    modifier="newsletter"
+                    className={styles.newsletterButton}
                     iconLeft={<Image src={PhoneIcon} alt="Phone" width={70} height={70}/>}
                 />
             </div>
             <div className={styles.newsletterContent}>
-                <DefaultTitleName titleName={"Join The Newsletter"} modifier={"whiteZeroMargin"}/>
+                <DefaultTitleName titleName={"Join The Newsletter"} modifier={"white"}/>
                 <p className={styles.newsletterContentSubtitle}>To receive our best monthly deals</p>
                 <div className={styles.newsletterContentEmailForm}>
                     <input
@@ -76,7 +72,7 @@ export const Newsletter: FC = () => {
                   info@example.com
                 </a>
     </span>}
-                    modifier="newsletter"
+                    className={styles.newsletterButton}
                     iconLeft={<Image src={MailIcon} alt="MailIcon" width={70} height={70}/>}
                 />
             </div>

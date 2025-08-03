@@ -45,7 +45,7 @@ export const ActiveTour: FC = () => {
                                             key={tab.label}
                                             buttonText={tab.label}
                                             iconLeft={<Image src={tab.icon} alt={tab.label} width={50} height={50} />}
-                                            modifier="activeTourTab"
+                                            className={styles.activeTourTabButton}
                                             isActive={activeTab === tab.label}
                                             onClick={() => setActiveTab(tab.label)}
                                         />
@@ -62,25 +62,25 @@ export const ActiveTour: FC = () => {
                                 </p>
                                 <div className={styles.activeTourAboutList}>
                                     <DefaultButton buttonText={'Treetop Views'}
-                                                   modifier={"activeTourList"}
+                                                   className={styles.activeTourListButton}
                                                    iconLeft={<Image src={activePoint} alt="activePoint" width={9}
                                                                     height={9}/>}/>
                                     <DefaultButton buttonText={'Adrenaline Rush'}
-                                                   modifier={"activeTourList"}
+                                                   className={styles.activeTourListButton}
                                                    iconLeft={<Image src={activePoint} alt="activePoint" width={9}
                                                                     height={9}/>}/>
                                     <DefaultButton buttonText={'Safety Measures'}
-                                                   modifier={"activeTourList"}
+                                                   className={styles.activeTourListButton}
                                                    iconLeft={<Image src={activePoint} alt="activePoint" width={9}
                                                                     height={9}/>}/>
                                     <DefaultButton buttonText={'Nature Immersion'}
-                                                   modifier={"activeTourList"}
+                                                   className={styles.activeTourListButton}
                                                    iconLeft={<Image src={activePoint} alt="activePoint" width={9}
                                                                     height={9}/>}/>
                                 </div>
                                 <div className={styles.activeTourContentLeftLink}>
                                     <DefaultButton buttonText={"Find Out More"}/>
-                                    <DefaultButton buttonText={<span>Watch Tour</span>} modifier={"bestTourVideo"}
+                                    <DefaultButton buttonText={<span>Watch Tour</span>} className={styles.activeTourVideoButton}
                                                    iconLeft={<Image src={videoIcon} alt="videoIcon" width={51}
                                                                     height={51}/>}/>
                                 </div>

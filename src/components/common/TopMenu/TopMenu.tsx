@@ -57,7 +57,7 @@ export const TopMenu: FC<Props> = ({ menu }) => {
                             <Image src={itemIcons} alt="item-icons" />
                         </div>
                        <Link href={'/book-trip'} className={styles.buttonLink}>
-                           <DefaultButton buttonText={'Book А Trip'}  modifier="button"/>
+                           <DefaultButton buttonText={'Book А Trip'}/>
                        </Link>
 
 

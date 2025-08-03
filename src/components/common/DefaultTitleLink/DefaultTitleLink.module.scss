@@ -12,10 +12,6 @@
   text-align: center;
 }
 
-.mask--Package {
-  background: var(--mask-yellow30);
-}
-
 .titleLinkButton {
   font-family: var(--font-satisfy-mono), sans-serif;
   letter-spacing: 0.5px;
@@ -23,29 +19,4 @@
   cursor: pointer;
 }
 
-.title--Package {
-  color: var(--mask-yellow);
-}
 
-.mask--tourSelect {
-  background: none;
-  height: 35px;
-}
-
-.title--tourSelect {
-  color: var(--main-bg-color);
-}
-
-.mask--videoTour {
-  background: none;
-  height: 35px;
-  justify-content: start;
-  mask-image: none;
-
-}
-
-.title--videoTour {
-  color: var(--mask-yellow);
-  font-weight: 400;
-  font-size: 20px;
-}
