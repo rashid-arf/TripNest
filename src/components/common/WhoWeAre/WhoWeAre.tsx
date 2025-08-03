@@ -1,14 +1,14 @@
 import {FC} from "react";
 import styles from './WhoWeAre.module.scss'
-import WhoWeArePlane from '@/assets/images/WhoWeArePlane.png';
-import WhoWeAreCompetitive from '@/assets/images/WhoWeAreCompetitive.png';
-import WhoWeAreBooking from '@/assets/images/WhoWeAreBooking.png';
-import WhoWeAreGuide from '@/assets/images/WhoWeAreGuide.png';
-import WhoWeAreSupport from '@/assets/images/WhoWeAreSupport.png';
-import WhoWeAreUltimate from '@/assets/images/WhoWeAreUltimate.png';
-import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
-import {DefaultTitleName} from "@/components/common/DefaultTitleName/DefaultTitleName";
-import {DefaultButton} from "@/components/common/DefaultButton/DefaultButton";
+import WhoWeArePlane from '../../../assets/images/WhoWeArePlane.png';
+import WhoWeAreCompetitive from '../../../assets/images/WhoWeAreCompetitive.png';
+import WhoWeAreBooking from '../../../assets/images/WhoWeAreBooking.png';
+import WhoWeAreGuide from '../../../assets/images/WhoWeAreGuide.png';
+import WhoWeAreSupport from '../../../assets/images/WhoWeAreSupport.png';
+import WhoWeAreUltimate from '../../../assets/images/WhoWeAreUltimate.png';
+import {DefaultTitleLink} from "../DefaultTitleLink/DefaultTitleLink";
+import {DefaultTitleName} from "../DefaultTitleName/DefaultTitleName";
+import {DefaultButton} from "../DefaultButton/DefaultButton";
 import Image from "next/image";
 
 
