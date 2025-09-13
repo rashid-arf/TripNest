@@ -17,6 +17,7 @@ import {TravelArticleService} from "@/components/common/services/travelArtivle.s
 import {Header} from "@/components/About/Header/Header";
 import {AboutMain} from "@/components/About/AboutMain/AboutMain";
 import {Newsletter} from "@/components/About/Newsletter/Newsletter";
+import styles from '@/app/about/page.module.scss'
 
 
 export default function Page() {
@@ -72,7 +73,9 @@ export default function Page() {
             <WhoWeAre/>
             {tourSelect && <TourSelect tourSelect={tourSelect}/>}
             <ActiveTour/>
-            {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
+            <div className={styles.travelGuideBlock}>
+                {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
+            </div>
             {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
             <Newsletter/>
         </main>

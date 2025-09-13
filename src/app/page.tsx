@@ -108,7 +108,7 @@ export default function Home() {
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
             <VideoTour/>
             {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
-            <Newsletter/>
+                <Newsletter/>
         </main>
     );
 }
