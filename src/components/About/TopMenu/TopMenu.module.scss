@@ -1,0 +1,89 @@
+.topMenuWidth {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  justify-content: space-between;
+  width: 656px;
+}
+
+.menuItemPlusImage {
+  width: 16px;
+  height: 16px;
+  mask-image: var(--menu-icon);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--main-color);
+}
+
+.menuItemSelect {
+  color: var(--main-color);
+}
+
+.menuItemPlusActive {
+  .menuItemSelect {
+    color: var(--menu-item-select);
+  }
+
+  .menuItemPlusImage {
+    background: var(--menu-item-select);
+  }
+}
+
+.menuItemPlus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    .menuItemSelect {
+      color: var(--menu-item-select);
+    }
+
+    .menuItemPlusImage {
+      background: var(--menu-item-select);
+    }
+  }
+}
+
+.accountBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340px;
+}
+
+.accountBlockIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.accountBlockPhone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.accountBlockPhoneTitle {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.masked-icon:hover {
+  background: var(--main-color-accent);
+}

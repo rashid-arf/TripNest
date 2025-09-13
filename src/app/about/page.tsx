@@ -1,56 +1,31 @@
 'use client';
-import {BannerSwiper} from '@/components/layout/BannerSwiper/BannerSwiper';
 import {useEffect, useState} from 'react';
 import {BannerSwiperService} from "@/components/common/services/banner-swiper-service";
-import {TravelLocation} from "@/components/common/TravelLocation/TravelLocation";
-import {TravelLocationService} from "@/components/common/services/travelLocation.services";
-import {TourPackage} from "@/components/common/TourPackage/TourPackage";
 import {TourPackageService} from "@/components/common/services/tourPackage.services";
 import {BestTour} from "@/components/common/BestTour/BestTour";
 import {SwiperItem} from "@/components/layout/BannerSwiper/BannerSwiper.types";
 import {ActiveTour} from "@/components/common/ActiveTour/ActiveTour";
 import {WhoWeAre} from "@/components/common/WhoWeAre/WhoWeAre";
 import {TourSelect} from "@/components/common/TourSelect/TourSelect";
-import {FindTravel} from "@/components/common/FindTravel/FindTravel";
-import {LocationItem} from "@/components/common/TravelLocation/TravelLocation.types";
-import {TourPackageItem} from "@/components/common/TourPackage/TourPackage.types";
 import {TourSelectItem} from "@/components/common/TourSelect/TourSelect.types";
 import {TravelGuide} from "@/components/common/TravelGuide/TravelGuide";
 import {TravelGuideService} from "@/components/common/services/travelGuide.services";
 import {TravelGuideItem} from "@/components/common/TravelGuide/TravelGuide.types";
-import {VideoTour} from "@/components/common/VideoTour/VideoTour";
 import {TravelActive} from "@/components/common/TravelArticle/TravelArticle";
 import {TravelArticleItem} from "@/components/common/TravelArticle/TravelArticle.types";
 import {TravelArticleService} from "@/components/common/services/travelArtivle.services";
-import {Newsletter} from "@/components/common/Newsletter/Newsletter";
-import {Header} from "@/components/layout/Header/Header";
+import {Header} from "@/components/About/Header/Header";
+import {AboutMain} from "@/components/About/AboutMain/AboutMain";
+import {Newsletter} from "@/components/About/Newsletter/Newsletter";
 
 
-export default function Home() {
+export default function Page() {
     const [bannerSwiperInfo, setBannerSwiperInfo] = useState<SwiperItem[] | null>(null);
 
     useEffect(() => {
         (async () => {
             const BannerSwiperInfoFromResponse = await BannerSwiperService.getBannerSwiperInfo();
             setBannerSwiperInfo(BannerSwiperInfoFromResponse);
-        })();
-    }, []);
-
-    const [travelLocation, setTravelLocation] = useState<LocationItem[] | null>(null);
-
-    useEffect(() => {
-        (async () => {
-            const TravelLocationFromResponse = await TravelLocationService.getTravelLocation();
-            setTravelLocation(TravelLocationFromResponse);
-        })();
-    }, []);
-
-    const [tourPackage, setTourPackage] = useState<TourPackageItem[] | null>(null);
-
-    useEffect(() => {
-        (async () => {
-            const TourPackageFromResponse = await TourPackageService.getTourPackage();
-            setTourPackage(TourPackageFromResponse);
         })();
     }, []);
 
@@ -83,10 +58,8 @@ export default function Home() {
 
     return (
         <main>
-            <Header/>
-            <div>{bannerSwiperInfo && <BannerSwiper bannerSwiperInfo={bannerSwiperInfo}/>}</div>
-            {travelLocation && (<TravelLocation travelLocation={travelLocation}/>)}
-            {tourPackage && (<TourPackage tourPackage={tourPackage}/>)}
+        <Header/>
+<AboutMain/>
             {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
                 <BestTour
                     tripAdvisorRating={bannerSwiperInfo[0].tripAdvisorRating}
@@ -96,17 +69,10 @@ export default function Home() {
                     tripAdvisorLogoAlt={bannerSwiperInfo[0].tripAdvisorLogoAlt}
                 />
             )}
-            <ActiveTour/>
             <WhoWeAre/>
             {tourSelect && <TourSelect tourSelect={tourSelect}/>}
-            {bannerSwiperInfo && tourSelect && (
-                <FindTravel
-                    tourSelect={tourSelect}
-                    bannerSwiperInfo={bannerSwiperInfo}
-                />
-            )}
+            <ActiveTour/>
             {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
-            <VideoTour/>
             {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
             <Newsletter/>
         </main>

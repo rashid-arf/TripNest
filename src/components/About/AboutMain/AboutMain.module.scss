@@ -1,0 +1,33 @@
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat center/cover url('/assets/images/about-main.jpg');
+  width: 100%;
+  height: 352px;
+}
+
+.aboutMainTitle {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62.4px;
+  color: var(--main-bg-color);
+}
+
+.aboutMainMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutMainMenuLink {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+
+.aboutMainMenuLink:hover {
+  color: var(--main-color-accent);
+}

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import '@/assets/styles/globals.scss'
 import { Rubik, Jost, Satisfy } from 'next/font/google';
-import { Header } from '@/components/layout/Header/Header';
 import {Footer} from "@/components/layout/Footer/Footer/Footer";
 
 
@@ -35,9 +34,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${rubik.variable} ${jost.variable} ${satisfy.variable}`}>
-
-        <Header />
-        {children}
+           {children}
 <Footer/>
         </body>
         </html>
