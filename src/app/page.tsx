@@ -1,4 +1,5 @@
 'use client';
+
 import {BannerSwiper} from '@/components/layout/BannerSwiper/BannerSwiper';
 import {useEffect, useState} from 'react';
 import {BannerSwiperService} from "@/components/common/services/banner-swiper-service";

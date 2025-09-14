@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '@/assets/styles/globals.scss'
 import { Rubik, Jost, Satisfy } from 'next/font/google';
 import {Footer} from "@/components/layout/Footer/Footer/Footer";
-
+import { Providers } from '@/GlobalRedux/provider';
 
 // Fonts setup
 const rubik = Rubik({
@@ -34,8 +34,11 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${rubik.variable} ${jost.variable} ${satisfy.variable}`}>
-           {children}
-<Footer/>
+        <Providers>
+          {children}
+          <Footer/>
+        </Providers>
+
         </body>
         </html>
     );

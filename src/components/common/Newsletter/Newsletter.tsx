@@ -35,7 +35,7 @@ export const Newsletter: FC = () => {
                 />
             </div>
             <div className={styles.newsletterContent}>
-                <DefaultTitleName titleName={"Join The Newsletter"} modifier={"white"}/>
+                <DefaultTitleName titleName={"Join The NewsletterPages"} modifier={"white"}/>
                 <p className={styles.newsletterContentSubtitle}>To receive our best monthly deals</p>
                 <div className={styles.newsletterContentEmailForm}>
                     <input

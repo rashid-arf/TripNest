@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/egypt.png",
+    "imageAlt": "Egypt",
+    "name": "Discover Serenity, Exploration, and Enlightenment.",
+    "type": "tour package",
+    "price": 450,
+    "salePrice": 340,
+    "location": "Egypt",
+    "routeLocations": [
+      "Saint Martin",
+      "Khagrachori",
+      "Cox's Bazar",
+      "Bandar ban"
+    ],
+    "duration": "1 Week",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": false
+    }
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/indonesia.png",
+    "imageAlt": "Indonesia",
+    "name": "Embracing City Lights, Land, And Iconic Culture.",
+    "type": "tour package",
+    "price": 380,
+    "salePrice": 240,
+    "location": "Indonesia",
+    "routeLocations": [
+      "Bandar ban",
+      "Cox's Bazar",
+      "Saint Martin",
+      "Sea Beach"
+    ],
+    "duration": "3 Days / 4 Night",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": false
+    }
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/new-york.png",
+    "imageAlt": "New York",
+    "name": "Immersive Cultural Expirees, Local Cuisine.",
+    "type": "tour package",
+    "price": 580,
+    "salePrice": 500,
+    "location": "New York",
+    "routeLocations": [
+      "Sajek Vally",
+      "Sea Beach",
+      "Bandar ban",
+      "Cox's Bazar"
+    ],
+    "duration": "10 Days / 11 Night",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": false
+    }
+  },
+  {
+    "id": 4,
+    "image": "/assets/images/saudi-arabia.png",
+    "imageAlt": "Saudi Arab",
+    "name": "Exploring Ancient Ruins, Histor Landmarks, And Cultural.",
+    "type": "tour package",
+    "price": 800,
+    "salePrice": 760,
+    "location": "Saudi Arab",
+    "routeLocations": [
+      "Bandar ban",
+      "Cox's Bazar",
+      "Khagrachori",
+      "Saint Martin"
+    ],
+    "duration": "4 Days / 5 Night",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": false
+    }
+  },
+  {
+    "id": 5,
+    "image": "/assets/images/brazil-sweden-egypt.png",
+    "imageAlt": "Brazil, Sweden, Egypt",
+    "name": "Adventure Art, Architecture, And Mediterranean.",
+    "type": "tour package",
+    "price": 220,
+    "salePrice": 170,
+    "location": [
+      "Brazil",
+      "Sweden",
+      "Egypt"
+    ],
+    "routeLocations": [
+      "Bandar ban",
+      "Cox's Bazar",
+      "Khagrachori",
+      "Saint Martin"
+    ],
+    "duration": "4 Days / 5 Night",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": false
+    }
+  },
+  {
+    "id": 6,
+    "image": "/assets/images/australia-sweden.png",
+    "imageAlt": "Australia, Sweden",
+    "name": "A Journey Of Tour Beauty And Inspiration.",
+    "type": "tour package",
+    "price": 180,
+    "salePrice": 160,
+    "location": [
+      "Australia",
+      "Sweden"
+    ],
+    "routeLocations": [
+      "Bandar ban",
+      "Cox's Bazar",
+      "Khagrachori",
+      "Saint Martin"
+    ],
+    "duration": "7 Days / 8 Night",
+    "flags": {
+      "ultimate": true,
+      "affordable": true,
+      "elite": true
+    }
+  },
+  {
+    "id": 7,
+    "image": "/assets/images/egypt.png",
+    "imageAlt": "New York, Sweden",
+    "name": "Exploring Energy, Landmarks, and Timeless Traditions.",
+    "type": "tour package",
+    "price": 670,
+    "salePrice": 460,
+    "location": [
+      "New York",
+      "Sweden"
+    ],
+    "routeLocations": [
+      "Sea Beach",
+      "Sajek Vally",
+      "Saint Martin",
+      "Cox's Bazar"
+    ],
+    "duration": "5 Days / 6 Night",
+    "flags": {
+      "ultimate": false,
+      "affordable": false,
+      "elite": true
+    }
+  },
+  {
+    "id": 8,
+    "image": "/assets/images/india-tour.png",
+    "imageAlt": "India",
+    "name": "Immersing in City Skylines, Heritage, and Vibrant Lifestyles.",
+    "type": "tour package",
+    "price": 380,
+    "salePrice": 260,
+    "location": "Sweden",
+    "routeLocations": [
+      "Bandar ban",
+      "Cox's Bazar",
+      "Khagrachori",
+      "Saint Martin"
+    ],
+    "duration": "4 Days / 5 Night",
+    "flags": {
+      "ultimate": false,
+      "affordable": false,
+      "elite": true
+    }
+  }
+]

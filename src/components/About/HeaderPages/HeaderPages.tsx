@@ -1,10 +1,10 @@
 'use client';
 import { FC, useEffect, useState } from 'react';
-import { TopMenu } from '@/components/About/TopMenu/TopMenu';
+import { TopMenuPages } from '@/components/About/TopMenuPages/TopMenuPages';
 import {HeaderMenuService} from "@/components/common/services/headerMenu.services";
 
 
-export const Header: FC = () => {
+export const HeaderPages: FC = () => {
   const [headerMenu, setHeaderMenu] = useState(null);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export const Header: FC = () => {
   return (
     <header>
       {!headerMenu && <h1>Loading...</h1>}
-      {headerMenu && <TopMenu menu={headerMenu} />}
+      {headerMenu && <TopMenuPages menu={headerMenu} />}
     </header>
   );
 };

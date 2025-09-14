@@ -1,12 +1,12 @@
 'use client';
 import { FC, useEffect, useState } from 'react';
-import styles from './Newsletter.module.scss';
+import styles from './NewsletterPages.module.scss';
 import Image from 'next/image';
 import arrow from '@/assets/images/newsletter-arrow.svg';
 import leftBanner from '@/assets/images/newsletter-left-banner.svg';
 import rightBanner from '@/assets/images/newsletter-right-banner.svg';
 
-export const Newsletter: FC = () => {
+export const NewsletterPages: FC = () => {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState(false);
 

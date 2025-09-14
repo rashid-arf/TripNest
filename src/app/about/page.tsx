@@ -14,9 +14,9 @@ import {TravelGuideItem} from "@/components/common/TravelGuide/TravelGuide.types
 import {TravelActive} from "@/components/common/TravelArticle/TravelArticle";
 import {TravelArticleItem} from "@/components/common/TravelArticle/TravelArticle.types";
 import {TravelArticleService} from "@/components/common/services/travelArtivle.services";
-import {Header} from "@/components/About/Header/Header";
+import {HeaderPages} from "@/components/About/HeaderPages/HeaderPages";
 import {AboutMain} from "@/components/About/AboutMain/AboutMain";
-import {Newsletter} from "@/components/About/Newsletter/Newsletter";
+import {NewsletterPages} from "@/components/About/NewsletterPages/NewsletterPages";
 import styles from '@/app/about/page.module.scss'
 
 
@@ -59,7 +59,7 @@ export default function Page() {
 
     return (
         <main>
-        <Header/>
+        <HeaderPages/>
 <AboutMain/>
             {bannerSwiperInfo && bannerSwiperInfo.length > 0 && (
                 <BestTour
@@ -77,7 +77,7 @@ export default function Page() {
                 {travelGuide && (<TravelGuide travelGuide={travelGuide}/>)}
             </div>
             {travelArticle && (<TravelActive travelArticle={travelArticle}/>)}
-            <Newsletter/>
+            <NewsletterPages/>
         </main>
     );
 }

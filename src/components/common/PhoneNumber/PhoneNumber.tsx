@@ -9,7 +9,7 @@ type Props = {
 export const PhoneNumber: FC<Props> = ({ phoneInfo, className }) => {
   return (
     <p>
-      <a className={`${styles.accountBlockPhoneNumber} ${className}`} href={`tel:${phoneInfo}`}>
+      <a className={`${styles.accountBlockPhoneNumber} ${className}` } href={`tel:${phoneInfo}` }>
         {phoneInfo}
       </a>
     </p>

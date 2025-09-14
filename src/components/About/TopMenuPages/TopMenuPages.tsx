@@ -5,10 +5,11 @@ import accountProfile from '@/assets/images/acount-profile-black.svg';
 import itemIcons from '@/assets/images/item-icons-black.svg';
 import phoneIcon from '@/assets/images/phone-icon.svg';
 import divider from '@/assets/images/vertical-divider.svg';
-import styles from './TopMenu.module.scss';
+import styles from './TopMenuPages.module.scss';
 import Link from 'next/link';
-import { PhoneNumber } from '@/components/About/TopMenu/PhoneNumber/PhoneNumber';
+import { PhoneNumber } from '@/components/common/PhoneNumber/PhoneNumber';
 import { ActiveLink } from '@/components/common/ActiveLink/ActiveLink';
+
 
 type MenuItem = {
   id: number;
@@ -22,7 +23,7 @@ type Props = {
   menu: MenuItem[];
 };
 
-export const TopMenu: FC<Props> = ({ menu }) => {
+export const TopMenuPages: FC<Props> = ({ menu }) => {
   return (
     <header>
       <div className={styles.topMenuWidth}>
@@ -63,7 +64,8 @@ export const TopMenu: FC<Props> = ({ menu }) => {
               <Image src={divider} alt="vertical-divider" />
               <div>
                 <p className={styles.accountBlockPhoneTitle}>To More Inquiry</p>
-                <PhoneNumber phoneInfo={'+990-737 621 432'} />
+                {/*<PhoneNumber phoneInfo={'+990-737 621 432'} />*/}
+                <PhoneNumber phoneInfo={'+990-737 621 432'} className={styles.TopMenuPagesPhone}/>
               </div>
             </div>
           </div>
