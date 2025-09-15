@@ -4,7 +4,9 @@
   gap: 24px; // відстань між картками
   row-gap: 48px;
   width: 1320px;
-  margin: 0 auto;
+  margin: 72px auto;
+  padding: 48px 12px 0;
+
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -14,3 +16,4 @@
     grid-template-columns: 1fr;
   }
 }
+

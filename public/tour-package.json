@@ -2,7 +2,7 @@
   {
     "id": 1,
     "greenLabel": "Popular",
-    "image": "/assets/images/tour-package1.png",
+    "image": "/assets/images/egypt.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 0,
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "greenLabel": "Featured",
-    "image": "/assets/images/tour-package2.png",
+    "image": "/assets/images/indonesia.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 3,
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "greenLabel": "Popular",
-    "image": "/assets/images/tour-package3.png",
+    "image": "/assets/images/new-york.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 0,
@@ -56,7 +56,7 @@
   {
     "id": 4,
     "greenLabel": "Popular",
-    "image": "/assets/images/tour-package1.png",
+    "image": "/assets/images/egypt.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 0,
@@ -74,7 +74,7 @@
   {
     "id": 5,
     "greenLabel": "Featured",
-    "image": "/assets/images/tour-package2.png",
+    "image": "/assets/images/indonesia.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 3,
@@ -92,7 +92,7 @@
   {
     "id": 6,
     "greenLabel": "Popular",
-    "image": "/assets/images/tour-package3.png",
+    "image": "/assets/images/new-york.png",
     "alt": "package",
     "rated": "/assets/images/rated.svg",
     "ratingNumber": 0,

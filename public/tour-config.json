@@ -16,9 +16,9 @@
     ],
     "duration": "1 Week",
     "flags": {
-      "ultimate": true,
-      "affordable": true,
-      "elite": false
+      "ultimate": false,
+      "affordable": false,
+      "elite": true
     }
   },
   {
@@ -38,7 +38,7 @@
     ],
     "duration": "3 Days / 4 Night",
     "flags": {
-      "ultimate": true,
+      "ultimate": false,
       "affordable": true,
       "elite": false
     }
@@ -61,7 +61,7 @@
     "duration": "10 Days / 11 Night",
     "flags": {
       "ultimate": true,
-      "affordable": true,
+      "affordable": false,
       "elite": false
     }
   },

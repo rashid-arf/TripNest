@@ -1,0 +1,29 @@
+.TourSliders {
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.TourSlidersItem {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--font-jost-mono), sans-serif;
+  cursor: pointer;
+}
+
+.TourSlidersItem:hover {
+  color: var(--grey);
+}
+
+.TourSlidersArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+}

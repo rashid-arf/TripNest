@@ -14,12 +14,14 @@ export const TourList = () => {
   }
 
   return (
-    <div className={styles.tourListWrapper}>
-      {tours.map((tour: TourItem) => (
-        <TourPageCard key={tour.id} tour={{...tour, location: Array.isArray(tour.location) ? tour.location.join(", ") : tour.location,
-        }} />
-      ))}
-    </div>
-  );
+          <div className={styles.tourListWrapper}>
+        {tours.map((tour: TourItem) => (
+          <TourPageCard key={tour.id} tour={{
+            ...tour, location: Array.isArray(tour.location) ? tour.location.join(", ") : tour.location,
+          }} />
+        ))}
+      </div>
+  )
+    ;
 };
 

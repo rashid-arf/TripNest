@@ -6,8 +6,8 @@ width: 416px;
   box-shadow: 0 0 10x 0 rgba(250 250 250 / 0.8);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 16px;
   padding: 20px;
 }
@@ -15,7 +15,7 @@ width: 416px;
 .tourPageCardItemPhoto {
   position: relative;
   width: 100%;
-  height: 260px; // підбери під свою картку
+  height: 260px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -25,14 +25,159 @@ width: 416px;
     inset: 0;
     background: linear-gradient(
                     180deg,
-                    rgba(21, 47, 0, 0) 0%,     // повністю прозорий зверху
-                    rgba(21, 47, 0, 0.6) 56%,  // напівпрозорий в середині
-                    rgba(21, 47, 0, 1) 100%    // насичений внизу
-    );
+                    var(--green-gradient0),     // повністю прозорий зверху
+                    var(--green-gradient56)); // напівпрозорий в середині);
     border-radius: 10px;
   }
 }
 
-.tourPageCardItemPhotoImg {
-  object-fit: cover;
+.tourPageCardItemTitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30.8px;
 }
+
+.tourPageCardItemRoutes {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-card-text);
+
+  .routeItem {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .routeArrow {
+    margin: 0 6px;
+    color: var(--grey-card-text);
+  }
+}
+
+.tourPageCardItemPrice {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .salePrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color-accent);
+    margin-right: 8px;
+  }
+
+  .oldPrice {
+    font-size: 16px;
+    color: var(--grey-text50);
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+}
+
+.tourPageCardItemPriceTop {
+ font-size: 12px;
+  line-height: 22px;
+}
+
+.tourPageCardItemPriceBottom {
+  font-size: 10px;
+  line-height: 22px;
+  color: var(--grey);
+}
+
+.tourPageCardItem {
+  position: relative;
+  border-radius: 12px;
+  background: var(--main-bg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tourPageCardItemPhoto {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+.tourPageCardItemBadges {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tourPageCardItemBadgesDuration {
+  background: var(--main-color);
+  color:var(--main-bg-color);
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 9px 10px;
+}
+
+.tourPageCardItemBadgesLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--main-bg-color);
+  border: 1px solid var(--main-color-accent);
+}
+
+.tourPageCardItemBadgesLocationTitle {
+  background: var(--main-bg-color);
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.flagBadge {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  color: #fff;
+}
+
+.flagUltimate {
+  background: #16a34a; // зелений
+}
+
+.flagAffordable {
+  background: #2563eb; // синій
+}
+
+.flagElite {
+  background: #facc15; // золотий
+  color: #111; // темний текст для контрасту
+}
+
+.cardLine {
+  width: 100%;
+}
+
+.tourPageButton {
+box-shadow: none;
+border-radius: 5px;
+align-items: center;
+width: 138px;
+height: 42px;
+padding: 0 16px;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+display: flex
+;}
