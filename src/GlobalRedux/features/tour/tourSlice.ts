@@ -4,7 +4,6 @@ import { createSlice } from '@reduxjs/toolkit';
 import { TourItem } from './tourItemTypes';
 import { fetchTour } from '@/GlobalRedux/features/tour/action';
 
-
 export interface TourState {
   tours: TourItem[];
 }

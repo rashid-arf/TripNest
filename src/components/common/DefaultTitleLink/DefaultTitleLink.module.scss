@@ -4,7 +4,7 @@
   justify-content: center;
   height: 42px;
   width: 174px;
-  mask-image: url('/assets/images/title-bg.svg');
+  mask-image: url("/assets/images/title-bg.svg");
   mask-repeat: no-repeat;
   mask-size: unset;
   mask-position: left;
@@ -18,5 +18,3 @@
   color: var(--main-color-accent);
   cursor: pointer;
 }
-
-

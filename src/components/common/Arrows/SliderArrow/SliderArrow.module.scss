@@ -18,7 +18,7 @@
 }
 
 .arrow {
-  mask-image: url('/assets/images/swiperButtonPrev.svg');
+  mask-image: url("/assets/images/swiperButtonPrev.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
@@ -36,7 +36,7 @@
   }
 
   &--sliderArrow {
-    mask-image: url('/assets/images/sliderArrow.svg');
+    mask-image: url("/assets/images/sliderArrow.svg");
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
@@ -72,5 +72,3 @@
   order: 1; // стрілка справа
   rotate: 180deg;
 }
-
-

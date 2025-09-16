@@ -1,8 +1,7 @@
 'use client';
 import { FC, useEffect, useState } from 'react';
 import { TopMenuPages } from '@/components/About/TopMenuPages/TopMenuPages';
-import {HeaderMenuService} from "@/components/common/services/headerMenu.services";
-
+import { HeaderMenuService } from '@/components/common/services/headerMenu.services';
 
 export const HeaderPages: FC = () => {
   const [headerMenu, setHeaderMenu] = useState(null);

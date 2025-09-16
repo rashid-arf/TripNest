@@ -8,12 +8,7 @@
     "price": 450,
     "salePrice": 340,
     "location": "Egypt",
-    "routeLocations": [
-      "Saint Martin",
-      "Khagrachori",
-      "Cox's Bazar",
-      "Bandar ban"
-    ],
+    "routeLocations": ["Saint Martin", "Khagrachori", "Cox's Bazar", "Bandar ban"],
     "duration": "1 Week",
     "flags": {
       "ultimate": false,
@@ -30,12 +25,7 @@
     "price": 380,
     "salePrice": 240,
     "location": "Indonesia",
-    "routeLocations": [
-      "Bandar ban",
-      "Cox's Bazar",
-      "Saint Martin",
-      "Sea Beach"
-    ],
+    "routeLocations": ["Bandar ban", "Cox's Bazar", "Saint Martin", "Sea Beach"],
     "duration": "3 Days / 4 Night",
     "flags": {
       "ultimate": false,
@@ -52,12 +42,7 @@
     "price": 580,
     "salePrice": 500,
     "location": "New York",
-    "routeLocations": [
-      "Sajek Vally",
-      "Sea Beach",
-      "Bandar ban",
-      "Cox's Bazar"
-    ],
+    "routeLocations": ["Sajek Vally", "Sea Beach", "Bandar ban", "Cox's Bazar"],
     "duration": "10 Days / 11 Night",
     "flags": {
       "ultimate": true,
@@ -74,12 +59,7 @@
     "price": 800,
     "salePrice": 760,
     "location": "Saudi Arab",
-    "routeLocations": [
-      "Bandar ban",
-      "Cox's Bazar",
-      "Khagrachori",
-      "Saint Martin"
-    ],
+    "routeLocations": ["Bandar ban", "Cox's Bazar", "Khagrachori", "Saint Martin"],
     "duration": "4 Days / 5 Night",
     "flags": {
       "ultimate": true,
@@ -95,17 +75,8 @@
     "type": "tour package",
     "price": 220,
     "salePrice": 170,
-    "location": [
-      "Brazil",
-      "Sweden",
-      "Egypt"
-    ],
-    "routeLocations": [
-      "Bandar ban",
-      "Cox's Bazar",
-      "Khagrachori",
-      "Saint Martin"
-    ],
+    "location": ["Brazil", "Sweden", "Egypt"],
+    "routeLocations": ["Bandar ban", "Cox's Bazar", "Khagrachori", "Saint Martin"],
     "duration": "4 Days / 5 Night",
     "flags": {
       "ultimate": true,
@@ -121,16 +92,8 @@
     "type": "tour package",
     "price": 180,
     "salePrice": 160,
-    "location": [
-      "Australia",
-      "Sweden"
-    ],
-    "routeLocations": [
-      "Bandar ban",
-      "Cox's Bazar",
-      "Khagrachori",
-      "Saint Martin"
-    ],
+    "location": ["Australia", "Sweden"],
+    "routeLocations": ["Bandar ban", "Cox's Bazar", "Khagrachori", "Saint Martin"],
     "duration": "7 Days / 8 Night",
     "flags": {
       "ultimate": true,
@@ -146,16 +109,8 @@
     "type": "tour package",
     "price": 670,
     "salePrice": 460,
-    "location": [
-      "New York",
-      "Sweden"
-    ],
-    "routeLocations": [
-      "Sea Beach",
-      "Sajek Vally",
-      "Saint Martin",
-      "Cox's Bazar"
-    ],
+    "location": ["New York", "Sweden"],
+    "routeLocations": ["Sea Beach", "Sajek Vally", "Saint Martin", "Cox's Bazar"],
     "duration": "5 Days / 6 Night",
     "flags": {
       "ultimate": false,
@@ -172,12 +127,7 @@
     "price": 380,
     "salePrice": 260,
     "location": "Sweden",
-    "routeLocations": [
-      "Bandar ban",
-      "Cox's Bazar",
-      "Khagrachori",
-      "Saint Martin"
-    ],
+    "routeLocations": ["Bandar ban", "Cox's Bazar", "Khagrachori", "Saint Martin"],
     "duration": "4 Days / 5 Night",
     "flags": {
       "ultimate": false,

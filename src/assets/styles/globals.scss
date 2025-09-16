@@ -1,8 +1,7 @@
 :root {
   --content-max-width: 1320px;
 
-
- // base colors
+  // base colors
   --main-bg-color: #fff;
   --main-color: #100c08; // rgba(16 12 8 / 100%)
 
@@ -20,7 +19,7 @@
   --blue-bg: #202f59;
 
   // visual effects
-  --phone-bg: #152F0066;
+  --phone-bg: #152f0066;
   --top-strip-bg-color: #222;
   --newsletter-bg: #f9f4f0;
   --footer-bg-color: #1d231f;
@@ -29,11 +28,7 @@
   --rating-circle-color: #00aa6c;
   --box-shadow-8: rgba(0 0 0 / 8%);
   --box-shadow-14: rgba(0 0 0 / 14%);
-  --blue-gradient: linear-gradient(
-                  to right,
-                  rgba(76 124 237 / 10%),
-                  rgba(76 124 237 / 0)
-  );
+  --blue-gradient: linear-gradient(to right, rgba(76 124 237 / 10%), rgba(76 124 237 / 0));
   --line: rgba(34 34 34 / 20%);
   --grey-line: rgba(19 20 26 / 16%);
   --grey-border: rgba(16 12 8 / 10%);
@@ -52,7 +47,7 @@
   --green-gradient0: rgba(21 47 0 / 0) 0%;
   --green-gradient56: rgba(21 47 0 / 0.6) 56%;
 
- // yellow variants
+  // yellow variants
   --mask-yellow10: rgba(251 176 59 / 10%);
   --mask-yellow: rgb(251 176 59); //#FBB03B
   --mask-yellow30: rgba(251, 176, 59, 30%);
@@ -71,7 +66,7 @@
 
   // warning, success, error
   --email-error: red;
-  }
+}
 
 html,
 body {
@@ -104,5 +99,3 @@ body {
 footer {
   font-family: var(--font-jost-mono), sans-serif;
 }
-
-

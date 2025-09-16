@@ -1,8 +1,7 @@
-
-export  type TravelGuideItem = {
+export type TravelGuideItem = {
   id: number;
   guideName: string;
-  guidePosition:string;
+  guidePosition: string;
   image: string;
   alt: string;
-}
+};

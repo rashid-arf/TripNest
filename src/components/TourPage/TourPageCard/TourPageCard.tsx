@@ -44,10 +44,6 @@ export const TourPageCard: FC<Props> = ({ tour }) => {
           height={260}
           className="rounded-lg"
         />
-
-
-
-
       </div>
 
       {/* Заголовок */}
@@ -64,7 +60,7 @@ export const TourPageCard: FC<Props> = ({ tour }) => {
           </span>
         ))}
       </div>
-     <hr className={styles.cardLine}/>
+      <hr className={styles.cardLine} />
       {/* Ціни */}
       <div className={styles.tourPageCardItemPrice}>
         <div>
@@ -73,15 +69,18 @@ export const TourPageCard: FC<Props> = ({ tour }) => {
           <span className={styles.oldPrice}>${tour.price}</span>
           <p className={styles.tourPageCardItemPriceBottom}>TAXES INCL/PERS</p>
         </div>
-        <DefaultButton buttonText={"Book A Trip"} className={styles.tourPageButton}
-                       iconRight={<Image src={planeIcon} alt="plane" width={18} height={20}/>}/>
+        <DefaultButton
+          buttonText={'Book A Trip'}
+          className={styles.tourPageButton}
+          iconRight={<Image src={planeIcon} alt="plane" width={18} height={20} />}
+        />
       </div>
 
       {/* Бейджики поверх фото */}
       <div className={styles.tourPageCardItemBadges}>
         <span className={styles.tourPageCardItemBadgesDuration}>{tour.duration}</span>
         <div className={styles.tourPageCardItemBadgesLocation}>
-          <Image src={locationPint} alt="location" width={18} height={20}/>
+          <Image src={locationPint} alt="location" width={18} height={20} />
           <span className={styles.tourPageCardItemBadgesLocationTitle}>{tour.location}</span>
         </div>
 
@@ -95,12 +94,10 @@ export const TourPageCard: FC<Props> = ({ tour }) => {
                   : styles.flagElite
             }`}
           >
-    {flagLabel}
-  </span>
+            {flagLabel}
+          </span>
         )}
       </div>
-
     </div>
   );
 };
-

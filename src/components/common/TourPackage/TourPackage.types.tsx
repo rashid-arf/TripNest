@@ -11,4 +11,4 @@ export type TourPackageItem = {
   countries: string;
   newPrice: number;
   oldPrice: number;
-}
+};

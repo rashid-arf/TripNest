@@ -16,10 +16,10 @@
   height: 204px;
   mask-repeat: no-repeat;
   mask-size: contain;
-  mask-image: url('/assets/images/planeMask.svg');
+  mask-image: url("/assets/images/planeMask.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-mask-image: url('/assets/images/planeMask.svg');
+  -webkit-mask-image: url("/assets/images/planeMask.svg");
   background: var(--mask-green);
   z-index: 1;
 }
@@ -33,10 +33,10 @@
   z-index: -1;
   mask-repeat: no-repeat;
   mask-size: contain;
-  mask-image: url('/assets/images/planet-left.svg');
+  mask-image: url("/assets/images/planet-left.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-mask-image: url('/assets/images/planet-left.svg');
+  -webkit-mask-image: url("/assets/images/planet-left.svg");
   background: linear-gradient(180deg, var(--mask-green10) -150%, var(--mask-green10) 100%);
 }
 
@@ -49,10 +49,10 @@
   z-index: -1;
   mask-repeat: no-repeat;
   mask-size: contain;
-  mask-image: url('/assets/images/planet-right.svg');
+  mask-image: url("/assets/images/planet-right.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-mask-image: url('/assets/images/planet-right.svg');
+  -webkit-mask-image: url("/assets/images/planet-right.svg");
   background: linear-gradient(180deg, var(--mask-green10) -150%, var(--mask-green10) 100%);
 }
 
@@ -106,10 +106,10 @@
 .bestTourContentRightMask {
   mask-repeat: no-repeat;
   mask-size: contain;
-  mask-image: url('/assets/images/planet-right.svg');
+  mask-image: url("/assets/images/planet-right.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-mask-image: url('/assets/images/planet-right.svg');
+  -webkit-mask-image: url("/assets/images/planet-right.svg");
 }
 
 .buttonNumber {
@@ -127,7 +127,6 @@
   border-top: 1px solid var(--grey-border);
   border-bottom: 1px solid var(--grey-border);
   margin-top: 90px;
-
 }
 
 .bestTourBottomVertical {
@@ -143,7 +142,7 @@
 }
 
 .bestTourBottomCaption {
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 32px;
@@ -167,12 +166,12 @@ display: flex;
 
 .ratingReviewsNumber {
   font-weight: 600;
-  text-decoration: underline ;
+  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
 .bestTourRatingInfo {
-font-family: var(--font-jost-mono), sans-serif;
+  font-family: var(--font-jost-mono), sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: var(--grey-text);
@@ -189,7 +188,7 @@ font-family: var(--font-jost-mono), sans-serif;
 .bestTourAdvisorBlockImage {
   width: 110px;
   height: 20px;
-  mask-image: url('/assets/images/trip-advisor-logo.svg');
+  mask-image: url("/assets/images/trip-advisor-logo.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;

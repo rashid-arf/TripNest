@@ -1,217 +1,216 @@
 .TourPackageContainer {
- position: relative;
- display: flex;
- flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 100px 0;
-background-image: url("/assets/images/bg.png");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-image: url("/assets/images/bg.png");
 }
 
 .TourPackageContainerBg {
- width: 100%;
- height: 100%;
- position: absolute;
- background: var( --footer-bg-color);
- z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--footer-bg-color);
+  z-index: -1;
 }
 
 .TourPackageLink {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .TourPackageSliders {
- display: flex;
- flex-direction: column;
- width: 416px;
- height: 568px;
- border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 416px;
+  height: 568px;
+  border-radius: 10px;
 }
 
 .TourPackagePhotos {
- display: flex;
- justify-content: space-between;
- align-items: start;
- width: 1320px;
- padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 1320px;
+  padding: 0 12px;
 }
 
-.TourPackagePhotosItem{
- padding: 15px;
- width: 416px;
- height: 288px;
- border: none;
- position: relative;
- overflow: hidden;
+.TourPackagePhotosItem {
+  padding: 15px;
+  width: 416px;
+  height: 288px;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .TourPackagePhotosItem1Mask {
- position: absolute;
- top: 20px;
- left: -30px;
- display: flex;
- align-items: center;
- justify-content: center;
- width: 140px;
- height: 28px;
- background: var(--greenLabel);
- font-size: 15px;
- font-weight: 500;
- color: var(--main-bg-color);
- transform: rotate(-45deg);
- z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 28px;
+  background: var(--greenLabel);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-bg-color);
+  transform: rotate(-45deg);
+  z-index: 2;
 }
 
 .greenMask {
- display: flex;
- justify-content: start;
+  display: flex;
+  justify-content: start;
 }
 
 .TourPackageSlidersInfo {
- height: 182px;
- background: var(--main-bg-color);
- padding: 30px 25px 21px;
- display: flex;
- flex-direction: column;
- justify-content: start;
+  height: 182px;
+  background: var(--main-bg-color);
+  padding: 30px 25px 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .ratingRow {
- display: flex;
- align-items: start;
- justify-content: start;
-font-size: 13px;
- color: var(--grey-text);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 13px;
+  color: var(--grey-text);
 }
 
 .TourPackageSlidersInfoRated {
- width: 88px;
- height: 18px;
- mask-image: var(--rated-image);
- mask-repeat: no-repeat;
- mask-size: contain;
- mask-position: center;
- background: var(--main-color);
- }
+  width: 88px;
+  height: 18px;
+  mask-image: var(--rated-image);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: var(--main-color);
+}
 
 .activeRating {
- background: var(--email-error); // активний колір (без фільтрів)
+  background: var(--email-error); // активний колір (без фільтрів)
 }
 
 .TourPackageSlidersInfoTitle {
- font-size: 22px;
- font-weight: 500;
- line-height: 30px;
- color: var(--main-color);
- margin-top: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--main-color);
+  margin-top: 8px;
 }
 
 .TourPackageSlidersInfoList {
- display: flex;
- align-items: center;
- gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .listItem {
- display: flex;
- align-items: center;
- gap: 4px;
- margin-top: 16px;
- margin-bottom: 26px;
- }
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
 
 .listItemTitle {
- font-weight: 500;
- font-size: 14px;
- color: var(--grey-text50);
-
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-text50);
 }
 
 .TourPackageSlidersPrice {
- height: 100px;
- width: 416px;
- border-top: 1px solid var(--grey-text20);
- background: var(--main-bg-color);
- display: flex;
- align-items: center;
- justify-content: space-between;
-padding: 23px 25px ;
- border-radius: 0 0 5px 5px;
+  height: 100px;
+  width: 416px;
+  border-top: 1px solid var(--grey-text20);
+  background: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 25px;
+  border-radius: 0 0 5px 5px;
 }
 
 .TourPackageSlidersPriceItem {
- padding: 22px 25px;
+  padding: 22px 25px;
 }
 
 .TourPackageSlidersPriceItemDiscount {
- display: flex;
- align-items: center;
- gap: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .TourPackageSlidersPriceItemDiscountNew {
- font-weight: 800;
- font-size: 22px;
- letter-spacing: 0.22px;
- color: var(--green-title);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  color: var(--green-title);
 }
 
 .TourPackageSlidersPriceItemDiscountOld {
- font-weight: 500;
- font-size: 16px;
- color: var(--grey-text50);
- text-decoration: line-through;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey-text50);
+  text-decoration: line-through;
 }
 
 .TourPackageSlidersPriceItemCaption {
-text-transform: uppercase;
- font-size: 11px;
- letter-spacing: 0.22px;
- color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.22px;
+  color: var(--main-color);
 }
 
 .TourPackageSlidersPriceItemTitle {
- font-size: 13px;
- font-weight: 500;
- letter-spacing: 0.26px;
- color: var(--main-color);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.26px;
+  color: var(--main-color);
 }
 
 .viewAllDestinationLink {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .swiperTourPackageButtonBox {
- display: flex;
- justify-content: space-between;
- margin-top: 84px;
- align-items: center;
- width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  align-items: center;
+  width: 1320px;
 }
 
 .tourPackageButton {
- border-radius: 5px;
- box-shadow: none;
- width: 138px;
- height: 42px;
- font-size: 14px;
- padding: 0 16px;
- font-weight: 500;
- line-height: 14px;
- display: flex;
- align-items: center;
+  border-radius: 5px;
+  box-shadow: none;
+  width: 138px;
+  height: 42px;
+  font-size: 14px;
+  padding: 0 16px;
+  font-weight: 500;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .tourSliderButton {
- background-color: var(--mask-yellow);
- box-shadow: 0 6px 0 var(--shadow-yellow);
- color: var(--main-color);
+  background-color: var(--mask-yellow);
+  box-shadow: 0 6px 0 var(--shadow-yellow);
+  color: var(--main-color);
 }
 
 .maskPackageTitleLink {
- background: var(--mask-yellow30);
+  background: var(--mask-yellow30);
 }
 
 .titlePackageLink {
- color: var(--mask-yellow);
+  color: var(--mask-yellow);
 }

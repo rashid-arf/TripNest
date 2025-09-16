@@ -11,7 +11,7 @@ export type SwiperItem = {
   tripAdvisorLogoAlt: string;
   tripAdvisorRating: number;
   trustPilotLogo: string;
-  trustPilotLogoAlt:string;
+  trustPilotLogoAlt: string;
   trustPilotIcon: string;
-  trustPilotIconAlt:string;
+  trustPilotIconAlt: string;
 };

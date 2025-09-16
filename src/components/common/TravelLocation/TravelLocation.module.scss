@@ -1,101 +1,99 @@
 .TravelLocationContainer {
- display: flex;
- flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 120px auto;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px auto;
 }
 
 .TravelLocationLink {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .TravelLocationPhotos {
- display: flex;
- justify-content: space-between;
- align-items: start;
- width: 1320px;
- padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 1320px;
+  padding: 0 12px;
 
- .TravelLocationPhotosItem:nth-child(2),
- .TravelLocationPhotosItem:nth-child(4),
- .TravelLocationPhotosItem:nth-child(6),
- .TravelLocationPhotosItem:nth-child(8){
-  margin-top: 20px;
- }
+  .TravelLocationPhotosItem:nth-child(2),
+  .TravelLocationPhotosItem:nth-child(4),
+  .TravelLocationPhotosItem:nth-child(6),
+  .TravelLocationPhotosItem:nth-child(8) {
+    margin-top: 20px;
+  }
 }
 
 .TravelLocationPhotosItem {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- padding: 15px;
- background: var(--local-image);
- background-size: cover;
- background-position: center;
- width: 306px;
- height: 370px;
- border-radius: 10px;
-background: #1d231f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--local-image);
+  background-size: cover;
+  background-position: center;
+  width: 306px;
+  height: 370px;
+  border-radius: 10px;
+  background: #1d231f;
 }
 
 .TravelLocationPhotosItem1Mask {
- display: flex;
- align-items: center;
- justify-content: center;
- width: 56px;
- height: 22px;
- border-radius: 3px;
- background: var(--mask-yellow);
- font-size: 12px;
- font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 22px;
+  border-radius: 3px;
+  background: var(--mask-yellow);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .yellowMask {
- display: flex;
- justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .titleMask {
- display: flex;
- justify-content: start;
+  display: flex;
+  justify-content: start;
 }
 
 .TravelLocationPhotosItemTitleTop {
- font-weight: 500;
- font-size: 14px;
- color: var(--green-title);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--green-title);
 }
 
 .TravelLocationPhotosItemTitleBottom {
- font-size: 28px;
- font-weight: 500;
- color: var(--main-bg-color);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--main-bg-color);
 }
 
 .viewAllDestinationLink {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .swiperTravelLocationButtonBox {
- display: flex;
- justify-content: space-between;
- margin-top: 84px;
- align-items: center;
- width: 1320px;
-
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  align-items: center;
+  width: 1320px;
 }
 
 .swiperArrowBlock {
- display: flex;
- align-items: center;
- justify-content: space-between;
-width: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 162px;
 }
 
 .sliderButton {
- background-color: var(--mask-yellow);
- box-shadow: 0 6px 0 var(--shadow-yellow);
- color: var(--main-color);
+  background-color: var(--mask-yellow);
+  box-shadow: 0 6px 0 var(--shadow-yellow);
+  color: var(--main-color);
 }

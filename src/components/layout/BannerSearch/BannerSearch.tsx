@@ -72,7 +72,10 @@ export const BannerSearch: FC = () => {
       ...bannerSearchData,
       [tabName]: {
         ...bannerSearchData[tabName],
-        dropdowns: { ...bannerSearchData[tabName].dropdowns, [dropdownName]: value },
+        dropdowns: {
+          ...bannerSearchData[tabName].dropdowns,
+          [dropdownName]: value,
+        },
       },
     });
   };
@@ -121,9 +124,9 @@ export const BannerSearch: FC = () => {
           <div className={styles.tabResults}>
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
-              description={"Destionetion"}
+              description={'Destionetion'}
               label={'Select Destination'}
-                            icon={'/assets/images/destination-icon.svg'}
+              icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
               onOptionChange={onBannerOptionChange}
               borderBottomLeftRadius={50}
@@ -132,7 +135,7 @@ export const BannerSearch: FC = () => {
             ></Dropdown>
             <Dropdown
               options={['Bus tour', 'Walking Tour', 'Bike Tour', 'Cultural Tour', 'Museum Tour']}
-              description={"Tour Type"}
+              description={'Tour Type'}
               label={'Select Tour Type'}
               icon={'/assets/images/tour-icon.svg'}
               name={'tourType'}
@@ -154,7 +157,7 @@ export const BannerSearch: FC = () => {
                 'October',
                 'November',
               ]}
-              description={"When"}
+              description={'When'}
               label={'Select Month'}
               icon={'/assets/images/time-icon.svg'}
               name={'when'}
@@ -163,7 +166,7 @@ export const BannerSearch: FC = () => {
             />
             <Dropdown
               options={['A weekend', 'A week', '2 weeks', 'A month', 'Other']}
-              description={"Tour Duration"}
+              description={'Tour Duration'}
               label={'Select Duration'}
               name={'duration'}
               icon={'/assets/images/tour-icon.svg'}
@@ -171,7 +174,6 @@ export const BannerSearch: FC = () => {
               tabName={activeTab}
               borderTopRightRadius={0}
               borderBottomRightRadius={0}
-
             />
             <button
               type="submit"
@@ -186,7 +188,7 @@ export const BannerSearch: FC = () => {
           <div className={styles.tabResults}>
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
-              description={"Destionetion"}
+              description={'Destionetion'}
               label={'Select Country'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
@@ -197,7 +199,7 @@ export const BannerSearch: FC = () => {
             ></Dropdown>
             <Dropdown
               options={['Single Room', 'Double Room', 'Studio']}
-              description={"Tour Type"}
+              description={'Tour Type'}
               label={'Select Room Type'}
               icon={'/assets/images/tour-icon.svg'}
               name={'tourType'}
@@ -219,7 +221,7 @@ export const BannerSearch: FC = () => {
                 'October',
                 'November',
               ]}
-              description={"When"}
+              description={'When'}
               label={'Select Month'}
               icon={'/assets/images/time-icon.svg'}
               name={'when'}
@@ -228,7 +230,7 @@ export const BannerSearch: FC = () => {
             />
             <Dropdown
               options={['A weekend', 'A week', '2 weeks', 'Other']}
-              description={"Tour Duration"}
+              description={'Tour Duration'}
               label={'Select Duration'}
               name={'duration'}
               icon={'/assets/images/tour-icon.svg'}
@@ -250,7 +252,7 @@ export const BannerSearch: FC = () => {
           <div className={styles.tabResults}>
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
-              description={"Destionetion"}
+              description={'Destionetion'}
               label={'Select Destination'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
@@ -261,7 +263,7 @@ export const BannerSearch: FC = () => {
             ></Dropdown>
             <Dropdown
               options={['Travel Visa', 'Business Visa', 'Student Visa', 'Work Visa']}
-              description={"Tour Type"}
+              description={'Tour Type'}
               label={'Select Visa Type'}
               icon={'/assets/images/tour-icon.svg'}
               name={'tourType'}
@@ -283,7 +285,7 @@ export const BannerSearch: FC = () => {
                 'October',
                 'November',
               ]}
-              description={"When"}
+              description={'When'}
               label={'Select Month'}
               icon={'/assets/images/time-icon.svg'}
               name={'when'}
@@ -292,7 +294,7 @@ export const BannerSearch: FC = () => {
             />
             <Dropdown
               options={['A weekend', 'A week', '2 weeks', 'A month', 'Other']}
-              description={"Tour Duration"}
+              description={'Tour Duration'}
               label={'Select Duration'}
               name={'duration'}
               icon={'/assets/images/tour-icon.svg'}
@@ -314,7 +316,7 @@ export const BannerSearch: FC = () => {
           <div className={styles.tabResults}>
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
-              description={"Destionetion"}
+              description={'Destionetion'}
               label={'Select Destination'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
@@ -326,7 +328,7 @@ export const BannerSearch: FC = () => {
 
             <Dropdown
               options={['Safari', 'Culinary Tourism', 'Road Trip', 'Historical Travel']}
-              description={"Tour Type"}
+              description={'Tour Type'}
               label={'Select Activity Type'}
               icon={'/assets/images/tour-icon.svg'}
               name={'tourType'}
@@ -348,7 +350,7 @@ export const BannerSearch: FC = () => {
                 'October',
                 'November',
               ]}
-              description={"When"}
+              description={'When'}
               label={'Select Month'}
               icon={'/assets/images/time-icon.svg'}
               name={'when'}
@@ -357,7 +359,7 @@ export const BannerSearch: FC = () => {
             />
             <Dropdown
               options={['A weekend', 'A week', '2 weeks', 'A month', 'Other']}
-              description={"Tour Duration"}
+              description={'Tour Duration'}
               label={'Select Duration'}
               name={'duration'}
               icon={'/assets/images/tour-icon.svg'}
@@ -379,7 +381,7 @@ export const BannerSearch: FC = () => {
           <div className={styles.tabResults}>
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
-              description={"Destionetion"}
+              description={'Destionetion'}
               label={'Select Destination'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
@@ -391,7 +393,7 @@ export const BannerSearch: FC = () => {
 
             <Dropdown
               options={['Bus', 'Car', 'Plane', 'Railway']}
-              description={"Tour Type"}
+              description={'Tour Type'}
               label={'Select Transport Type'}
               icon={'/assets/images/tour-icon.svg'}
               name={'tourType'}
@@ -413,7 +415,7 @@ export const BannerSearch: FC = () => {
                 'October',
                 'November',
               ]}
-              description={"When"}
+              description={'When'}
               label={'Select Month'}
               icon={'/assets/images/time-icon.svg'}
               name={'when'}
@@ -422,7 +424,7 @@ export const BannerSearch: FC = () => {
             />
             <Dropdown
               options={['A weekend', 'A week', '2 weeks', 'A month', 'Other']}
-              description={"Tour Duration"}
+              description={'Tour Duration'}
               label={'Select Duration'}
               name={'duration'}
               icon={'/assets/images/tour-icon.svg'}

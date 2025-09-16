@@ -1,5 +1,5 @@
 .tourPageCardItem {
-width: 416px;
+  width: 416px;
   height: 530px;
   border-radius: 10px;
   background: var(--main-bg-color);
@@ -24,9 +24,11 @@ width: 416px;
     position: absolute;
     inset: 0;
     background: linear-gradient(
-                    180deg,
-                    var(--green-gradient0),     // повністю прозорий зверху
-                    var(--green-gradient56)); // напівпрозорий в середині);
+      180deg,
+      var(--green-gradient0),
+      // повністю прозорий зверху
+      var(--green-gradient56)
+    ); // напівпрозорий в середині);
     border-radius: 10px;
   }
 }
@@ -77,7 +79,7 @@ width: 416px;
 }
 
 .tourPageCardItemPriceTop {
- font-size: 12px;
+  font-size: 12px;
   line-height: 22px;
 }
 
@@ -118,7 +120,7 @@ width: 416px;
 
 .tourPageCardItemBadgesDuration {
   background: var(--main-color);
-  color:var(--main-bg-color);
+  color: var(--main-bg-color);
   width: 100%;
   font-size: 12px;
   font-weight: 600;
@@ -170,14 +172,14 @@ width: 416px;
 }
 
 .tourPageButton {
-box-shadow: none;
-border-radius: 5px;
-align-items: center;
-width: 138px;
-height: 42px;
-padding: 0 16px;
-font-size: 14px;
-font-weight: 500;
-line-height: 14px;
-display: flex
-;}
+  box-shadow: none;
+  border-radius: 5px;
+  align-items: center;
+  width: 138px;
+  height: 42px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  display: flex;
+}

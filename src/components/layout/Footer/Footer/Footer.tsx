@@ -17,8 +17,7 @@ import { SocialButton } from '@/components/common/SocialButton/SocialButton';
 import { PhoneNumber } from '@/components/common/PhoneNumber/PhoneNumber';
 import { FooterMenu } from '@/components/layout/Footer/FooterMenu/FooterMenu';
 import { DefaultButton } from '@/components/common/DefaultButton/DefaultButton';
-import {HeaderMenuService} from "@/components/common/services/headerMenu.services";
-
+import { HeaderMenuService } from '@/components/common/services/headerMenu.services';
 
 export const Footer: FC = () => {
   const [footerMenu, setFooterMenu] = useState(null);
@@ -42,7 +41,7 @@ export const Footer: FC = () => {
               </Link>
               <p className={styles.footerContainerHeading}>Want to Take Tour Packages?</p>
               <Link href={'/book-trip'} className={styles.buttonLink}>
-                <DefaultButton buttonText={'Book a Trip'} className={styles.footerButton}/>
+                <DefaultButton buttonText={'Book a Trip'} className={styles.footerButton} />
               </Link>
             </div>
             <div className={styles.footerContainerMenu}>

@@ -1,4 +1,3 @@
-
 .defaultDiscount {
   display: flex;
   flex-direction: column;
@@ -8,7 +7,7 @@
   &.defaultDiscount--green-black {
     align-items: start;
   }
-  }
+}
 
 .defaultDiscountTitle {
   font-weight: 600;
@@ -32,8 +31,6 @@
   &.defaultDiscountNumber--green-black {
     color: var(--green-title);
     text-align: start;
-    font-size: 60px
-  ;
+    font-size: 60px;
   }
 }
-

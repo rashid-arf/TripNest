@@ -12,9 +12,9 @@ import Link from 'next/link';
 import { SwiperItem } from '@/components/layout/BannerSwiper/BannerSwiper.types';
 import { TripAdvisor } from '@/components/common/TripAdvisor/TripAdvisor';
 import Image from 'next/image';
-import {PhoneNumber} from "@/components/common/PhoneNumber/PhoneNumber";
-import {BannerSearch} from "@/components/layout/BannerSearch/BannerSearch";
-import {DefaultTitleLink} from "@/components/common/DefaultTitleLink/DefaultTitleLink";
+import { PhoneNumber } from '@/components/common/PhoneNumber/PhoneNumber';
+import { BannerSearch } from '@/components/layout/BannerSearch/BannerSearch';
+import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';
 
 type Props = {
   bannerSwiperInfo: SwiperItem[];
@@ -37,17 +37,17 @@ export const BannerSwiper: FC<Props> = ({ bannerSwiperInfo }) => {
   const getStyledTitle = (title: string, target: string) => {
     const parts = title.split(new RegExp(`(${target})`, 'i'));
     return (
-        <>
-          {parts.map((part, index) =>
-                  part.toLowerCase() === target.toLowerCase() ? (
-                      <span key={index} className={styles.greenWord}>
-            {part}
-          </span>
-                  ) : (
-                      part
-                  )
-          )}
-        </>
+      <>
+        {parts.map((part, index) =>
+          part.toLowerCase() === target.toLowerCase() ? (
+            <span key={index} className={styles.greenWord}>
+              {part}
+            </span>
+          ) : (
+            part
+          )
+        )}
+      </>
     );
   };
 
@@ -66,30 +66,31 @@ export const BannerSwiper: FC<Props> = ({ bannerSwiperInfo }) => {
               <div className={styles.info}>
                 <div className={styles.location}>
                   <Link href={'/spain'} className={styles.locationLink}>
-                    <DefaultTitleLink titleLinkText="Spain" classNameMask={styles.bannerLocationMask}
-                                      className={styles.bannerLocationTitle}/>
+                    <DefaultTitleLink
+                      titleLinkText="Spain"
+                      classNameMask={styles.bannerLocationMask}
+                      className={styles.bannerLocationTitle}
+                    />
                   </Link>
                 </div>
-                <h2 className={styles.title}>
-                  {getStyledTitle(bannerSwiperInfo.title, 'Family')}
-                </h2>
+                <h2 className={styles.title}>{getStyledTitle(bannerSwiperInfo.title, 'Family')}</h2>
                 <div className={styles.bookRatingBlock}>
                   <div className={styles.accountBlockPhone}>
-                    <Image src={phoneIcon} alt="phone-icon"/>
-                    <Image src={divider} alt="vertical-divider"/>
+                    <Image src={phoneIcon} alt="phone-icon" />
+                    <Image src={divider} alt="vertical-divider" />
                     <div>
                       <p className={styles.accountBlockPhoneTitle}>To More Inquiry</p>
-                      <PhoneNumber phoneInfo={'+990-737 621 432'}/>
+                      <PhoneNumber phoneInfo={'+990-737 621 432'} />
                     </div>
                   </div>
                   <TripAdvisor
-                      source="tripadvisor"
-                      icon={bannerSwiperInfo.tripAdvisorIcon}
-                      iconAlt={bannerSwiperInfo.iconAlt}
-                      logo={bannerSwiperInfo.tripAdvisorLogo}
-                      logoAlt={bannerSwiperInfo.tripAdvisorLogoAlt}
-                      rating={bannerSwiperInfo.tripAdvisorRating}
-                      modifier="Banner"
+                    source="tripadvisor"
+                    icon={bannerSwiperInfo.tripAdvisorIcon}
+                    iconAlt={bannerSwiperInfo.iconAlt}
+                    logo={bannerSwiperInfo.tripAdvisorLogo}
+                    logoAlt={bannerSwiperInfo.tripAdvisorLogoAlt}
+                    rating={bannerSwiperInfo.tripAdvisorRating}
+                    modifier="Banner"
                   />
                 </div>
               </div>
@@ -105,7 +106,7 @@ export const BannerSwiper: FC<Props> = ({ bannerSwiperInfo }) => {
           </div>
         </div>
       </Swiper>
-      <BannerSearch/>
+      <BannerSearch />
     </div>
   );
 };

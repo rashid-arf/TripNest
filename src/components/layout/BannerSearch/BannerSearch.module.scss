@@ -9,8 +9,6 @@
   transform: translateX(-50%);
 }
 
-
-
 .tabButtons {
   display: flex;
   flex-direction: row;
@@ -60,40 +58,37 @@
 }
 
 .buttonIconTour {
-  mask-image: url('/assets/images/tour.svg');
-  --webkit-mask-image: url('/assets/images/tour.svg');
-
+  mask-image: url("/assets/images/tour.svg");
+  --webkit-mask-image: url("/assets/images/tour.svg");
 }
 
 .buttonIconHotel {
-  mask-image: url('/assets/images/hotel.svg');
-  --webkit-mask-image: url('/assets/images/hotel.svg');
+  mask-image: url("/assets/images/hotel.svg");
+  --webkit-mask-image: url("/assets/images/hotel.svg");
 }
 
 .buttonIconVisa {
-  mask-image: url('/assets/images/visa.svg');
+  mask-image: url("/assets/images/visa.svg");
 
-  --webkit-mask-image: url('/assets/images/visa.svg');
+  --webkit-mask-image: url("/assets/images/visa.svg");
 }
 
 .buttonIconActivities {
-  mask-image: url('/assets/images/activities.svg');
-  --webkit-mask-image: url('/assets/images/activities.svg');
+  mask-image: url("/assets/images/activities.svg");
+  --webkit-mask-image: url("/assets/images/activities.svg");
 }
 
 .buttonIconTransport {
-  mask-image: url('/assets/images/transport.svg');
-  --webkit-mask-image: url('/assets/images/transport.svg');
+  mask-image: url("/assets/images/transport.svg");
+  --webkit-mask-image: url("/assets/images/transport.svg");
 }
 
 .tabButtons > .tabSelected {
   background-color: var(--main-color-accent);
-
 }
 
 .tabSelected > p {
   color: var(--white);
-
 }
 
 .tabSelected > .buttonIcon {

@@ -18,22 +18,22 @@
   height: 14px;
 
   &:global(.facebook) {
-    mask-image: url('/assets/images/facebook.svg');
+    mask-image: url("/assets/images/facebook.svg");
   }
 
   &:global(.twitter) {
-    mask-image: url('/assets/images/twitter.svg');
+    mask-image: url("/assets/images/twitter.svg");
   }
 
   &:global(.pinterest) {
-    mask-image: url('/assets/images/pinterest.svg');
+    mask-image: url("/assets/images/pinterest.svg");
   }
 
   &:global(.instagram) {
-    mask-image: url('/assets/images/instagram.svg');
+    mask-image: url("/assets/images/instagram.svg");
   }
 
   &:global(.linkedin) {
-    mask-image: url('/assets/images/linkedin.svg');
+    mask-image: url("/assets/images/linkedin.svg");
   }
 }

@@ -1,5 +1,4 @@
-
-export  type LocationItem = {
+export type LocationItem = {
   id: number;
   titleTop: string;
   titleBottom: string;
@@ -8,5 +7,4 @@ export  type LocationItem = {
   image: string;
   alt: string;
   rating: number; // <== додаємо рейтинг
-
-}
+};

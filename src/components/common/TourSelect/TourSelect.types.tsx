@@ -11,8 +11,8 @@ export type TourSelectItem = {
   countries: string;
   newPrice: number;
   oldPrice: number;
-  "description": string;
-  "customer": string;
-  "position": string;
-  "customerPhoto": string;
-}
+  description: string;
+  customer: string;
+  position: string;
+  customerPhoto: string;
+};

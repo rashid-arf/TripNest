@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { PhoneNumber } from '@/components/common/PhoneNumber/PhoneNumber';
 import { ActiveLink } from '@/components/common/ActiveLink/ActiveLink';
 
-
 type MenuItem = {
   id: number;
   title: string;
@@ -44,7 +43,11 @@ export const TopMenuPages: FC<Props> = ({ menu }) => {
                         {menuItem.image && (
                           <div
                             className={styles.menuItemPlusImage}
-                            style={{ '--menu-icon': `url(${menuItem.image})` } as CSSProperties}
+                            style={
+                              {
+                                '--menu-icon': `url(${menuItem.image})`,
+                              } as CSSProperties
+                            }
                           />
                         )}
                       </div>
@@ -65,7 +68,7 @@ export const TopMenuPages: FC<Props> = ({ menu }) => {
               <div>
                 <p className={styles.accountBlockPhoneTitle}>To More Inquiry</p>
                 {/*<PhoneNumber phoneInfo={'+990-737 621 432'} />*/}
-                <PhoneNumber phoneInfo={'+990-737 621 432'} className={styles.TopMenuPagesPhone}/>
+                <PhoneNumber phoneInfo={'+990-737 621 432'} className={styles.TopMenuPagesPhone} />
               </div>
             </div>
           </div>

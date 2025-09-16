@@ -1,0 +1,59 @@
+.DestinationLocationPhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 1320px;
+  padding: 0 12px;
+  margin: 96px auto 70px;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 24px;
+}
+
+.DestinationLocationPhotosItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--local-image);
+  background-size: cover;
+  background-position: center;
+  width: 306px;
+  height: 370px;
+  border-radius: 10px;
+  background: #1d231f;
+}
+
+.DestinationLocationPhotosItem1Mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 22px;
+  border-radius: 3px;
+  background: var(--mask-yellow);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.yellowMask {
+  display: flex;
+  justify-content: end;
+}
+
+.titleMask {
+  display: flex;
+  justify-content: start;
+}
+
+.DestinationLocationPhotosItemTitleTop {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--green-title);
+}
+
+.DestinationLocationPhotosItemTitleBottom {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--main-bg-color);
+}
