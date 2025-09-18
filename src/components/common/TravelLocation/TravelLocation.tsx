@@ -76,7 +76,7 @@ export const TravelLocation: FC<Props> = ({ travelLocation }) => {
             sliderArrow={''}
           />
         </div>
-        <Link href={'/view-all-destination'} className={styles.viewAllDestinationLink}>
+        <Link href={'/destination'} className={styles.viewAllDestinationLink}>
           <DefaultButton buttonText={'View All Destination'} className={styles.sliderButton} />
         </Link>
       </div>

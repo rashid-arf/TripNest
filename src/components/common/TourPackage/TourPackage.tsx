@@ -114,8 +114,8 @@ export const TourPackage: FC<Props> = ({ tourPackage }) => {
           circle={''}
           modifier={'PREV'}
         />
-        <Link href={'/view-all-destination'} className={styles.viewAllDestinationLink}>
-          <DefaultButton buttonText={'View All Destination'} className={styles.tourSliderButton} />
+        <Link href={'/tour'} className={styles.viewAllDestinationLink}>
+          <DefaultButton buttonText={'View All Package'} className={styles.tourSliderButton} />
         </Link>
 
         <SliderArrow

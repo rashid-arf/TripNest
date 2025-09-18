@@ -1,0 +1,135 @@
+.BlogContainer {
+  display: flex;
+ align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.BlogLink {
+  text-decoration: none;
+}
+
+.BlogPhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 70px;
+  }
+
+.BlogSlideItem {
+  position: relative;
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+.BlogSlideItemDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 36px 32px;
+  gap: 26px;
+  font-weight: 500;
+}
+
+.BlogDescriptionTop {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: var(--font-jost-mono) sans-serif;
+  color: var(--grey-text50);
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.26px;
+}
+
+.BlogDescriptionTopLine {
+  width: 2px;
+  height: 10px;
+  border-radius: 4px;
+  background: var(--main-color-accent);
+}
+
+.ItemDescriptionTopByName {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ItemDescriptionTitle {
+  font-size: 23px;
+  line-height: 32.2px;
+  letter-spacing: 0.23px;
+  color: var(--main-color);
+}
+
+.ItemDescriptionBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ItemDescriptionBottomPost {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ItemDescriptionBottomPostLeft {
+  color: var(--main-color-accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.BlogDescriptionTopItem {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.BlogDescriptionTopItemTitle {
+  color: var(--grey-text50);
+}
+
+.BlogSlideItemDate {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background: var(--main-color-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-bg-color);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.22px;
+  line-height: 12px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.BlogFilters {
+  display: flex;
+  flex-direction: column;
+  width: 416px;
+}
+
+.BlogFiltersSearch {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 154px;
+  padding: 26px;
+  background: var(--main-bg-color);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}

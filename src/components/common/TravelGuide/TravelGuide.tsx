@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';
 import { DefaultTitleName } from '@/components/common/DefaultTitleName/DefaultTitleName';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { SliderArrow } from '@/components/common/Arrows/SliderArrow/SliderArrow';
 import { useRef } from 'react';
 import { Swiper as SwiperType } from 'swiper';
@@ -20,7 +20,8 @@ export const TravelGuide: FC<Props> = ({ travelGuide }) => {
   const swiperProps = {
     loop: true,
     autoplay: {
-      delay: 1000,
+      delay: 3000,
+      disableOnInteraction: false, // щоб не зупинявся після ручного свайпу
     },
     slidesPerView: 4,
     pagination: false,
@@ -36,7 +37,7 @@ export const TravelGuide: FC<Props> = ({ travelGuide }) => {
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className={styles.TravelGuidePhotos}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         {...swiperProps}
       >
         {travelGuide.map((item) => (

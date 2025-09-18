@@ -7,7 +7,10 @@
     "ByName": "Shafiqul",
     "TourType": "Cruise Voyage",
     "Date": "6",
-    "Month": "Feb"
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "287 Views"
+
   },
   {
     "id": 2,
@@ -17,26 +20,56 @@
     "ByName": "Shafiqul",
     "TourType": "Adventure Safari",
     "Date": "6",
-    "Month": "Feb"
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "260 Views"
   },
   {
     "id": 3,
-    "Title": "Spiritual Sojourn: Pilgrimage Tours for Soul Seekers",
-    "image": "/assets/images/TourArticle-1.png",
-    "alt": "TourArticle-1",
+    "Title": "Thrills & Chills: Extreme Sports Tours for Adren Aline Junkies",
+    "image": "/assets/images/TourArticle-3.png",
+    "alt": "TourArticle-3",
     "ByName": "Shafiqul",
     "TourType": "Cruise Voyage",
     "Date": "6",
-    "Month": "Feb"
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "211 Views"
   },
   {
     "id": 4,
-    "Title": "Wine Country Escapes: Vineyard Tours for Connoisseurs",
-    "image": "/assets/images/TourArticle-2.png",
-    "alt": "TourArticle-2",
+    "Title": "Urban Wanderlust: City Walking Tours for Street Savvy",
+    "image": "/assets/images/TourArticle-4.png",
+    "alt": "TourArticle-4",
     "ByName": "Shafiqul",
     "TourType": "Adventure Safari",
     "Date": "6",
-    "Month": "Feb"
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "205 Views"
+  },
+  {
+    "id": 5,
+    "Title": "Sailing Serenity: Seaside Escapes on Luxury Yacht Tours",
+    "image": "/assets/images/TourArticle-5.png",
+    "alt": "TourArticle-5",
+    "ByName": "Shafiqul",
+    "TourType": "Adventure Safari",
+    "Date": "6",
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "159 Views"
+  },
+  {
+    "id": 6,
+    "Title": "Historic Odyssey: Immersive Cultural Tours Through Time",
+    "image": "/assets/images/TourArticle-6.png",
+    "alt": "TourArticle-6",
+    "ByName": "Shafiqul",
+    "TourType": "Adventure Safari",
+    "Date": "6",
+    "Month": "Feb",
+    "TextBlog": "NSuspendisse bibendum efficitur orci, a pretium erat mattis nec. Vestibulum antema ypsumi primisot inaetahsjanl faucibus orci luctus etenjot ultrices posuere cubilia andt. Vestibulum quis odio ut dui malesuada ornare ut…",
+    "views": "169 Views"
   }
 ]

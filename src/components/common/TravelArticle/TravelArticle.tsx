@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { DefaultTitleLink } from '@/components/common/DefaultTitleLink/DefaultTitleLink';
 import { DefaultTitleName } from '@/components/common/DefaultTitleName/DefaultTitleName';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import { TravelArticleItem } from '@/components/common/TravelArticle/TravelArticle.types';
 import postArrow from '@/assets/images/post-arrow.png';
@@ -18,7 +18,8 @@ export const TravelActive: FC<Props> = ({ travelArticle }) => {
   const swiperProps = {
     loop: true,
     autoplay: {
-      delay: 1000,
+      delay: 3000,
+      disableOnInteraction: false, // щоб не зупинявся після ручного свайпу
     },
     slidesPerView: 2,
     pagination: false,
@@ -27,11 +28,15 @@ export const TravelActive: FC<Props> = ({ travelArticle }) => {
 
   return (
     <div className={`content-width ${styles.TravelArticleContainer}`}>
-      <Link href={'/travel-article'} className={styles.TravelArticleLink}>
+      <Link href={'/blog'} className={styles.TravelArticleLink}>
         <DefaultTitleLink titleLinkText={'Article'} />
       </Link>
       <DefaultTitleName titleName={'Travel Article Enthusiast'} />
-      <Swiper className={styles.TravelArticlePhotos} modules={[Navigation]} {...swiperProps}>
+      <Swiper
+        className={styles.TravelArticlePhotos}
+        modules={[Navigation, Autoplay]}
+        {...swiperProps}
+      >
         {travelArticle.map((item) => (
           <SwiperSlide key={item.id} className={styles.TravelArticleSlideItem}>
             <Image src={item.image} alt={item.alt} width={648} height={324} />
@@ -45,7 +50,7 @@ export const TravelActive: FC<Props> = ({ travelArticle }) => {
               </div>
               <p className={styles.ItemDescriptionTitle}>{item.Title}</p>
               <div className={styles.ItemDescriptionBottom}>
-                <Link href={'/view-post'}>
+                <Link href={'/blog'}>
                   <div className={styles.ItemDescriptionBottomPost}>
                     <p className={styles.ItemDescriptionBottomPostLeft}>View Post</p>
                     <Image src={postArrow} alt="postArrow" width={22} height={22} />
