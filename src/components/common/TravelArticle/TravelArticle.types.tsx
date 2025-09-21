@@ -7,6 +7,7 @@ export type TravelArticleItem = {
   TourType: string;
   Date: number;
   Month: string;
+  Year: string;
   views: string;
   TextBlog: string;
 };

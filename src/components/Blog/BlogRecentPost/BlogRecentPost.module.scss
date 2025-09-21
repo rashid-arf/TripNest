@@ -1,0 +1,54 @@
+.BlogResentPost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 26px;
+  background: var(--main-bg-color);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.BlogResentPostTitle {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px; // товщина лінії
+  text-underline-offset: 2px; // відступ від тексту
+}
+
+.BlogResentPostItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+}
+
+.BlogRecentPostImage {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.BlogRecentPostDate {
+  font-size: 12px;
+ color: var(--main-color50);
+  font-family: var(--font-jost-mono), sans-serif;
+  display: flex;
+  gap: 4px;
+}
+
+.BlogRecentPostText {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.23px;
+  color: var(--main-color);
+  font-weight: 500;
+}
