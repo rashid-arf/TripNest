@@ -125,7 +125,7 @@ export const BannerSearch: FC = () => {
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
               description={'Destionetion'}
-              label={'Select Destination'}
+              label={'Select Faqs'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
               onOptionChange={onBannerOptionChange}
@@ -253,7 +253,7 @@ export const BannerSearch: FC = () => {
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
               description={'Destionetion'}
-              label={'Select Destination'}
+              label={'Select Faqs'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
               onOptionChange={onBannerOptionChange}
@@ -317,7 +317,7 @@ export const BannerSearch: FC = () => {
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
               description={'Destionetion'}
-              label={'Select Destination'}
+              label={'Select Faqs'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
               onOptionChange={onBannerOptionChange}
@@ -382,7 +382,7 @@ export const BannerSearch: FC = () => {
             <Dropdown
               options={['Spain', 'New York', 'Mexico']}
               description={'Destionetion'}
-              label={'Select Destination'}
+              label={'Select Faqs'}
               icon={'/assets/images/destination-icon.svg'}
               name={'destination'}
               onOptionChange={onBannerOptionChange}

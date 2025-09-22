@@ -77,7 +77,7 @@ export const TravelLocation: FC<Props> = ({ travelLocation }) => {
           />
         </div>
         <Link href={'/destination'} className={styles.viewAllDestinationLink}>
-          <DefaultButton buttonText={'View All Destination'} className={styles.sliderButton} />
+          <DefaultButton buttonText={'View All Faqs'} className={styles.sliderButton} />
         </Link>
       </div>
     </div>
