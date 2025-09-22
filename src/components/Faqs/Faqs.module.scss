@@ -1,0 +1,71 @@
+.Faqs {
+  margin: 100px auto;
+  padding: 20px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 1320px;
+
+  &BannerCard {
+    background: no-repeat center/cover url("../../../public/assets/images/faqs-banner.png");
+    width: 420px;
+    height: 526px;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+
+
+    &Content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid var(--white50);
+      height: 100%;
+      position: relative;
+      z-index: 2;
+
+      &Button {
+        border-radius: 5px !important;
+        box-shadow: none;
+        width: 126px;
+        height: 42px;
+        font-size: 15px;
+        padding: 0;
+        margin-top: 40px;
+        cursor: pointer;
+
+      }
+
+      &Title {
+        color: var(--main-bg-color);
+        font-family: var(--font-satisfy-mono), sans-serif;
+        font-size: 20px;
+
+      }
+
+      &Discount {
+        font-weight: 700;
+        font-size: 35px;
+        margin-top: 10px;
+
+      }
+
+      &Text {
+        font-size: 13px;
+        color: var(--main-bg-color);
+        text-transform: capitalize;
+        margin-top: 6px;
+      }
+    }
+
+    &Mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px 5px 0 0;
+      z-index: 1;
+    }
+  }
+}

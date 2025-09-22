@@ -1,4 +1,4 @@
-.BlogResentPost {
+.BlogRecentPost {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,47 +8,50 @@
   border-radius: 5px;
   justify-content: space-between;
   gap: 20px;
-}
 
-.BlogResentPostTitle {
-  color: var(--main-color);
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: underline;
-  text-decoration-thickness: 1px; // товщина лінії
-  text-underline-offset: 2px; // відступ від тексту
-}
-
-.BlogResentPostItem {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  text-decoration: none;
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 0.8;
+  &Title {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px; // товщина лінії
+    text-underline-offset: 2px; // відступ від тексту
   }
 
-}
+  &Item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: opacity 0.3s;
 
-.BlogRecentPostImage {
-  border-radius: 5px;
-  object-fit: cover;
-}
+    &:hover {
+      opacity: 0.8;
+    }
 
-.BlogRecentPostDate {
-  font-size: 12px;
- color: var(--main-color50);
-  font-family: var(--font-jost-mono), sans-serif;
-  display: flex;
-  gap: 4px;
-}
+    &Image {
+      border-radius: 5px;
+      object-fit: cover;
+    }
 
-.BlogRecentPostText {
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.23px;
-  color: var(--main-color);
-  font-weight: 500;
+    &Content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      &Date {
+        font-size: 12px;
+        color: var(--main-color50);
+        font-family: var(--font-jost-mono), sans-serif;
+      }
+
+      &Text {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.23px;
+        color: var(--main-color);
+        font-weight: 500;
+      }
+    }
+  }
 }

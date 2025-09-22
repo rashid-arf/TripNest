@@ -20,7 +20,13 @@ export const Blog: FC<Props> = ({ travelArticle }) => {
       <div className={styles.BlogList}>
         {travelArticle.map((item) => (
           <div key={item.id} className={styles.BlogListItem}>
-            <Image src={item.image} alt={item.alt} width={856} height={428} />
+            <Image
+              src={item.image}
+              alt={item.alt}
+              width={856}
+              height={428}
+              className={styles.BlogListItemPhoto}
+            />
             <div className={styles.BlogListItemDescription}>
               <div className={styles.BlogListItemDescriptionTop}>
                 <div className={styles.BlogListItemDescriptionTopMeta}>

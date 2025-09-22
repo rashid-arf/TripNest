@@ -19,6 +19,15 @@
       align-items: center;
       justify-content: center;
 
+      &Photo {
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
       &Description {
         display: flex;
         flex-direction: column;
@@ -108,7 +117,6 @@
     }
   }
 
-
   .BlogFilters {
     display: flex;
     flex-direction: column;
@@ -165,7 +173,6 @@
           border: none;
         }
       }
-
     }
 
     &Categories {
@@ -205,7 +212,6 @@
         }
       }
     }
-
 
     &Tags {
       display: flex;

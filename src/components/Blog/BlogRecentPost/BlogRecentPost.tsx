@@ -12,25 +12,25 @@ type Props = {
 
 export const BlogRecentPost: FC<Props> = ({ travelArticle }) => {
   return (
-    <div className={styles.BlogResentPost}>
-      <h3 className={styles.BlogResentPostTitle}>Recent Post</h3>
+    <div className={styles.BlogRecentPost}>
+      <h3 className={styles.BlogRecentPostTitle}>Recent Post</h3>
       {travelArticle.slice(0, 3).map(
         (
           item // 👉 тільки перші 3
         ) => (
-          <Link href={`/blog/${item.id}`} className={styles.BlogResentPostItem} key={item.id}>
+          <Link href={`/blog/${item.id}`} className={styles.BlogRecentPostItem} key={item.id}>
             <Image
               src={item.image}
               alt={item.alt}
               width={92}
               height={70}
-              className={styles.BlogRecentPostImage}
+              className={styles.BlogRecentPostItemImage}
             />
-            <div className={styles.BlogRecentPostContent}>
-              <span className={styles.BlogRecentPostDate}>
+            <div className={styles.BlogRecentPostItemContent}>
+              <span className={styles.BlogRecentPostItemContentDate}>
                 {item.Date} {item.Month}, {item.Year}
               </span>
-              <p className={styles.BlogRecentPostText}>{item.Title}</p>
+              <p className={styles.BlogRecentPostItemContentText}>{item.Title}</p>
             </div>
           </Link>
         )
