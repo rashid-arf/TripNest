@@ -14,7 +14,6 @@
     padding: 15px;
     position: relative;
 
-
     &Content {
       display: flex;
       align-items: flex-start;
@@ -35,21 +34,18 @@
         padding: 0;
         margin-top: 40px;
         cursor: pointer;
-
       }
 
       &Title {
         color: var(--main-bg-color);
         font-family: var(--font-satisfy-mono), sans-serif;
         font-size: 20px;
-
       }
 
       &Discount {
         font-weight: 700;
         font-size: 35px;
         margin-top: 10px;
-
       }
 
       &Text {
@@ -69,37 +65,69 @@
     }
   }
 
-&Questions {
-  display: flex;
-  flex-direction: column;
-  width: 860px;
-
-  &Title {
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 38.5px;
-    letter-spacing: 1.05px;
-    margin-bottom: 50px;
-  }
-
-  &Text {
-    font-size: 16px;
-    line-height: 30.4px;
-    letter-spacing: 0.48px;
-    font-family: var(--font-jost-mono), sans-serif;
-    margin: 23px 20px;
-  }
-
-  &Item {
+  &Questions {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 46px;
+    flex-direction: column;
+    width: 860px;
 
-&Title {
-  font-size: 17px;
+    &Top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 38px;
+      margin-bottom: 50px;
 
-}
+      &Title {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38.5px;
+        letter-spacing: 1.05px;
+      }
+
+      &Tips {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 38px;
+        margin: 50px 0;
+      }
+    }
+
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 46px;
+      cursor: pointer; // 👈 додав курсор
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--main-color-accent);
+      }
+
+      &Title {
+        font-size: 17px;
+      }
+    }
+
+    &Text {
+      font-size: 16px;
+      line-height: 30.4px;
+      letter-spacing: 0.48px;
+      font-family: var(--font-jost-mono), sans-serif;
+      margin: 0 20px;
+
+      // ❗️ Анімація
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+
+      &.isOpen {
+        max-height: 300px; // обмеження (можна збільшити)
+        opacity: 1;
+        margin: 23px 20px; // тільки коли відкрито
+      }
+    }
   }
-}
 }
