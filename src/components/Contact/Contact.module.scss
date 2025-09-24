@@ -1,0 +1,20 @@
+.Contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 10px;
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      padding: 20px 50px;
+border-radius: 10px;
+      border: 1px solid var(--contact-line);
+    }
+  }
+}

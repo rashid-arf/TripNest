@@ -121,7 +121,10 @@
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+      transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        margin 0.3s ease;
 
       &.isOpen {
         max-height: 300px; // обмеження (можна збільшити)
