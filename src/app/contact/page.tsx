@@ -10,6 +10,7 @@ export default function Page() {
       <HeaderPages />
       <AboutMain title={'Contact'} pageTitle={'Contact'} />
       <Contact />
+
       <NewsletterPages />
     </main>
   );
